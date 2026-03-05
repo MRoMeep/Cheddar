@@ -5,6 +5,7 @@ const timerDisplay = document.getElementById('timer');
 let sentences = [];
 let startTime = null;
 let timerInterval = null;
+let previousSentence = "";
 
 async function loadData() {
     const response = await fetch('data.json');
@@ -25,7 +26,12 @@ function startNewRound(resetTimer = true) {
 }
 
 function renderText() {
-    const randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+    let randomSentence;
+    do {
+        randomSentence = sentences[Math.floor(Math.random() * sentences.length)];
+    } while (randomSentence === previousSentence && sentences.length > 1);
+    
+    previousSentence = randomSentence;
     textDisplay.innerHTML = '';
     
     randomSentence.split('').forEach(char => {
@@ -72,6 +78,9 @@ userInput.addEventListener('input', () => {
 
 window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
+        if (startTime) {
+            alert(`Czas pisania: ${timerDisplay.innerText}`);
+        }
         startNewRound(true);
     }
     if (e.key === "Enter") {
