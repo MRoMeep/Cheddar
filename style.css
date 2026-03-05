@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-color: antiquewhite;
+}
+header{
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items:stretch;
+    align-content: center;
+    display: flex;
+    background-color: rgba(255, 199, 67, 0.35);
+}
+main{
+    margin: auto;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    background-color: rgba(255, 199, 67, 0.35);
+    padding: 20px;
+    flex-direction: column;
+    gap: 5px;
+}
+div{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background-color: blanchedalmond;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+}
