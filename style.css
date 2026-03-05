@@ -34,6 +34,7 @@ main {
     font-weight: 800;
     min-height: 120px;
     box-sizing: border-box;
+    row-gap: 10px;
 }
 #TimeDisplay {
     width: 100%;
@@ -52,13 +53,15 @@ main {
     outline: none;
     box-sizing: border-box;
 }
+.word {
+    display: flex;
+}
 .letter {
     color: #444;
-    display: inline-block;
-    min-width: 0.2em;
+    white-space: pre;
 }
 .space {
-    margin-right: 12px;
+    width: 12px;
 }
 .correct {
     color: #2ecc71;
