@@ -1,14 +1,88 @@
 {
-  "sentences": [
-    "W ludzkim ciele jest więcej bakterii niż własnych komórek.",
-    "Ośmiornice mają trzy serca i niebieską krew.",
-    "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
-    "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
-    "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 m.",
-    "Serce płetwal błękitny jest wielkości małego samochodu.",
-    "W kosmosie nie słychać dźwięku, ponieważ nie ma tam powietrza do przenoszenia fal dźwiękowych.",
-    "Największa pustynia na świecie to Antarktyda, a nie Sahara.",
-    "Najdłuższą rzeką świata jest Nil o długości ponad 6600 km.",
-    "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych."
-  ]
+  "polish": {
+    "easy": [
+      "W ludzkim ciele jest więcej bakterii niż własnych komórek.",
+      "Ośmiornice mają trzy serca i niebieską krew.",
+      "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 m.",
+      "Najdłuższą rzeką świata jest Nil o długości ponad 6600 km.",
+      "Kawa jest najpopularniejszym napojem na całym świecie.",
+      "Słońce jest gwiazdą znajdującą się w centrum Układu Słonecznego.",
+      "Koty spędzają większość swojego życia na spaniu.",
+      "Woda wrze w temperaturze stu stopni Celsjusza.",
+      "Polska leży w Europie Środkowej nad Morzem Bałtyckim.",
+      "Liście drzew zmieniają kolor i spadają podczas jesieni.",
+      "Miód jest jedynym produktem spożywczym, który się nie psuje.",
+      "Banany rosną na ogromnych roślinach, które nie są drzewami.",
+      "Zimą dni są krótsze, a noce stają się znacznie dłuższe."
+    ],
+    "hard": [
+      "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
+      "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
+      "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych.",
+      "Konstantynopolitańczykowianeczka to jedno z najdłuższych słów w języku polskim.",
+      "Subiektywne poczucie estetyki często koliduje z obiektywnymi paradygmatami współczesnej architektury.",
+      "Zaleca się systematyczną synchronizację baz danych w celu uniknięcia redundantnych rekordów i niespójności.",
+      "W Szczebrzeszynie chrząszcz brzmi w trzcinie i Szczebrzeszyn z tego słynie.",
+      "Transcendentalna medytacja pozwala na osiągnięcie homeostazy między umysłem a ciałem użytkownika.",
+      "Eksperymentalna fizyka kwantowa bada zjawiska superpozycji oraz splątania cząsteczek elementarnych.",
+      "Skomplikowane algorytmy kryptograficzne zabezpieczają transfery danych przed nieautoryzowanym dostępem."
+    ]
+  },
+  "english": {
+    "easy": [
+      "The sun rises in the east and sets in the west every day.",
+      "Cats like to sleep in warm places and hunt for small mice.",
+      "Drinking water is very important for your health and skin.",
+      "The blue sky looks beautiful when the weather is clear and sunny.",
+      "An apple a day keeps the doctor away is a popular saying.",
+      "Most birds can fly high in the air using their wings.",
+      "I love to read interesting books during my free time.",
+      "The capital city of France is Paris, known for the Eiffel Tower.",
+      "Learning a new language can be a very rewarding experience.",
+      "Summer is the warmest season of the year in this country.",
+      "Milk contains calcium which helps to keep your bones strong.",
+      "Dogs are often called a man's best friend for their loyalty.",
+      "Music has the power to change a person's mood instantly."
+    ],
+    "hard": [
+      "A quick brown fox jumps over the lazy dog, is a pangram used to test specialized typewriters.",
+      "Synchronizing polymorphic encryption algorithms requires extraordinary rhythmic dexterity and precision.",
+      "The quirky psychiatrist's zephyr-like rhythm overwhelmed the xanthic xylophone's synthesized melody.",
+      "Supercalifragilisticexpialidocious is a word used when you have nothing else to say.",
+      "The fundamental principles of thermodynamics dictate the direction of heat transfer in closed systems.",
+      "Archaeological excavations revealed ancient artifacts from the prehistoric era of the civilization.",
+      "Technological advancements in artificial intelligence are reshaping the global economic landscape.",
+      "Phenomenological observations suggest that perception is heavily influenced by prior expectations.",
+      "The juxtaposition of vibrant colors created a stark contrast against the monochromatic background.",
+      "Interdisciplinary research facilitates the integration of diverse methodologies to solve complex problems."
+    ]
+  },
+  "russian": {
+    "easy": [
+      "Солнце встает на востоке и заходит на западе каждый день.",
+      "Кошки любят спать в теплых местах и охотиться на мышей.",
+      "Пить чистую воду очень важно для здоровья и кожи.",
+      "Синее небо выглядит красиво, когда погода ясная и солнечная.",
+      "Книга - лучший подарок для человека любого возраста.",
+      "Летом в лесу растет много грибов и сладких ягод.",
+      "Ученики ходят в школу, чтобы получать новые знания.",
+      "Завтрак - самый важный прием пищи в течение всего дня.",
+      "Зимой дети любят кататься на санках и лепить снеговиков.",
+      "Машина быстро едет по широкой асфальтированной дороге.",
+      "У меня есть маленькая собака, которая очень любит играть.",
+      "Весной на деревьях появляются первые зеленые листья."
+    ],
+    "hard": [
+      "Синхронизация полиморфных алгоритмов шифрования требует исключительной ловкости и точности ритма.",
+      "На побережье океана были обнаружены древние артефакты доисторической эпохи цивилизации.",
+      "Технологический прогресс в области искусственного интеллекта меняет мировой экономический ландшафт.",
+      "В четверг четвертого числа в четыре с четвертью часа лигурийский регулировщик регулировал в Лигурии.",
+      "Трансцендентальная концепция бытия исследуется в рамках современной метафизической философии.",
+      "Систематическое изучение квантовой механики открывает новые горизонты в микроэлектронике.",
+      "Дифференциальные уравнения высших порядков применяются для моделирования динамических систем.",
+      "Архитектурный ансамбль исторического центра города поражает своей монументальностью и изяществом.",
+      "Междисциплинарный подход позволяет интегрировать различные методологии для решения сложных задач.",
+      "Энтузиазм исследователей способствовал открытию уникальных биологических видов в амазонских джунглях."
+    ]
+  }
 }

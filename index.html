@@ -9,14 +9,26 @@
 <body>
     <header>
         <h1>Writing Program</h1>
+        <div id="LanguageSelection">
+            <label for="langSelect">Język:</label>
+            <select id="langSelect">
+                <option value="polish">Polski</option>
+                <option value="english">English</option>
+                <option value="russian">Russian</option>
+            </select>
+        </div>
     </header>
     <main>
-        <div id="TextDisplay"></div>
-        <div id="TimeDisplay">
-            <p id="timer">0:00</p>
-        </div>
-        <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zrestartować">
-    </main>
+    <div id="TextDisplay">
+        <div id="ProgressBar"></div>
+        <div id="TextContent"></div>
+    </div>
+    <div id="TimeDisplay">
+        <span class="timer-label">CZAS:</span>
+        <p id="timer">0:00</p>
+    </div>
+    <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zrestartować">
+</main>
     <script src="script.js"></script>
 </body>
 </html>
