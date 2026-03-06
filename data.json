@@ -1,33 +1,4 @@
 {
-  "polish": {
-    "easy": [
-      "W ludzkim ciele jest więcej bakterii niż własnych komórek.",
-      "Ośmiornice mają trzy serca i niebieską krew.",
-      "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 m.",
-      "Najdłuższą rzeką świata jest Nil o długości ponad 6600 km.",
-      "Kawa jest najpopularniejszym napojem na całym świecie.",
-      "Słońce jest gwiazdą znajdującą się w centrum Układu Słonecznego.",
-      "Koty spędzają większość swojego życia na spaniu.",
-      "Woda wrze w temperaturze stu stopni Celsjusza.",
-      "Polska leży w Europie Środkowej nad Morzem Bałtyckim.",
-      "Liście drzew zmieniają kolor i spadają podczas jesieni.",
-      "Miód jest jedynym produktem spożywczym, który się nie psuje.",
-      "Banany rosną na ogromnych roślinach, które nie są drzewami.",
-      "Zimą dni są krótsze, a noce stają się znacznie dłuższe."
-    ],
-    "hard": [
-      "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
-      "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
-      "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych.",
-      "Konstantynopolitańczykowianeczka to jedno z najdłuższych słów w języku polskim.",
-      "Subiektywne poczucie estetyki często koliduje z obiektywnymi paradygmatami współczesnej architektury.",
-      "Zaleca się systematyczną synchronizację baz danych w celu uniknięcia redundantnych rekordów i niespójności.",
-      "W Szczebrzeszynie chrząszcz brzmi w trzcinie i Szczebrzeszyn z tego słynie.",
-      "Transcendentalna medytacja pozwala na osiągnięcie homeostazy między umysłem a ciałem użytkownika.",
-      "Eksperymentalna fizyka kwantowa bada zjawiska superpozycji oraz splątania cząsteczek elementarnych.",
-      "Skomplikowane algorytmy kryptograficzne zabezpieczają transfery danych przed nieautoryzowanym dostępem."
-    ]
-  },
   "english": {
     "easy": [
       "The sun rises in the east and sets in the west every day.",
@@ -57,6 +28,35 @@
       "Interdisciplinary research facilitates the integration of diverse methodologies to solve complex problems."
     ]
   },
+  "polish": {
+    "easy": [
+      "W ludzkim ciele jest więcej bakterii niż własnych komórek.",
+      "Ośmiornice mają trzy serca i niebieską krew.",
+      "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 m.",
+      "Najdłuższą rzeką świata jest Nil o długości ponad 6600 km.",
+      "Kawa jest najpopularniejszym napojem na całym świecie.",
+      "Słońce jest gwiazdą znajdującą się w centrum Układu Słonecznego.",
+      "Koty spędzają większość swojego życia na spaniu.",
+      "Woda wrze w temperaturze stu stopni Celsjusza.",
+      "Polska leży w Europie Środkowej nad Morzem Bałtyckim.",
+      "Liście drzew zmieniają kolor i spadają podczas jesieni.",
+      "Miód jest jedynym produktem spożywczym, który się nie psuje.",
+      "Banany rosną na ogromnych roślinach, które nie są drzewami.",
+      "Zimą dni są krótsze, a noce stają się znacznie dłuższe."
+    ],
+    "hard": [
+      "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
+      "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
+      "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych.",
+      "Konstantynopolitańczykowianeczka to jedno z najdłuższych słów w języku polskim.",
+      "Subiektywne poczucie estetyki często koliduje z obiektywnymi paradygmatami współczesnej architektury.",
+      "Zaleca się systematyczną synchronizację baz danych w celu uniknięcia redundantnych rekordów i niespójności.",
+      "W Szczebrzeszynie chrząszcz brzmi w trzcinie i Szczebrzeszyn z tego słynie.",
+      "Transcendentalna medytacja pozwala na osiągnięcie homeostazy między umysłem a ciałem użytkownika.",
+      "Eksperymentalna fizyka kwantowa bada zjawiska superpozycji oraz splątania cząsteczek elementarnych.",
+      "Skomplikowane algorytmy kryptograficzne zabezpieczają transfery danych przed nieautoryzowanym dostępem."
+    ]
+  },
   "russian": {
     "easy": [
       "Солнце встает на востоке и заходит на западе каждый день.",
@@ -83,6 +83,28 @@
       "Архитектурный ансамбль исторического центра города поражает своей монументальностью и изяществом.",
       "Междисциплинарный подход позволяет интегрировать различные методологии для решения сложных задач.",
       "Энтузиазм исследователей способствовал открытию уникальных биологических видов в амазонских джунглях."
+    ]
+  },
+  "swedish": {
+    "easy": [
+      "Solen går upp i öster och ner i väster varje dag.",
+      "Katter gillar att sova på varma platser och jaga små möss.",
+      "Att dricka vatten är mycket viktigt för din hälsa och hud.",
+      "Den blå himlen ser vacker ut när vädret är klart och soligt.",
+      "En bok är den bästa presenten för människor i alla åldrar.",
+      "På sommaren växer det många svampar och söta bär i skogen.",
+      "Elever går i skolan för att få nya kunskaper.",
+      "Frukost är den viktigaste måltiden under hela dagen.",
+      "På vintern älskar barn att åka pulka och bygga snögubbar.",
+      "Bilen kör snabbt på den breda asfalterade vägen.",
+      "Jag har en liten hund som älskar att leka.",
+      "På våren kommer de första gröna bladen på träden."
+    ],
+    "hard": [
+      "Synkronisering av polymorfa krypteringsalgoritmer kräver exceptionell rytmisk smidighet och precision.",
+      "Arkeologiska utgrävningar avslöjade antika artefakter från civilisationens förhistoriska era.",
+      "Teknologiska framsteg inom artificiell intelligens omformar den globala ekonomiska landskapen.",
+      "Transcendental konceptualisering av varande utforskas inom ramen för modern metafysisk filosofi."
     ]
   }
 }

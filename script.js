@@ -3,6 +3,11 @@ const progressBar = document.getElementById('ProgressBar');
 const userInput = document.getElementById('userInput');
 const timerDisplay = document.getElementById('timer');
 const langSelect = document.getElementById('langSelect');
+const nightModeToggle = document.getElementById('nightModeInput');
+
+nightModeToggle.addEventListener('change', () => {
+    document.body.classList.toggle('night-mode', nightModeToggle.checked);
+});
 
 let startTime = null;
 let timerInterval = null;
@@ -179,10 +184,20 @@ window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
         if (startTime) {
             let accuracy = 100;
+            let cpm = 0;
+            
             if (totalKeystrokes > 0) {
                 accuracy = Math.max(0, ((totalKeystrokes - errorsMade) / totalKeystrokes) * 100).toFixed(2);
             }
-            alert(`Czas pisania: ${timerDisplay.innerText}\nDokładność: ${accuracy}%`);
+            
+            const timeInSeconds = (new Date() - startTime) / 1000;
+            const timeInMinutes = timeInSeconds / 60;
+            
+            if (timeInMinutes > 0) {
+                cpm = Math.round(totalKeystrokes / timeInMinutes);
+            }
+
+            alert(`Czas pisania: ${timerDisplay.innerText}\nDokładność: ${accuracy}%\nDługość tekstu: ${totalKeystrokes} znaków\nLiczba błędów: ${errorsMade}\nPrędkość: ${cpm} znaków/min`);
         }
         perfectStreak = 0;
         startNewRound(true);

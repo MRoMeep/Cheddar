@@ -6,6 +6,7 @@ body {
     min-height: 100vh;
     box-sizing: border-box;
     box-shadow: inset 0 8px 15px rgba(0, 0, 0, 0.5), inset 0 -2px 5px rgba(255, 255, 255, 0.05);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
@@ -17,6 +18,7 @@ header {
     padding: 20px 0;
     color: #F0EDE5;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
 }
 
 header h1 {
@@ -47,6 +49,83 @@ header h1 {
     background-color: #004643;
 }
 
+#day_nightToggleSwitch {
+    position: relative;
+}
+
+#switch {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#switch > input {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    z-index: -1;
+    position: absolute;
+    right: 6px;
+    top: -8px;
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    opacity: 0;
+    transform: scale(1);
+    pointer-events: none;
+    transition: opacity 0.3s 0.1s, transform 0.2s 0.1s;
+}
+
+#switch > span {
+    position: relative;
+    padding-left: 34px;
+    display: inline-block;
+}
+
+#switch > span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 12px;
+    background-color: #F0EDE5;
+    border-radius: 6px;
+    transition: background-color 0.2s, opacity 0.2s;
+}
+
+#switch > span::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 14px;
+    background-color: #F0EDE5;
+    border-radius: 50%;
+    box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    transition: background-color 0.2s, transform 0.2s, opacity 0.2s;
+}
+
+#switch > input:checked + span::before {
+    background-color: #1a6c6b;
+}
+
+#switch > input:checked + span::after {
+    transform: translate(10px, -50%);
+    background-color: #85b8b7;
+}
+
+#switch > input:active {
+    opacity: 1;
+    transform: scale(0);
+    transition: transform 0s, opacity 0s;
+}
+
 main {
     margin: 40px auto;
     width: 90%;
@@ -58,6 +137,7 @@ main {
     gap: 25px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
 }
 
 #TextDisplay {
@@ -71,6 +151,7 @@ main {
     overflow: hidden;
     display: flex;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
 #TextContent {
@@ -83,6 +164,7 @@ main {
     line-height: 1.4;
     color: #004643;
     width: 100%;
+    transition: color 0.3s ease;
 }
 
 #ProgressBar {
@@ -144,7 +226,7 @@ main {
     box-sizing: border-box;
     border-radius: 8px;
     box-shadow: inset 0 2px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 #userInput:focus {
@@ -196,4 +278,50 @@ main {
 
 .error-shake {
     animation: errorWave 0.4s ease-in-out;
+}
+
+body.night-mode {
+    background-color: #121414;
+    color: #abd1c6;
+}
+
+body.night-mode header {
+    background-color: #0d1010;
+}
+
+body.night-mode #langSelect option {
+    background-color: #0d1010;
+}
+
+body.night-mode main {
+    background-color: #0d1010;
+}
+
+body.night-mode #TextDisplay {
+    background-color: #1e2222;
+}
+
+body.night-mode #TextContent {
+    color: #abd1c6;
+}
+
+body.night-mode #userInput {
+    background-color: #1e2222;
+    color: #abd1c6;
+}
+
+body.night-mode .letter {
+    color: rgba(171, 209, 198, 0.3);
+}
+
+body.night-mode .correct {
+    color: #abd1c6;
+}
+
+body.night-mode ::-webkit-scrollbar-track {
+    background: #121414;
+}
+
+body.night-mode ::-webkit-scrollbar-thumb {
+    background: #abd1c6;
 }
