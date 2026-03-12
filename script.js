@@ -28,6 +28,76 @@ async function loadData() {
     updateLanguage();
 }
 
+const helpBtn = document.getElementById('helpBtn');
+const helpModal = document.getElementById('helpModal');
+const closeModal = document.getElementById('closeModal');
+
+helpBtn.addEventListener('click', () => {
+    helpModal.classList.add('open');
+});
+
+closeModal.addEventListener('click', () => {
+    helpModal.classList.remove('open');
+});
+
+helpModal.addEventListener('click', (e) => {
+    if (e.target === helpModal) {
+        helpModal.classList.remove('open');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    const images = document.querySelectorAll('.interactive-img');
+
+    images.forEach(img => {
+        img.addEventListener('click', function(e) {
+            if (this.classList.contains('hidden-placeholder')) return;
+
+            const rect = this.getBoundingClientRect();
+            
+            const distanceToBottom = window.innerHeight - rect.top + 300;
+
+            const wrapperX = document.createElement('div');
+            wrapperX.classList.add('fly-wrapper-x');
+            wrapperX.style.left = rect.left + 'px';
+            wrapperX.style.top = rect.top + 'px';
+            wrapperX.style.width = rect.width + 'px';
+            wrapperX.style.height = rect.height + 'px';
+
+            const wrapperY = document.createElement('div');
+            wrapperY.classList.add('fly-wrapper-y');
+            wrapperY.style.setProperty('--fall-dist', `${distanceToBottom}px`);
+
+            const clone = this.cloneNode();
+            clone.className = 'fly-content';
+            clone.style.margin = '0';
+            
+            wrapperY.appendChild(clone);
+            wrapperX.appendChild(wrapperY);
+            document.body.appendChild(wrapperX);
+
+            this.classList.add('hidden-placeholder');
+
+            wrapperX.addEventListener('animationend', () => {
+                wrapperX.remove();
+            });
+        });
+    });
+});
+
+document.addEventListener('keydown', (event) => {
+    if (helpModal.classList.contains('open')) {
+        return;
+    }
+    if (document.activeElement !== userInput) {
+        if (!event.ctrlKey && !event.metaKey && !event.altKey) {
+            if (event.key.length === 1 || event.key === 'Backspace') {
+                userInput.focus();
+            }
+        }
+    }
+});
+
 function updateLanguage() {
     currentLanguageData = allData[langSelect.value];
     perfectStreak = 0;
@@ -182,6 +252,10 @@ userInput.addEventListener('input', () => {
 
 window.addEventListener('keydown', (e) => {
     if (e.key === "Escape") {
+        if (helpModal.classList.contains('open')) {
+            helpModal.classList.remove('open');
+            return;
+        }
         if (startTime) {
             let accuracy = 100;
             let cpm = 0;
@@ -197,7 +271,7 @@ window.addEventListener('keydown', (e) => {
                 cpm = Math.round(totalKeystrokes / timeInMinutes);
             }
 
-            alert(`Czas pisania: ${timerDisplay.innerText}\nDokładność: ${accuracy}%\nDługość tekstu: ${totalKeystrokes} znaków\nLiczba błędów: ${errorsMade}\nPrędkość: ${cpm} znaków/min`);
+            alert(`Time: ${timerDisplay.innerText}\nAccuracy: ${accuracy}%\nText Length: ${totalKeystrokes} characters\nErrors: ${errorsMade}\nCPM: ${cpm} characters/min`);
         }
         perfectStreak = 0;
         startNewRound(true);

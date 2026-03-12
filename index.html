@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Writing Program</title>
+    <title>Cheddar</title>
 </head>
 <body>
     <header>
-        <h1>Writing Program</h1>
+        <h1>Cheddar</h1>
         <div id="LanguageSelection">
             <label for="langSelect">Language:</label>
             <select id="langSelect">
                 <option value="english">English</option>
-                <option value="polish">Polski</option>
+                <option value="french">French</option>
+                <option value="german">German</option>
+                <option value="polish">Polish</option>
                 <option value="russian">Russian</option>
                 <option value="swedish">Swedish</option>
             </select>
@@ -34,8 +36,27 @@
         <span class="timer-label">CZAS:</span>
         <p id="timer">0:00</p>
     </div>
-    <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zrestartować">
+    <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zrestartować" spellcheck="false">
 </main>
+
+<div id="helpModal" class="modal-overlay">
+            <div class="modal-content">
+                <span id="closeModal" class="close-modal">&times;</span>
+                <h3>How to use CHEDDAR</h3>
+                <ul>
+                    <li>Start typing the displayed text as quickly and accurately as possible.</li>
+                    <li>Press ESC to end the current round, or reroll the sentence.</li>
+                    <li>Switch between languages using the dropdown menu.</li>
+                    <li>Toggle night mode for a darker interface.</li>
+                    <li>Have fun and improve your typing skills!</li>
+                </ul>
+                <div class="modal-easter-egg">
+                    <img src="MRMeepe.png" class="interactive-img" alt="MRMeepe2">
+                </div>
+            </div>
+        </div>
+
+<button id="helpBtn" class="help-btn">?</button>
     <script src="script.js"></script>
 </body>
 </html>
