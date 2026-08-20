@@ -1,12 +1,15 @@
 /**
  * CHEDDAR - Intelligent Typing & Fact Learning
  * Features:
+ * - Full Multilingual UI Localization (PL, EN, DE, FR, SV, RU)
+ * - Micro-interactions: Gear rotation on hover, Letter hover pop/lift animation
+ * - Smooth transition for Virtual Keyboard
  * - Smart Weakness Engine (Bigram & transition error tracking)
  * - Category Multi-Select Filtering
  * - Real-time Visual Keyboard with Layout Hinting (Russian Cyrillic, Polish diacritics, German, French, Swedish)
- * - 3 Keyboard Geometries: Standard ANSI, Ergonomic Alice 98 (Angled Split), Columnar Ortho
+ * - 3 Keyboard Geometries: Ergonomic Alice Split, Standard ANSI, Columnar Ortho
  * - WebHID VIA / QMK Auto-Detection
- * - Modern Results Screen & Keyboard Shortcuts
+ * - Modern Results Screen & Global Shortcuts
  * - Records, Statistics & Persistence (localStorage)
  */
 
@@ -64,12 +67,14 @@ const trainerToggle = document.getElementById('trainerToggle');
 const weaknessChips = document.getElementById('weaknessChips');
 const btnResetWeakness = document.getElementById('btnResetWeakness');
 const btnResetAllStats = document.getElementById('btnResetAllStats');
+const uiLangSelect = document.getElementById('uiLangSelect');
 
 // ==========================================================================
 // STATE MANAGEMENT
 // ==========================================================================
 let allData = {};
 let currentLanguage = 'polish';
+let uiLanguageSetting = 'auto'; // 'auto' or 'polish', 'english', 'german', 'french', 'swedish', 'russian'
 let currentMode = 'endless'; // 'endless' or 'single'
 let selectedCategories = new Set(['all', 'nature', 'science', 'human', 'history', 'language']);
 let currentSentenceObj = null;
@@ -88,10 +93,605 @@ let currentSentenceErrors = 0;
 let roundMistakes = new Set();
 
 // ==========================================================================
-// 1. KEYBOARD LAYOUTS & MAPPINGS
+// 1. UI LOCALIZATION DICTIONARY (ALL 6 LANGUAGES)
 // ==========================================================================
+const UI_TRANSLATIONS = {
+    polish: {
+        lblLangSelect: "Język:",
+        lblModeSelect: "Tryb:",
+        modeEndless: "Endless (Ciągły)",
+        modeSingle: "Single (Pojedynczy)",
+        kbToggleTitle: "Włącz/Wyłącz klawiaturę ekranową",
+        settingsBtnTitle: "Ustawienia, Rekordy i Klawiatura",
+        catAll: "Wszystkie",
+        catNature: "Natura",
+        catScience: "Nauka & Kosmos",
+        catHuman: "Ciało & Zdrowie",
+        catHistory: "Historia & Świat",
+        catLanguage: "Język & Trudne",
+        hudWpm: "WPM:",
+        hudTimer: "CZAS:",
+        hudStreak: "STREAK:",
+        placeholder: "Naciśnij ESC aby zakończyć / zrestartować",
+        resHeading: "Podsumowanie Sesji",
+        resTitleWpm: "WPM",
+        resSubWpm: "słów/min",
+        resTitleCpm: "CPM",
+        resSubCpm: "znaków/min",
+        resTitleAcc: "DOKŁADNOŚĆ",
+        resErrors: (n) => `${n} ${n === 1 ? 'błąd' : (n >= 2 && n <= 4 ? 'błędy' : 'błędów')}`,
+        resTitleTime: "CZAS",
+        resChars: (n) => `${n} znaków`,
+        roundWeaknessDefault: "Trener odnotował trudniejsze momenty.",
+        roundWeaknessDetected: (list) => `Wykryto trudniejsze momenty: ${list}. Trener uwzględni je w kolejnych zdaniach.`,
+        btnNext: "Następne zdanie",
+        btnRepeat: "Powtórz to zdanie",
+        settingsTitle: "Ustawienia & Rekordy",
+        tabRecords: "Rekordy & Trener",
+        tabKeyboard: "Klawiatura & VIA",
+        tabThemes: "Motywy & Język",
+        lblRecBestWpm: "Najlepszy WPM",
+        lblRecBestCpm: "Najlepszy CPM",
+        lblRecAvgAcc: "Średnia Dokładność",
+        lblRecCompleted: "Ukończone Zdania",
+        trainerTitle: "Inteligentny Trener Błędów",
+        trainerDesc: "Automatycznie dobiera zdania zawierające Twoje trudne kombinacje liter.",
+        weaknessTitle: "Twoje najczęstsze pomyłki:",
+        noWeakness: "Brak zarejestrowanych słabych punktów. Pisz dalej!",
+        btnResetWeakness: "Resetuj dane Trenera",
+        btnResetAllStats: "Wyczyść wszystkie statystyki",
+        kbShowTitle: "Pokaż wirtualną klawiaturę",
+        kbShowDesc: "Wyświetla podpowiedzi klawiszy w czasie rzeczywistym.",
+        kbGeomTitle: "Kształt / Układ fizyczny klawiatury:",
+        geomAliceTitle: "Ergonomiczna Alice",
+        geomAliceDesc: "Dzielona, klawisze pod kątem dla dłoni",
+        geomStandardTitle: "Standardowa ANSI",
+        geomStandardDesc: "Klasyczny prosty układ rzędów",
+        geomOrthoTitle: "Kolumnowa (Ortho)",
+        geomOrthoDesc: "Pionowe proste kolumny",
+        viaTitle: "Autodetekcja USB (VIA / QMK)",
+        viaDesc: "Podłącz klawiaturę przez USB, a aplikacja automatycznie rozpozna model i dopasuje geometrię.",
+        btnDetectVia: "Wykryj przez USB",
+        uiLangTitle: "Język interfejsu (UI)",
+        uiLangDesc: "Wybierz język menu i opisów.",
+        uiLangAuto: "Auto (Dopasuj do ćwiczenia)",
+        themeTitle: "Motyw kolorystyczny:",
+        fontSizeTitle: "Rozmiar tekstu:",
+        btnFontNormal: "Standardowy (2rem)",
+        btnFontLarge: "Duży (2.4rem)",
+        helpTitle: "Jak korzystać z CHEDDAR",
+        helpItems: [
+            "<strong>Wartościowe ciekawostki:</strong> Pisz prawdziwe fakty ze świata zamiast losowych słów.",
+            "<strong>Klawiatura ekranowa:</strong> Podświetla aktualnie wymagany klawisz, a przy obcych alfabetach (np. rosyjskim) pokazuje fizyczny odpowiednik QWERTY.",
+            "<strong>Układ Alice & Ortho:</strong> W ustawieniach możesz dopasować kształt klawiatury do ergonomicznej <em>Alice</em> lub wykryć ją automatycznie przez USB (VIA).",
+            "<strong>Tryby pisania:</strong> W trybie <em>Endless</em> piszesz ciągle bez przerw, a w <em>Single</em> po każdym zdaniu widzisz wynik.",
+            "<strong>Inteligentny Trener Błędów:</strong> Aplikacja uczy się Twoich błędów i priorytetowo podsuwa zdania z trudnymi dla Ciebie znakami.",
+            "<strong>Skróty klawiszowe:</strong> Naciśnij <kbd>ESC</kbd>, aby zobaczyć podsumowanie sesji. Na ekranie wyników <kbd>Enter</kbd> daje nowe zdanie, a <kbd>Tab</kbd> powtarza obecne."
+        ]
+    },
+    english: {
+        lblLangSelect: "Language:",
+        lblModeSelect: "Mode:",
+        modeEndless: "Endless (Continuous)",
+        modeSingle: "Single (Sentence by sentence)",
+        kbToggleTitle: "Toggle on-screen keyboard",
+        settingsBtnTitle: "Settings, Records & Keyboard",
+        catAll: "All",
+        catNature: "Nature",
+        catScience: "Science & Space",
+        catHuman: "Body & Health",
+        catHistory: "History & World",
+        catLanguage: "Language & Typing",
+        hudWpm: "WPM:",
+        hudTimer: "TIME:",
+        hudStreak: "STREAK:",
+        placeholder: "Press ESC to finish / restart",
+        resHeading: "Session Summary",
+        resTitleWpm: "WPM",
+        resSubWpm: "words/min",
+        resTitleCpm: "CPM",
+        resSubCpm: "chars/min",
+        resTitleAcc: "ACCURACY",
+        resErrors: (n) => `${n} ${n === 1 ? 'error' : 'errors'}`,
+        resTitleTime: "TIME",
+        resChars: (n) => `${n} characters`,
+        roundWeaknessDefault: "Trainer recorded challenging keystrokes.",
+        roundWeaknessDetected: (list) => `Challenging transitions detected: ${list}. Trainer will prioritize them in future sentences.`,
+        btnNext: "Next sentence",
+        btnRepeat: "Repeat this sentence",
+        settingsTitle: "Settings & Records",
+        tabRecords: "Records & Trainer",
+        tabKeyboard: "Keyboard & VIA",
+        tabThemes: "Themes & Language",
+        lblRecBestWpm: "Best WPM",
+        lblRecBestCpm: "Best CPM",
+        lblRecAvgAcc: "Average Accuracy",
+        lblRecCompleted: "Completed Sentences",
+        trainerTitle: "Smart Weakness Engine",
+        trainerDesc: "Automatically serves sentences featuring your difficult letter combinations.",
+        weaknessTitle: "Your most frequent mistakes:",
+        noWeakness: "No weaknesses registered yet. Keep typing!",
+        btnResetWeakness: "Reset Trainer Data",
+        btnResetAllStats: "Clear All Statistics",
+        kbShowTitle: "Show Virtual Keyboard",
+        kbShowDesc: "Displays real-time key hints and visual feedback.",
+        kbGeomTitle: "Keyboard Form Factor / Geometry:",
+        geomAliceTitle: "Ergonomic Alice",
+        geomAliceDesc: "Split angled layout for natural hand position",
+        geomStandardTitle: "Standard ANSI",
+        geomStandardDesc: "Classic straight row layout",
+        geomOrthoTitle: "Columnar (Ortho)",
+        geomOrthoDesc: "Straight vertical columns",
+        viaTitle: "USB Auto-Detection (VIA / QMK)",
+        viaDesc: "Connect your keyboard via USB to automatically detect its layout and geometry.",
+        btnDetectVia: "Detect via USB",
+        uiLangTitle: "Interface Language (UI)",
+        uiLangDesc: "Choose interface menu and help language.",
+        uiLangAuto: "Auto (Match exercise)",
+        themeTitle: "Color Theme:",
+        fontSizeTitle: "Font Size:",
+        btnFontNormal: "Standard (2rem)",
+        btnFontLarge: "Large (2.4rem)",
+        helpTitle: "How to use CHEDDAR",
+        helpItems: [
+            "<strong>Fascinating Facts:</strong> Type engaging real-world trivia instead of meaningless random words.",
+            "<strong>Visual Keyboard:</strong> Highlights required keys in real-time and shows physical QWERTY hints for foreign alphabets (e.g. Russian).",
+            "<strong>Alice & Ortho Layouts:</strong> Adjust keyboard geometry to your ergonomic <em>Alice</em> split or detect it via USB (VIA).",
+            "<strong>Typing Modes:</strong> <em>Endless</em> mode for continuous typing, or <em>Single</em> mode for sentence-by-sentence evaluation.",
+            "<strong>Smart Weakness Engine:</strong> Learns your mistyped transitions and adapts future sentences to improve your accuracy.",
+            "<strong>Shortcuts:</strong> Press <kbd>ESC</kbd> to view session results. On results screen press <kbd>Enter</kbd> for next fact or <kbd>Tab</kbd> to retry."
+        ]
+    },
+    german: {
+        lblLangSelect: "Sprache:",
+        lblModeSelect: "Modus:",
+        modeEndless: "Endless (Fortlaufend)",
+        modeSingle: "Single (Satz für Satz)",
+        kbToggleTitle: "Bildschirmtastatur ein-/ausschalten",
+        settingsBtnTitle: "Einstellungen, Rekorde & Tastatur",
+        catAll: "Alle",
+        catNature: "Natur",
+        catScience: "Wissenschaft & Raum",
+        catHuman: "Körper & Gesundheit",
+        catHistory: "Geschichte & Welt",
+        catLanguage: "Sprache & Tippen",
+        hudWpm: "WPM:",
+        hudTimer: "ZEIT:",
+        hudStreak: "SERIE:",
+        placeholder: "Drücke ESC zum Beenden / Neustarten",
+        resHeading: "Sitzungsübersicht",
+        resTitleWpm: "WPM",
+        resSubWpm: "Wörter/Min",
+        resTitleCpm: "CPM",
+        resSubCpm: "Zeichen/Min",
+        resTitleAcc: "GENAUIGKEIT",
+        resErrors: (n) => `${n} ${n === 1 ? 'Fehler' : 'Fehler'}`,
+        resTitleTime: "ZEIT",
+        resChars: (n) => `${n} Zeichen`,
+        roundWeaknessDefault: "Trainer hat schwierige Tastenanschläge erfasst.",
+        roundWeaknessDetected: (list) => `Schwierige Übergänge erkannt: ${list}. Der Trainer wird diese priorisieren.`,
+        btnNext: "Nächster Satz",
+        btnRepeat: "Satz wiederholen",
+        settingsTitle: "Einstellungen & Rekorde",
+        tabRecords: "Rekorde & Trainer",
+        tabKeyboard: "Tastatur & VIA",
+        tabThemes: "Motive & Sprache",
+        lblRecBestWpm: "Beste WPM",
+        lblRecBestCpm: "Beste CPM",
+        lblRecAvgAcc: "Durchschn. Genauigkeit",
+        lblRecCompleted: "Abgeschlossene Sätze",
+        trainerTitle: "Intelligenter Fehlertrainer",
+        trainerDesc: "Wählt automatisch Sätze mit deinen schwierigen Buchstabenkombinationen.",
+        weaknessTitle: "Häufigste Fehler:",
+        noWeakness: "Noch keine Schwachstellen erfasst. Tippe weiter!",
+        btnResetWeakness: "Trainerdaten zurücksetzen",
+        btnResetAllStats: "Alle Statistiken löschen",
+        kbShowTitle: "Virtuelle Tastatur anzeigen",
+        kbShowDesc: "Zeigt Tastatur-Tipps in Echtzeit an.",
+        kbGeomTitle: "Tastatur-Geometrie:",
+        geomAliceTitle: "Ergonomische Alice",
+        geomAliceDesc: "Geteiltes, abgewinkeltes Layout",
+        geomStandardTitle: "Standard ANSI",
+        geomStandardDesc: "Klassisches gerades Layout",
+        geomOrthoTitle: "Spaltenförmig (Ortho)",
+        geomOrthoDesc: "Vertikale Tastenreihen",
+        viaTitle: "USB-Autodetection (VIA / QMK)",
+        viaDesc: "Schließe deine Tastatur über USB an, um das Modell automatisch zu erkennen.",
+        btnDetectVia: "Über USB erkennen",
+        uiLangTitle: "Oberflächensprache (UI)",
+        uiLangDesc: "Wähle die Sprache der Menüs und Hilfetexte.",
+        uiLangAuto: "Auto (An Übung anpassen)",
+        themeTitle: "Farbthema:",
+        fontSizeTitle: "Schriftgröße:",
+        btnFontNormal: "Standard (2rem)",
+        btnFontLarge: "Groß (2.4rem)",
+        helpTitle: "Wie man CHEDDAR benutzt",
+        helpItems: [
+            "<strong>Wissenswerte Fakten:</strong> Tippe echte Fakten aus aller Welt statt sinnloser Zufallswörter.",
+            "<strong>Bildschirmtastatur:</strong> Hebt erforderliche Tasten in Echtzeit hervor und zeigt QWERTY-Hinweise für fremde Alphabete.",
+            "<strong>Alice- & Ortho-Layouts:</strong> Passe die Tastaturgeometrie an deine ergonomische <em>Alice</em> an oder erkenne sie via USB.",
+            "<strong>Tippmodi:</strong> <em>Endless</em> für kontinuierliches Tippen oder <em>Single</em> für Auswertung nach jedem Satz.",
+            "<strong>Intelligenter Fehlertrainer:</strong> Lernt deine Tippfehler und passt künftige Sätze gezielt an.",
+            "<strong>Tastaturkürzel:</strong> Drücke <kbd>ESC</kbd> für Ergebnisse. Im Ergebnisbildschirm: <kbd>Enter</kbd> für nächsten Satz, <kbd>Tab</kbd> zum Wiederholen."
+        ]
+    },
+    french: {
+        lblLangSelect: "Langue :",
+        lblModeSelect: "Mode :",
+        modeEndless: "Endless (Continu)",
+        modeSingle: "Single (Phrase par phrase)",
+        kbToggleTitle: "Activer/désactiver le clavier visuel",
+        settingsBtnTitle: "Paramètres, Records & Clavier",
+        catAll: "Tout",
+        catNature: "Nature",
+        catScience: "Science & Espace",
+        catHuman: "Corps & Santé",
+        catHistory: "Histoire & Monde",
+        catLanguage: "Langue & Frappe",
+        hudWpm: "MPM :",
+        hudTimer: "TEMPS :",
+        hudStreak: "SÉRIE :",
+        placeholder: "Appuyez sur Échap pour terminer / redémarrer",
+        resHeading: "Résumé de la session",
+        resTitleWpm: "MPM",
+        resSubWpm: "mots/min",
+        resTitleCpm: "CPM",
+        resSubCpm: "caractères/min",
+        resTitleAcc: "PRÉCISION",
+        resErrors: (n) => `${n} ${n === 1 ? 'erreur' : 'erreurs'}`,
+        resTitleTime: "TEMPS",
+        resChars: (n) => `${n} caractères`,
+        roundWeaknessDefault: "L'entraîneur a enregistré des moments difficiles.",
+        roundWeaknessDetected: (list) => `Transitions difficiles détectées : ${list}. L'entraîneur les ciblera en priorité.`,
+        btnNext: "Phrase suivante",
+        btnRepeat: "Répéter cette phrase",
+        settingsTitle: "Paramètres & Records",
+        tabRecords: "Records & Entraîneur",
+        tabKeyboard: "Clavier & VIA",
+        tabThemes: "Thèmes & Langue",
+        lblRecBestWpm: "Meilleur MPM",
+        lblRecBestCpm: "Meilleur CPM",
+        lblRecAvgAcc: "Précision moyenne",
+        lblRecCompleted: "Phrases terminées",
+        trainerTitle: "Entraîneur Intelligent d'Erreurs",
+        trainerDesc: "Sélectionne automatiquement des phrases contenant vos combinaisons de lettres difficiles.",
+        weaknessTitle: "Vos erreurs les plus fréquentes :",
+        noWeakness: "Aucun point faible enregistré. Continuez à taper !",
+        btnResetWeakness: "Réinitialiser l'entraîneur",
+        btnResetAllStats: "Effacer toutes les statistiques",
+        kbShowTitle: "Afficher le clavier virtuel",
+        kbShowDesc: "Affiche des indications de touches en temps réel.",
+        kbGeomTitle: "Disposition physique du clavier :",
+        geomAliceTitle: "Alice Ergonomique",
+        geomAliceDesc: "Disposition scindée et inclinée pour les mains",
+        geomStandardTitle: "Standard ANSI",
+        geomStandardDesc: "Disposition droite classique",
+        geomOrthoTitle: "Ortholineaire (Ortho)",
+        geomOrthoDesc: "Colonnes verticales droites",
+        viaTitle: "Détection USB (VIA / QMK)",
+        viaDesc: "Connectez votre clavier par USB pour détecter automatiquement son modèle.",
+        btnDetectVia: "Détecter via USB",
+        uiLangTitle: "Langue de l'interface (UI)",
+        uiLangDesc: "Choisissez la langue des menus et de l'aide.",
+        uiLangAuto: "Auto (Adapter à l'exercice)",
+        themeTitle: "Thème de couleur :",
+        fontSizeTitle: "Taille du texte :",
+        btnFontNormal: "Standard (2rem)",
+        btnFontLarge: "Grand (2.4rem)",
+        helpTitle: "Comment utiliser CHEDDAR",
+        helpItems: [
+            "<strong>Faits captivants :</strong> Tapez de vraies anecdotes du monde entier au lieu de mots aléatoires.",
+            "<strong>Clavier virtuel :</strong> Met en surbrillance les touches en temps réel avec indices QWERTY pour les alphabets étrangers.",
+            "<strong>Dispositions Alice & Ortho :</strong> Ajustez la géométrie à votre clavier ergonomique <em>Alice</em> ou détectez-le via USB.",
+            "<strong>Modes de frappe :</strong> Mode <em>Endless</em> pour taper en continu ou <em>Single</em> pour évaluer chaque phrase.",
+            "<strong>Entraîneur Intelligent :</strong> Apprend de vos erreurs et cible vos faiblesses dans les phrases suivantes.",
+            "<strong>Raccourcis :</strong> Appuyez sur <kbd>Échap</kbd> pour afficher les résultats. Dans l'écran de résultats : <kbd>Entrée</kbd> pour continuer, <kbd>Tab</kbd> pour réessayer."
+        ]
+    },
+    swedish: {
+        lblLangSelect: "Språk:",
+        lblModeSelect: "Läge:",
+        modeEndless: "Endless (Kontinuerligt)",
+        modeSingle: "Single (Mening för mening)",
+        kbToggleTitle: "Slå på/av skärmtangentbord",
+        settingsBtnTitle: "Inställningar, Rekord & Tangentbord",
+        catAll: "Alla",
+        catNature: "Natur",
+        catScience: "Vetenskap & Rymd",
+        catHuman: "Kropp & Hälsa",
+        catHistory: "Historia & Värld",
+        catLanguage: "Språk & Skrivande",
+        hudWpm: "WPM:",
+        hudTimer: "TID:",
+        hudStreak: "SVIT:",
+        placeholder: "Tryck på ESC för att avsluta / starta om",
+        resHeading: "Sessionssammanfattning",
+        resTitleWpm: "WPM",
+        resSubWpm: "ord/min",
+        resTitleCpm: "CPM",
+        resSubCpm: "tecken/min",
+        resTitleAcc: "NOGGRANNHET",
+        resErrors: (n) => `${n} ${n === 1 ? 'fel' : 'fel'}`,
+        resTitleTime: "TID",
+        resChars: (n) => `${n} tecken`,
+        roundWeaknessDefault: "Tränaren registrerade svårare tangentkombinationer.",
+        roundWeaknessDetected: (list) => `Svåra övergångar upptäckta: ${list}. Tränaren kommer att prioritera dem.`,
+        btnNext: "Nästa mening",
+        btnRepeat: "Upprepa denna mening",
+        settingsTitle: "Inställningar & Rekord",
+        tabRecords: "Rekord & Tränare",
+        tabKeyboard: "Tangentbord & VIA",
+        tabThemes: "Teman & Språk",
+        lblRecBestWpm: "Bästa WPM",
+        lblRecBestCpm: "Bästa CPM",
+        lblRecAvgAcc: "Genomsnittlig noggrannhet",
+        lblRecCompleted: "Slutförda meningar",
+        trainerTitle: "Intelligent Feltränare",
+        trainerDesc: "Väljer automatiskt meningar med dina svåra bokstavskombinationer.",
+        weaknessTitle: "Dina vanligaste misstag:",
+        noWeakness: "Inga svagheter registrerade än. Fortsätt skriva!",
+        btnResetWeakness: "Återställ tränardata",
+        btnResetAllStats: "Rensa all statistik",
+        kbShowTitle: "Visa virtuellt tangentbord",
+        kbShowDesc: "Visar tangenttips i realtid.",
+        kbGeomTitle: "Tangentbordslayout / Form:",
+        geomAliceTitle: "Ergonomisk Alice",
+        geomAliceDesc: "Delad vinklad layout för händerna",
+        geomStandardTitle: "Standard ANSI",
+        geomStandardDesc: "Klassisk rak radlayout",
+        geomOrthoTitle: "Kolumnär (Ortho)",
+        geomOrthoDesc: "Raka vertikala kolumner",
+        viaTitle: "USB-autodetektering (VIA / QMK)",
+        viaDesc: "Anslut ditt tangentbord via USB för att automatiskt identifiera modellen.",
+        btnDetectVia: "Identifiera via USB",
+        uiLangTitle: "Gränssnittsspråk (UI)",
+        uiLangDesc: "Välj språk för menyer och hjälp.",
+        uiLangAuto: "Auto (Anpassa till övning)",
+        themeTitle: "Färgtema:",
+        fontSizeTitle: "Textstorlek:",
+        btnFontNormal: "Standard (2rem)",
+        btnFontLarge: "Stor (2.4rem)",
+        helpTitle: "Hur man använder CHEDDAR",
+        helpItems: [
+            "<strong>Fakta & Kunskap:</strong> Skriv intressanta fakta istället för slumpmässiga ord.",
+            "<strong>Skärmtangentbord:</strong> Lyser upp rätt tangent i realtid och ger QWERTY-tips för främmande alfabet.",
+            "<strong>Alice- & Ortho-layouter:</strong> Anpassa tangentbordsformen till din ergonomiska <em>Alice</em> eller anslut via USB.",
+            "<strong>Skrivlägen:</strong> <em>Endless</em> för kontinuerligt skrivande eller <em>Single</em> för utvärdering mening för mening.",
+            "<strong>Intelligent Feltränare:</strong> Lär sig av dina misstag och anpassar kommande meningar därefter.",
+            "<strong>Kortkommandon:</strong> Tryck på <kbd>ESC</kbd> för resultat. På resultatskärmen: <kbd>Enter</kbd> för nästa mening, <kbd>Tab</kbd> för att försöka igen."
+        ]
+    },
+    russian: {
+        lblLangSelect: "Язык:",
+        lblModeSelect: "Режим:",
+        modeEndless: "Endless (Непрерывный)",
+        modeSingle: "Single (По предложениям)",
+        kbToggleTitle: "Вкл/Выкл экранную клавиатуру",
+        settingsBtnTitle: "Настройки, Рекорды и Клавиатура",
+        catAll: "Все",
+        catNature: "Природа",
+        catScience: "Наука и Космос",
+        catHuman: "Тело и Здоровье",
+        catHistory: "История и Мир",
+        catLanguage: "Язык и Слова",
+        hudWpm: "WPM:",
+        hudTimer: "ВРЕМЯ:",
+        hudStreak: "СЕРИЯ:",
+        placeholder: "Нажмите ESC для завершения / перезапуска",
+        resHeading: "Итоги сессии",
+        resTitleWpm: "WPM",
+        resSubWpm: "слов/мин",
+        resTitleCpm: "CPM",
+        resSubCpm: "знаков/мин",
+        resTitleAcc: "ТОЧНОСТЬ",
+        resErrors: (n) => `${n} ${n === 1 ? 'ошибка' : (n >= 2 && n <= 4 ? 'ошибки' : 'ошибок')}`,
+        resTitleTime: "ВРЕМЯ",
+        resChars: (n) => `${n} знаков`,
+        roundWeaknessDefault: "Тренер зафиксировал трудные комбинации клавиш.",
+        roundWeaknessDetected: (list) => `Обнаружены сложные моменты: ${list}. Тренер учтет их в следующих предложениях.`,
+        btnNext: "Следующее предложение",
+        btnRepeat: "Повторить предложение",
+        settingsTitle: "Настройки и Рекорды",
+        tabRecords: "Рекорды и Тренер",
+        tabKeyboard: "Клавиатура и VIA",
+        tabThemes: "Темы и Язык",
+        lblRecBestWpm: "Лучший WPM",
+        lblRecBestCpm: "Лучший CPM",
+        lblRecAvgAcc: "Средняя точность",
+        lblRecCompleted: "Завершено предложений",
+        trainerTitle: "Интеллектуальный Тренер Ошибок",
+        trainerDesc: "Автоматически подбирает предложения с вашими сложными сочетаниями букв.",
+        weaknessTitle: "Ваши частые ошибки:",
+        noWeakness: "Ошибок пока не зафиксировано. Продолжайте печатать!",
+        btnResetWeakness: "Сбросить данные Тренера",
+        btnResetAllStats: "Очистить всю статистику",
+        kbShowTitle: "Показать виртуальную клавиатуру",
+        kbShowDesc: "Отображает подсказки нужных клавиш в реальном времени.",
+        kbGeomTitle: "Форма / Раскладка клавиатуры:",
+        geomAliceTitle: "Эргономичная Alice",
+        geomAliceDesc: "Раздельная раскладка под углом для кистей рук",
+        geomStandardTitle: "Стандартная ANSI",
+        geomStandardDesc: "Классические прямые ряды",
+        geomOrthoTitle: "Ортолинейная (Ortho)",
+        geomOrthoDesc: "Прямые вертикальные колонки",
+        viaTitle: "Автоопределение по USB (VIA / QMK)",
+        viaDesc: "Подключите клавиатуру по USB, и приложение автоматически распознает геометрию.",
+        btnDetectVia: "Определить по USB",
+        uiLangTitle: "Язык интерфейса (UI)",
+        uiLangDesc: "Выберите язык меню и справочной информации.",
+        uiLangAuto: "Авто (По языку упражнения)",
+        themeTitle: "Цветовая тема:",
+        fontSizeTitle: "Размер текста:",
+        btnFontNormal: "Стандартный (2rem)",
+        btnFontLarge: "Большой (2.4rem)",
+        helpTitle: "Как пользоваться CHEDDAR",
+        helpItems: [
+            "<strong>Познавательные факты:</strong> Печатайте интересные факты со всего мира вместо бессмысленных наборов слов.",
+            "<strong>Экранная клавиатура:</strong> Подсвечивает нужные клавиши в реальном времени и показывает QWERTY-подсказки для незнакомых раскладок.",
+            "<strong>Раскладки Alice и Ortho:</strong> Настройте форму клавиатуры под эргономичную <em>Alice</em> или определите её через USB (VIA).",
+            "<strong>Режимы печати:</strong> Режим <em>Endless</em> для непрерывной тренировки или <em>Single</em> с подведением итогов после каждого предложения.",
+            "<strong>Интеллектуальный Тренер:</strong> Анализирует ваши ошибки и генерирует упражнения для тренировки слабых мест.",
+            "<strong>Горячие клавиши:</strong> Нажмите <kbd>ESC</kbd> для подведения итогов. На экране результатов: <kbd>Enter</kbd> — следующее предложение, <kbd>Tab</kbd> — повторить текущее."
+        ]
+    }
+};
 
-// Mapowanie fizycznych kodów klawiszy na litery w różnych językach
+function getActiveUiLanguage() {
+    if (uiLanguageSetting === 'auto') {
+        return currentLanguage;
+    }
+    return uiLanguageSetting;
+}
+
+function applyUiLocalization() {
+    const lang = getActiveUiLanguage();
+    const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS.polish;
+
+    // Header elements
+    const lblLang = document.getElementById('lblLangSelect');
+    if (lblLang) lblLang.innerText = t.lblLangSelect;
+
+    const lblMode = document.getElementById('lblModeSelect');
+    if (lblMode) lblMode.innerText = t.lblModeSelect;
+
+    if (modeSelect) {
+        modeSelect.options[0].text = t.modeEndless;
+        modeSelect.options[1].text = t.modeSingle;
+    }
+
+    if (kbToggleBtn) kbToggleBtn.title = t.kbToggleTitle;
+    if (settingsBtn) settingsBtn.title = t.settingsBtnTitle;
+
+    // Categories
+    const catLabelAll = document.getElementById('catLabelAll');
+    if (catLabelAll) catLabelAll.innerText = t.catAll;
+    const catLabelNature = document.getElementById('catLabelNature');
+    if (catLabelNature) catLabelNature.innerText = t.catNature;
+    const catLabelScience = document.getElementById('catLabelScience');
+    if (catLabelScience) catLabelScience.innerText = t.catScience;
+    const catLabelHuman = document.getElementById('catLabelHuman');
+    if (catLabelHuman) catLabelHuman.innerText = t.catHuman;
+    const catLabelHistory = document.getElementById('catLabelHistory');
+    if (catLabelHistory) catLabelHistory.innerText = t.catHistory;
+    const catLabelLanguage = document.getElementById('catLabelLanguage');
+    if (catLabelLanguage) catLabelLanguage.innerText = t.catLanguage;
+
+    // HUD labels
+    const lblHudTimer = document.getElementById('lblHudTimer');
+    if (lblHudTimer) lblHudTimer.innerText = t.hudTimer;
+    const lblHudWpm = document.getElementById('lblHudWpm');
+    if (lblHudWpm) lblHudWpm.innerText = t.hudWpm;
+    const lblHudStreak = document.getElementById('lblHudStreak');
+    if (lblHudStreak) lblHudStreak.innerText = t.hudStreak;
+
+    // Input placeholder
+    if (userInput) userInput.placeholder = t.placeholder;
+
+    // Results modal
+    const resultsHeading = document.getElementById('resultsHeading');
+    if (resultsHeading) resultsHeading.innerText = t.resHeading;
+    const resTitleWpm = document.getElementById('resTitleWpm');
+    if (resTitleWpm) resTitleWpm.innerText = t.resTitleWpm;
+    const resSubWpm = document.getElementById('resSubWpm');
+    if (resSubWpm) resSubWpm.innerText = t.resSubWpm;
+    const resTitleCpm = document.getElementById('resTitleCpm');
+    if (resTitleCpm) resTitleCpm.innerText = t.resTitleCpm;
+    const resSubCpm = document.getElementById('resSubCpm');
+    if (resSubCpm) resSubCpm.innerText = t.resSubCpm;
+    const resTitleAcc = document.getElementById('resTitleAcc');
+    if (resTitleAcc) resTitleAcc.innerText = t.resTitleAcc;
+    const resTitleTime = document.getElementById('resTitleTime');
+    if (resTitleTime) resTitleTime.innerText = t.resTitleTime;
+    const btnNextText = document.getElementById('btnNextText');
+    if (btnNextText) btnNextText.innerText = t.btnNext;
+    const btnRepeatText = document.getElementById('btnRepeatText');
+    if (btnRepeatText) btnRepeatText.innerText = t.btnRepeat;
+
+    // Settings Modal
+    const settingsModalTitle = document.getElementById('settingsModalTitle');
+    if (settingsModalTitle) settingsModalTitle.innerText = t.settingsTitle;
+    const tabTitleRecords = document.getElementById('tabTitleRecords');
+    if (tabTitleRecords) tabTitleRecords.innerText = t.tabRecords;
+    const tabTitleKeyboard = document.getElementById('tabTitleKeyboard');
+    if (tabTitleKeyboard) tabTitleKeyboard.innerText = t.tabKeyboard;
+    const tabTitleThemes = document.getElementById('tabTitleThemes');
+    if (tabTitleThemes) tabTitleThemes.innerText = t.tabThemes;
+
+    const lblRecBestWpm = document.getElementById('lblRecBestWpm');
+    if (lblRecBestWpm) lblRecBestWpm.innerText = t.lblRecBestWpm;
+    const lblRecBestCpm = document.getElementById('lblRecBestCpm');
+    if (lblRecBestCpm) lblRecBestCpm.innerText = t.lblRecBestCpm;
+    const lblRecAvgAcc = document.getElementById('lblRecAvgAcc');
+    if (lblRecAvgAcc) lblRecAvgAcc.innerText = t.lblRecAvgAcc;
+    const lblRecCompleted = document.getElementById('lblRecCompleted');
+    if (lblRecCompleted) lblRecCompleted.innerText = t.lblRecCompleted;
+
+    const trainerHeaderTitle = document.getElementById('trainerHeaderTitle');
+    if (trainerHeaderTitle) trainerHeaderTitle.innerText = t.trainerTitle;
+    const trainerHeaderDesc = document.getElementById('trainerHeaderDesc');
+    if (trainerHeaderDesc) trainerHeaderDesc.innerText = t.trainerDesc;
+    const lblWeaknessTitle = document.getElementById('lblWeaknessTitle');
+    if (lblWeaknessTitle) lblWeaknessTitle.innerText = t.weaknessTitle;
+    const lblNoWeakness = document.getElementById('lblNoWeakness');
+    if (lblNoWeakness) lblNoWeakness.innerText = t.noWeakness;
+    if (btnResetWeakness) btnResetWeakness.innerText = t.btnResetWeakness;
+    if (btnResetAllStats) btnResetAllStats.innerText = t.btnResetAllStats;
+
+    const lblKbShowTitle = document.getElementById('lblKbShowTitle');
+    if (lblKbShowTitle) lblKbShowTitle.innerText = t.kbShowTitle;
+    const lblKbShowDesc = document.getElementById('lblKbShowDesc');
+    if (lblKbShowDesc) lblKbShowDesc.innerText = t.kbShowDesc;
+    const lblKbGeomTitle = document.getElementById('lblKbGeomTitle');
+    if (lblKbGeomTitle) lblKbGeomTitle.innerText = t.kbGeomTitle;
+    const lblGeomAliceTitle = document.getElementById('lblGeomAliceTitle');
+    if (lblGeomAliceTitle) lblGeomAliceTitle.innerText = t.geomAliceTitle;
+    const lblGeomAliceDesc = document.getElementById('lblGeomAliceDesc');
+    if (lblGeomAliceDesc) lblGeomAliceDesc.innerText = t.geomAliceDesc;
+    const lblGeomStandardTitle = document.getElementById('lblGeomStandardTitle');
+    if (lblGeomStandardTitle) lblGeomStandardTitle.innerText = t.geomStandardTitle;
+    const lblGeomStandardDesc = document.getElementById('lblGeomStandardDesc');
+    if (lblGeomStandardDesc) lblGeomStandardDesc.innerText = t.geomStandardDesc;
+    const lblGeomOrthoTitle = document.getElementById('lblGeomOrthoTitle');
+    if (lblGeomOrthoTitle) lblGeomOrthoTitle.innerText = t.geomOrthoTitle;
+    const lblGeomOrthoDesc = document.getElementById('lblGeomOrthoDesc');
+    if (lblGeomOrthoDesc) lblGeomOrthoDesc.innerText = t.geomOrthoDesc;
+
+    const lblViaTitle = document.getElementById('lblViaTitle');
+    if (lblViaTitle) lblViaTitle.innerText = t.viaTitle;
+    const lblViaDesc = document.getElementById('lblViaDesc');
+    if (lblViaDesc) lblViaDesc.innerText = t.viaDesc;
+    const btnDetectViaText = document.getElementById('btnDetectViaText');
+    if (btnDetectViaText) btnDetectViaText.innerText = t.btnDetectVia;
+
+    const lblUiLangTitle = document.getElementById('lblUiLangTitle');
+    if (lblUiLangTitle) lblUiLangTitle.innerText = t.uiLangTitle;
+    const lblUiLangDesc = document.getElementById('lblUiLangDesc');
+    if (lblUiLangDesc) lblUiLangDesc.innerText = t.uiLangDesc;
+    if (uiLangSelect && uiLangSelect.options[0]) {
+        uiLangSelect.options[0].text = t.uiLangAuto;
+    }
+
+    const lblThemeTitle = document.getElementById('lblThemeTitle');
+    if (lblThemeTitle) lblThemeTitle.innerText = t.themeTitle;
+    const lblFontSizeTitle = document.getElementById('lblFontSizeTitle');
+    if (lblFontSizeTitle) lblFontSizeTitle.innerText = t.fontSizeTitle;
+    const btnFontNormal = document.getElementById('btnFontNormal');
+    if (btnFontNormal) btnFontNormal.innerText = t.btnFontNormal;
+    const btnFontLarge = document.getElementById('btnFontLarge');
+    if (btnFontLarge) btnFontLarge.innerText = t.btnFontLarge;
+
+    // Help modal
+    const helpModalTitle = document.getElementById('helpModalTitle');
+    if (helpModalTitle) helpModalTitle.innerText = t.helpTitle;
+    const helpModalList = document.getElementById('helpModalList');
+    if (helpModalList && t.helpItems) {
+        helpModalList.innerHTML = t.helpItems.map(item => `<li>${item}</li>`).join('');
+    }
+}
+
+// ==========================================================================
+// 2. KEYBOARD LAYOUTS & MAPPINGS
+// ==========================================================================
 const KEY_MAPS = {
     russian: {
         'Backquote': { main: 'Ё', hint: '`' },
@@ -161,7 +761,6 @@ const KEY_MAPS = {
     }
 };
 
-// Mapowanie znaków do kodu klawisza + ewentualny modyfikator (Alt / Shift)
 function getTargetKeyInfo(char, lang) {
     if (!char) return null;
     if (char === ' ') return { code: 'Space', shift: false, alt: false };
@@ -169,7 +768,7 @@ function getTargetKeyInfo(char, lang) {
     const isUpper = char !== char.toLowerCase() && char === char.toUpperCase() && char.match(/[A-ZĄĆĘŁŃÓŚŹŻА-ЯЁÄÖÜ]/i);
     const lowChar = char.toLowerCase();
 
-    // Specjalne mapowanie dla języka polskiego (AltGr + klawisz)
+    // Język polski (AltGr + klawisz)
     if (lang === 'polish') {
         const polishAltMap = {
             'ą': 'KeyA', 'ć': 'KeyC', 'ę': 'KeyE', 'ł': 'KeyL',
@@ -180,7 +779,7 @@ function getTargetKeyInfo(char, lang) {
         }
     }
 
-    // Specjalne mapowanie dla języka rosyjskiego
+    // Język rosyjski
     if (lang === 'russian') {
         const ruMap = {
             'ё': { code: 'Backquote' }, '1': { code: 'Digit1' }, '2': { code: 'Digit2' }, '3': { code: 'Digit3' },
@@ -202,7 +801,7 @@ function getTargetKeyInfo(char, lang) {
         }
     }
 
-    // Specjalne mapowanie dla niemieckiego / francuskiego / szwedzkiego
+    // Niemiecki / francuski / szwedzki
     if (lang === 'german') {
         const deMap = { 'ä': 'Quote', 'ö': 'Semicolon', 'ü': 'BracketLeft', 'ß': 'Minus', 'z': 'KeyY', 'y': 'KeyZ' };
         if (deMap[lowChar]) return { code: deMap[lowChar], alt: false, shift: !!isUpper };
@@ -224,7 +823,6 @@ function getTargetKeyInfo(char, lang) {
         return { code: 'Key' + upperChar, alt: false, shift: !!isUpper };
     }
 
-    // Cyfry i znaki
     if (char >= '0' && char <= '9') {
         return { code: 'Digit' + char, alt: false, shift: false };
     }
@@ -242,7 +840,7 @@ function getTargetKeyInfo(char, lang) {
 }
 
 // ==========================================================================
-// 2. VISUAL KEYBOARD RENDERER (STANDARD, ALICE 98, ORTHO)
+// 3. VISUAL KEYBOARD RENDERER (STANDARD, ALICE SPLIT, ORTHO)
 // ==========================================================================
 function renderVisualKeyboard() {
     if (!visualKeyboard) return;
@@ -466,7 +1064,6 @@ function renderOrthoLayout(container, langMap) {
 function updateHighlightedKey() {
     if (!visualKeyboard || !isKeyboardEnabled) return;
 
-    // Usuń poprzednie podświetlenia
     document.querySelectorAll('.kb-key.key-target, .kb-key.key-modifier').forEach(k => {
         k.classList.remove('key-target', 'key-modifier');
     });
@@ -481,7 +1078,6 @@ function updateHighlightedKey() {
 
     if (!targetInfo) return;
 
-    // Podświetl spację dla Alice (dowolna połówka) lub Standard
     if (targetInfo.code === 'Space') {
         const spaceKeys = visualKeyboard.querySelectorAll('[data-code="Space"], [data-code="SpaceLeft"], [data-code="SpaceRight"]');
         spaceKeys.forEach(k => k.classList.add('key-target'));
@@ -493,7 +1089,6 @@ function updateHighlightedKey() {
         keyElem.classList.add('key-target');
     }
 
-    // Podświetlenie modyfikatorów (Alt / Shift)
     if (targetInfo.alt) {
         const altKey = visualKeyboard.querySelector('[data-code="AltRight"]') || visualKeyboard.querySelector('[data-code="AltLeft"]');
         if (altKey) altKey.classList.add('key-modifier');
@@ -566,7 +1161,7 @@ async function detectViaKeyboard() {
 }
 
 // ==========================================================================
-// 3. SMART WEAKNESS ENGINE
+// 4. SMART WEAKNESS ENGINE
 // ==========================================================================
 class SmartWeaknessEngine {
     constructor() {
@@ -687,7 +1282,7 @@ class SmartWeaknessEngine {
 const weaknessEngine = new SmartWeaknessEngine();
 
 // ==========================================================================
-// 4. STATS & RECORDS MANAGER
+// 5. STATS & RECORDS MANAGER
 // ==========================================================================
 class RecordsManager {
     constructor() {
@@ -743,7 +1338,9 @@ class RecordsManager {
         if (!weaknessChips) return;
         const top = weaknessEngine.getTopWeaknesses(12);
         if (top.length === 0) {
-            weaknessChips.innerHTML = '<span class="no-weakness">Brak zarejestrowanych słabych punktów. Pisz dalej!</span>';
+            const lang = getActiveUiLanguage();
+            const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS.polish;
+            weaknessChips.innerHTML = `<span class="no-weakness">${t.noWeakness}</span>`;
             return;
         }
 
@@ -773,7 +1370,7 @@ class RecordsManager {
 const recordsManager = new RecordsManager();
 
 // ==========================================================================
-// 5. THEMES & SETTINGS
+// 6. THEMES & SETTINGS
 // ==========================================================================
 function initTheme() {
     const savedNight = localStorage.getItem('cheddar_night_mode');
@@ -787,24 +1384,58 @@ function initTheme() {
     const savedKbEnabled = localStorage.getItem('cheddar_keyboard_enabled');
     isKeyboardEnabled = savedKbEnabled !== 'false';
     toggleVisualKeyboard(isKeyboardEnabled);
+
+    const savedUiLang = localStorage.getItem('cheddar_ui_lang') || 'auto';
+    uiLanguageSetting = savedUiLang;
+    if (uiLangSelect) uiLangSelect.value = savedUiLang;
+}
+
+function updateStreakUI(didIncrease = false) {
+    const statStreakUnit = document.getElementById('statStreakUnit');
+    if (hudStreak) hudStreak.innerText = perfectStreak;
+    if (statStreakUnit) {
+        statStreakUnit.classList.toggle('active', perfectStreak > 0);
+        if (didIncrease && perfectStreak > 0) {
+            statStreakUnit.classList.remove('streak-bounce');
+            void statStreakUnit.offsetWidth;
+            statStreakUnit.classList.add('streak-bounce');
+        }
+    }
 }
 
 function setTheme(themeName) {
     document.querySelectorAll('.theme-card').forEach(card => {
         card.classList.toggle('active', card.dataset.theme === themeName);
     });
+
+    // Usuwanie wszystkich poprzednich klas motywów
+    document.body.classList.remove(
+        'theme-cheddar-classic',
+        'theme-roquefort-night',
+        'theme-gouda-cream',
+        'theme-swiss-pine',
+        'theme-vintage-paper',
+        'theme-nordic-aurora',
+        'theme-matcha-garden',
+        'theme-sunset-lavender',
+        'theme-cyber-neon',
+        'theme-espresso-mocha',
+        'night-mode'
+    );
+
+    document.body.classList.add(`theme-${themeName}`);
+
     if (themeName === 'roquefort-night') {
         document.body.classList.add('night-mode');
         localStorage.setItem('cheddar_night_mode', 'true');
     } else {
-        document.body.classList.remove('night-mode');
         localStorage.setItem('cheddar_night_mode', 'false');
     }
     localStorage.setItem('cheddar_theme', themeName);
 }
 
 // ==========================================================================
-// 6. DATA LOADING & INITIALIZATION
+// 7. DATA LOADING & INITIALIZATION
 // ==========================================================================
 async function loadData() {
     try {
@@ -827,6 +1458,7 @@ async function loadData() {
         } catch (e) {}
 
         initTheme();
+        applyUiLocalization();
         updateCategoryChipsUI();
         recordsManager.updateUI();
         startNewRound(true);
@@ -836,7 +1468,7 @@ async function loadData() {
 }
 
 // ==========================================================================
-// 7. CATEGORY FILTERING
+// 8. CATEGORY FILTERING
 // ==========================================================================
 function setupCategoryListeners() {
     if (!categoriesBar) return;
@@ -915,7 +1547,7 @@ function getFilteredFactsPool() {
 }
 
 // ==========================================================================
-// 8. ROUND & TYPING CORE LOGIC
+// 9. ROUND & TYPING CORE LOGIC
 // ==========================================================================
 function startNewRound(resetTimer = true, forceRepeat = false) {
     if (resetTimer) {
@@ -933,7 +1565,7 @@ function startNewRound(resetTimer = true, forceRepeat = false) {
     currentSentenceErrors = 0;
     roundMistakes.clear();
     updateProgressBar(0);
-    if (hudStreak) hudStreak.innerText = perfectStreak;
+    updateStreakUI(false);
 
     renderText(forceRepeat);
     renderVisualKeyboard();
@@ -1017,7 +1649,7 @@ function triggerErrorAnimation() {
 }
 
 // ==========================================================================
-// 9. REAL-TIME INPUT LISTENER & KEYBOARD HIGHLIGHTING
+// 10. REAL-TIME INPUT LISTENER & KEYBOARD HIGHLIGHTING
 // ==========================================================================
 userInput.addEventListener('input', () => {
     const arrayQuote = textContent.querySelectorAll('span.letter');
@@ -1073,11 +1705,11 @@ userInput.addEventListener('input', () => {
     if (allCorrect && arrayValue.length === arrayQuote.length) {
         if (currentSentenceErrors === 0) {
             perfectStreak++;
+            updateStreakUI(true);
         } else {
             perfectStreak = 0;
+            updateStreakUI(false);
         }
-
-        if (hudStreak) hudStreak.innerText = perfectStreak;
 
         if (currentMode === 'single') {
             setTimeout(() => {
@@ -1116,11 +1748,13 @@ function updateTimer() {
 }
 
 // ==========================================================================
-// 10. RESULTS MODAL LOGIC
+// 11. RESULTS MODAL LOGIC
 // ==========================================================================
 function showResultsModal(isCompleted = false) {
     clearInterval(timerInterval);
     const { wpm, cpm } = calculateWpmAndCpm();
+    const lang = getActiveUiLanguage();
+    const t = UI_TRANSLATIONS[lang] || UI_TRANSLATIONS.polish;
 
     let accuracy = 100;
     if (totalKeystrokes > 0) {
@@ -1130,14 +1764,14 @@ function showResultsModal(isCompleted = false) {
     if (resWpm) resWpm.innerText = wpm;
     if (resCpm) resCpm.innerText = cpm;
     if (resAccuracy) resAccuracy.innerText = `${accuracy}%`;
-    if (resErrors) resErrors.innerText = `${errorsMade} ${errorsMade === 1 ? 'błąd' : 'błędów'}`;
+    if (resErrors) resErrors.innerText = typeof t.resErrors === 'function' ? t.resErrors(errorsMade) : `${errorsMade} errors`;
     if (resTime) resTime.innerText = timerDisplay.innerText;
-    if (resChars) resChars.innerText = `${totalKeystrokes} znaków`;
+    if (resChars) resChars.innerText = typeof t.resChars === 'function' ? t.resChars(totalKeystrokes) : `${totalKeystrokes} chars`;
 
     if (roundWeaknessInfo && roundWeaknessText) {
         if (roundMistakes.size > 0) {
             const mistakesList = Array.from(roundMistakes).slice(0, 4).map(m => `"${m}"`).join(', ');
-            roundWeaknessText.innerText = `Wykryto trudniejsze momenty: ${mistakesList}. Trener uwzględni je w kolejnych zdaniach.`;
+            roundWeaknessText.innerText = typeof t.roundWeaknessDetected === 'function' ? t.roundWeaknessDetected(mistakesList) : t.roundWeaknessDefault;
             roundWeaknessInfo.classList.add('visible');
         } else {
             roundWeaknessInfo.classList.remove('visible');
@@ -1153,7 +1787,7 @@ function hideResultsModal() {
 }
 
 // ==========================================================================
-// 11. MODALS & CONTROLLERS
+// 12. MODALS & CONTROLLERS
 // ==========================================================================
 function setupModalListeners() {
     if (helpBtn) helpBtn.addEventListener('click', () => helpModal.classList.add('open'));
@@ -1201,7 +1835,7 @@ function setupModalListeners() {
         });
     }
 
-    // Wybór geometrii klawiatury (Alice, Standard, Ortho)
+    // Wybór geometrii klawiatury
     document.querySelectorAll('.layout-card').forEach(card => {
         card.addEventListener('click', () => {
             setKeyboardGeometry(card.dataset.geometry);
@@ -1211,6 +1845,16 @@ function setupModalListeners() {
     // Przycisk autodetekcji USB (VIA/QMK)
     if (btnDetectVia) {
         btnDetectVia.addEventListener('click', detectViaKeyboard);
+    }
+
+    // Zmiana języka interfejsu (UI)
+    if (uiLangSelect) {
+        uiLangSelect.addEventListener('change', () => {
+            uiLanguageSetting = uiLangSelect.value;
+            localStorage.setItem('cheddar_ui_lang', uiLanguageSetting);
+            applyUiLocalization();
+            recordsManager.updateUI();
+        });
     }
 
     [helpModal, settingsModal, resultsModal].forEach(modal => {
@@ -1277,7 +1921,7 @@ function setupModalListeners() {
 }
 
 // ==========================================================================
-// 12. GLOBAL KEYBOARD SHORTCUTS
+// 13. GLOBAL KEYBOARD SHORTCUTS
 // ==========================================================================
 document.addEventListener('keydown', (event) => {
     if (resultsModal && resultsModal.classList.contains('open')) {
@@ -1342,6 +1986,7 @@ if (langSelect) {
         currentLanguage = langSelect.value;
         localStorage.setItem('cheddar_lang', currentLanguage);
         perfectStreak = 0;
+        applyUiLocalization();
         startNewRound(true);
     });
 }
@@ -1356,7 +2001,7 @@ if (modeSelect) {
 }
 
 // ==========================================================================
-// 13. EASTER EGG & WINDOW RESIZE
+// 14. EASTER EGG & WINDOW RESIZE
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
     const images = document.querySelectorAll('.interactive-img');

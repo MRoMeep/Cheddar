@@ -11,7 +11,7 @@
         <div class="header-content">
             <h1>Cheddar</h1>
             <div id="LanguageSelection">
-                <label for="langSelect">Language:</label>
+                <label for="langSelect" id="lblLangSelect">Language:</label>
                 <select id="langSelect">
                     <option value="polish">Polish</option>
                     <option value="english">English</option>
@@ -21,7 +21,7 @@
                     <option value="russian">Russian</option>
                 </select>
 
-                <label for="modeSelect">Mode:</label>
+                <label for="modeSelect" id="lblModeSelect">Mode:</label>
                 <select id="modeSelect">
                     <option value="endless">Endless (Ciągły)</option>
                     <option value="single">Single (Pojedynczy)</option>
@@ -35,7 +35,7 @@
                 </button>
 
                 <button id="settingsBtn" class="header-icon-btn" title="Ustawienia, Rekordy i Klawiatura" aria-label="Ustawienia i Rekordy">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                    <svg class="gear-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
                         <circle cx="12" cy="12" r="3"/>
                     </svg>
@@ -47,27 +47,27 @@
         <div class="categories-bar" id="categoriesBar">
             <button class="cat-chip active" data-category="all" title="Wszystkie kategorie">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
-                <span>Wszystkie</span>
+                <span class="cat-name" id="catLabelAll">Wszystkie</span>
             </button>
             <button class="cat-chip active" data-category="nature" title="Natura i Zwierzęta">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg>
-                <span>Natura</span>
+                <span class="cat-name" id="catLabelNature">Natura</span>
             </button>
             <button class="cat-chip active" data-category="science" title="Nauka i Kosmos">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1" fill="currentColor"/><path d="M20.2 20.2c2.04-2.03.02-7.36-4.5-11.9-4.54-4.52-9.87-6.54-11.9-4.5-2.04 2.03-.02 7.36 4.5 11.9 4.54 4.52 9.87 6.54 11.9 4.5Z"/><path d="M15.7 8.3c4.54 4.54 6.54 9.87 4.5 11.9-2.03 2.04-7.36.02-11.9-4.5-4.52-4.54-6.54-9.87-4.5-11.9 2.03-2.04 7.36-.02 11.9 4.5Z"/></svg>
-                <span>Nauka & Kosmos</span>
+                <span class="cat-name" id="catLabelScience">Nauka & Kosmos</span>
             </button>
             <button class="cat-chip active" data-category="human" title="Ciało i Zdrowie">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
-                <span>Ciało & Zdrowie</span>
+                <span class="cat-name" id="catLabelHuman">Ciało & Zdrowie</span>
             </button>
             <button class="cat-chip active" data-category="history" title="Historia i Świat">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-                <span>Historia & Świat</span>
+                <span class="cat-name" id="catLabelHistory">Historia & Świat</span>
             </button>
             <button class="cat-chip active" data-category="language" title="Język i Trudne Słowa">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg>
-                <span>Język & Trudne</span>
+                <span class="cat-name" id="catLabelLanguage">Język & Trudne</span>
             </button>
         </div>
     </header>
@@ -82,22 +82,25 @@
             <!-- Stylizowane pole ze statystykami i ciemnym zegarem -->
             <div id="TimeDisplay">
                 <div class="stat-unit">
-                    <span class="timer-label">WPM:</span>
+                    <span class="timer-label" id="lblHudWpm">WPM:</span>
                     <p class="hud-stat-val" id="hudWpm">0</p>
                 </div>
                 <div class="stat-unit stat-main">
-                    <span class="timer-label">CZAS:</span>
+                    <span class="timer-label" id="lblHudTimer">CZAS:</span>
                     <p id="timer">0:00</p>
                 </div>
-                <div class="stat-unit">
-                    <span class="timer-label">STREAK:</span>
+                <div class="stat-unit stat-streak-unit" id="statStreakUnit">
+                    <svg class="streak-flame-icon" id="streakFlameIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"/>
+                    </svg>
+                    <span class="timer-label" id="lblHudStreak">STREAK:</span>
                     <p class="hud-stat-val" id="hudStreak">0</p>
                 </div>
             </div>
 
             <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zakończyć / zrestartować" spellcheck="false">
 
-            <!-- Wirtualna Klawiatura z podpowiedziami (Standard / Alice 98 / Ortho) -->
+            <!-- Wirtualna Klawiatura z podpowiedziami (Standard / Alice / Ortho) -->
             <div id="visualKeyboardContainer" class="visual-keyboard-container">
                 <div id="visualKeyboard" class="visual-keyboard keyboard-alice">
                     <!-- Dynamicznie generowane klawisze -->
@@ -116,22 +119,22 @@
 
             <div class="results-grid">
                 <div class="stat-card stat-wpm">
-                    <span class="stat-title">WPM</span>
+                    <span class="stat-title" id="resTitleWpm">WPM</span>
                     <span class="stat-number" id="resWpm">0</span>
-                    <span class="stat-sub">słów/min</span>
+                    <span class="stat-sub" id="resSubWpm">słów/min</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-title">CPM</span>
+                    <span class="stat-title" id="resTitleCpm">CPM</span>
                     <span class="stat-number" id="resCpm">0</span>
-                    <span class="stat-sub">znaków/min</span>
+                    <span class="stat-sub" id="resSubCpm">znaków/min</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-title">DOKŁADNOŚĆ</span>
+                    <span class="stat-title" id="resTitleAcc">DOKŁADNOŚĆ</span>
                     <span class="stat-number" id="resAccuracy">100%</span>
                     <span class="stat-sub" id="resErrors">0 błędów</span>
                 </div>
                 <div class="stat-card">
-                    <span class="stat-title">CZAS</span>
+                    <span class="stat-title" id="resTitleTime">CZAS</span>
                     <span class="stat-number" id="resTime">0:00</span>
                     <span class="stat-sub" id="resChars">0 znaków</span>
                 </div>
@@ -143,11 +146,11 @@
 
             <div class="results-actions">
                 <button id="btnNextSentence" class="action-btn btn-primary" title="Naciśnij Enter">
-                    <span>Następne zdanie</span>
+                    <span id="btnNextText">Następne zdanie</span>
                     <kbd>Enter ↵</kbd>
                 </button>
                 <button id="btnRepeatSentence" class="action-btn btn-secondary" title="Naciśnij Tab">
-                    <span>Powtórz to zdanie</span>
+                    <span id="btnRepeatText">Powtórz to zdanie</span>
                     <kbd>Tab ↹</kbd>
                 </button>
             </div>
@@ -159,21 +162,21 @@
         <div class="modal-content settings-modal-content">
             <span id="closeSettingsModal" class="close-modal" title="Zamknij">&times;</span>
             <div class="modal-title-bar">
-                <h3>Ustawienia & Rekordy</h3>
+                <h3 id="settingsModalTitle">Ustawienia & Rekordy</h3>
             </div>
 
             <div class="settings-tabs">
                 <button class="tab-btn active" data-tab="tabRecords">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.45.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-                    <span>Rekordy & Trener</span>
+                    <span id="tabTitleRecords">Rekordy & Trener</span>
                 </button>
                 <button class="tab-btn" data-tab="tabKeyboard">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M18 13h.01M10 13h4"/></svg>
-                    <span>Klawiatura & VIA</span>
+                    <span id="tabTitleKeyboard">Klawiatura & VIA</span>
                 </button>
                 <button class="tab-btn" data-tab="tabThemes">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.992 6.012 17.48 2 12 2z"/></svg>
-                    <span>Motywy & Wygląd</span>
+                    <span id="tabTitleThemes">Motywy & Język</span>
                 </button>
             </div>
 
@@ -181,19 +184,19 @@
             <div id="tabRecords" class="tab-panel active">
                 <div class="records-grid">
                     <div class="record-item">
-                        <span class="record-label">Najlepszy WPM</span>
+                        <span class="record-label" id="lblRecBestWpm">Najlepszy WPM</span>
                         <span class="record-val" id="recBestWpm">0</span>
                     </div>
                     <div class="record-item">
-                        <span class="record-label">Najlepszy CPM</span>
+                        <span class="record-label" id="lblRecBestCpm">Najlepszy CPM</span>
                         <span class="record-val" id="recBestCpm">0</span>
                     </div>
                     <div class="record-item">
-                        <span class="record-label">Średnia Dokładność</span>
+                        <span class="record-label" id="lblRecAvgAcc">Średnia Dokładność</span>
                         <span class="record-val" id="recAvgAcc">100%</span>
                     </div>
                     <div class="record-item">
-                        <span class="record-label">Ukończone Zdania</span>
+                        <span class="record-label" id="lblRecCompleted">Ukończone Zdania</span>
                         <span class="record-val" id="recCompleted">0</span>
                     </div>
                 </div>
@@ -201,8 +204,8 @@
                 <div class="trainer-section">
                     <div class="trainer-header">
                         <div class="trainer-title">
-                            <strong>Inteligentny Trener Błędów</strong>
-                            <p>Automatycznie dobiera zdania zawierające Twoje trudne kombinacje liter.</p>
+                            <strong id="trainerHeaderTitle">Inteligentny Trener Błędów</strong>
+                            <p id="trainerHeaderDesc">Automatycznie dobiera zdania zawierające Twoje trudne kombinacje liter.</p>
                         </div>
                         <label class="toggle-switch">
                             <input type="checkbox" id="trainerToggle" checked>
@@ -211,9 +214,9 @@
                     </div>
 
                     <div class="weakness-list-container">
-                        <span class="sub-label">Twoje najczęstsze pomyłki:</span>
+                        <span class="sub-label" id="lblWeaknessTitle">Twoje najczęstsze pomyłki:</span>
                         <div id="weaknessChips" class="weakness-chips">
-                            <span class="no-weakness">Brak zarejestrowanych słabych punktów. Pisz dalej!</span>
+                            <span class="no-weakness" id="lblNoWeakness">Brak zarejestrowanych słabych punktów. Pisz dalej!</span>
                         </div>
                     </div>
 
@@ -228,8 +231,8 @@
             <div id="tabKeyboard" class="tab-panel">
                 <div class="setting-row">
                     <div>
-                        <strong>Pokaż wirtualną klawiaturę</strong>
-                        <p class="setting-desc">Wyświetla podpowiedzi klawiszy w czasie rzeczywistym.</p>
+                        <strong id="lblKbShowTitle">Pokaż wirtualną klawiaturę</strong>
+                        <p class="setting-desc" id="lblKbShowDesc">Wyświetla podpowiedzi klawiszy w czasie rzeczywistym.</p>
                     </div>
                     <label class="toggle-switch">
                         <input type="checkbox" id="kbEnableToggle" checked>
@@ -237,42 +240,42 @@
                     </label>
                 </div>
 
-                <span class="sub-label">Kształt / Układ fizyczny klawiatury:</span>
+                <span class="sub-label" id="lblKbGeomTitle">Kształt / Układ fizyczny klawiatury:</span>
                 <div class="layout-selector-grid">
                     <button class="layout-card active" data-geometry="alice">
                         <div class="layout-icon-preview alice-preview">
                             <span class="preview-half left"></span>
                             <span class="preview-half right"></span>
                         </div>
-                        <strong>Ergonomiczna Alice 98</strong>
-                        <span class="layout-desc">Dzielona, klawisze pod kątem dla dłoni</span>
+                        <strong id="lblGeomAliceTitle">Ergonomiczna Alice</strong>
+                        <span class="layout-desc" id="lblGeomAliceDesc">Dzielona, klawisze pod kątem dla dłoni</span>
                     </button>
 
                     <button class="layout-card" data-geometry="standard">
                         <div class="layout-icon-preview standard-preview">
                             <span class="preview-rect"></span>
                         </div>
-                        <strong>Standardowa ANSI</strong>
-                        <span class="layout-desc">Klasyczny prosty układ rzędów</span>
+                        <strong id="lblGeomStandardTitle">Standardowa ANSI</strong>
+                        <span class="layout-desc" id="lblGeomStandardDesc">Klasyczny prosty układ rzędów</span>
                     </button>
 
                     <button class="layout-card" data-geometry="ortho">
                         <div class="layout-icon-preview ortho-preview">
                             <span class="preview-grid"></span>
                         </div>
-                        <strong>Kolumnowa (Ortho)</strong>
-                        <span class="layout-desc">Pionowe proste kolumny</span>
+                        <strong id="lblGeomOrthoTitle">Kolumnowa (Ortho)</strong>
+                        <span class="layout-desc" id="lblGeomOrthoDesc">Pionowe proste kolumny</span>
                     </button>
                 </div>
 
                 <div class="via-detection-box">
                     <div class="via-info">
-                        <strong>Autodetekcja USB (VIA / QMK)</strong>
-                        <p>Podłącz klawiaturę przez USB, a aplikacja automatycznie rozpozna model i dopasuje geometrię.</p>
+                        <strong id="lblViaTitle">Autodetekcja USB (VIA / QMK)</strong>
+                        <p id="lblViaDesc">Podłącz klawiaturę przez USB, a aplikacja automatycznie rozpozna model i dopasuje geometrię.</p>
                     </div>
                     <button id="btnDetectVia" class="btn-subtle btn-via">
                         <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
-                        <span>Wykryj przez USB</span>
+                        <span id="btnDetectViaText">Wykryj przez USB</span>
                     </button>
                     <div id="viaStatusMsg" class="via-status"></div>
                 </div>
@@ -280,7 +283,23 @@
 
             <!-- Tab 3: Motywy i Opcje -->
             <div id="tabThemes" class="tab-panel">
-                <span class="sub-label">Motyw kolorystyczny:</span>
+                <div class="setting-row">
+                    <div>
+                        <strong id="lblUiLangTitle">Język interfejsu (UI)</strong>
+                        <p class="setting-desc" id="lblUiLangDesc">Wybierz język menu i opisów.</p>
+                    </div>
+                    <select id="uiLangSelect" class="settings-select">
+                        <option value="auto">Auto (Dopasuj do ćwiczenia)</option>
+                        <option value="polish">Polski</option>
+                        <option value="english">English</option>
+                        <option value="german">Deutsch</option>
+                        <option value="french">Français</option>
+                        <option value="swedish">Svenska</option>
+                        <option value="russian">Русский</option>
+                    </select>
+                </div>
+
+                <span class="sub-label" id="lblThemeTitle">Motyw kolorystyczny:</span>
                 <div class="themes-grid">
                     <button class="theme-card active" data-theme="cheddar-classic">
                         <div class="theme-preview cheddar-classic-preview">
@@ -326,13 +345,58 @@
                         </div>
                         <span class="theme-name">Vintage Paper</span>
                     </button>
+
+                    <button class="theme-card" data-theme="nordic-aurora">
+                        <div class="theme-preview nordic-aurora-preview">
+                            <div class="color-dot dot-1"></div>
+                            <div class="color-dot dot-2"></div>
+                            <div class="color-dot dot-3"></div>
+                        </div>
+                        <span class="theme-name">Nordic Aurora</span>
+                    </button>
+
+                    <button class="theme-card" data-theme="matcha-garden">
+                        <div class="theme-preview matcha-garden-preview">
+                            <div class="color-dot dot-1"></div>
+                            <div class="color-dot dot-2"></div>
+                            <div class="color-dot dot-3"></div>
+                        </div>
+                        <span class="theme-name">Matcha Garden</span>
+                    </button>
+
+                    <button class="theme-card" data-theme="sunset-lavender">
+                        <div class="theme-preview sunset-lavender-preview">
+                            <div class="color-dot dot-1"></div>
+                            <div class="color-dot dot-2"></div>
+                            <div class="color-dot dot-3"></div>
+                        </div>
+                        <span class="theme-name">Sunset Lavender</span>
+                    </button>
+
+                    <button class="theme-card" data-theme="cyber-neon">
+                        <div class="theme-preview cyber-neon-preview">
+                            <div class="color-dot dot-1"></div>
+                            <div class="color-dot dot-2"></div>
+                            <div class="color-dot dot-3"></div>
+                        </div>
+                        <span class="theme-name">Cyber Neon</span>
+                    </button>
+
+                    <button class="theme-card" data-theme="espresso-mocha">
+                        <div class="theme-preview espresso-mocha-preview">
+                            <div class="color-dot dot-1"></div>
+                            <div class="color-dot dot-2"></div>
+                            <div class="color-dot dot-3"></div>
+                        </div>
+                        <span class="theme-name">Espresso Mocha</span>
+                    </button>
                 </div>
 
                 <div class="font-size-section">
-                    <span class="sub-label">Rozmiar tekstu:</span>
+                    <span class="sub-label" id="lblFontSizeTitle">Rozmiar tekstu:</span>
                     <div class="font-size-buttons">
-                        <button class="btn-subtle btn-font-size active" data-fontsize="normal">Standardowy (2rem)</button>
-                        <button class="btn-subtle btn-font-size" data-fontsize="large">Duży (2.4rem)</button>
+                        <button class="btn-subtle btn-font-size active" data-fontsize="normal" id="btnFontNormal">Standardowy (2rem)</button>
+                        <button class="btn-subtle btn-font-size" data-fontsize="large" id="btnFontLarge">Duży (2.4rem)</button>
                     </div>
                 </div>
             </div>
@@ -344,12 +408,12 @@
         <div class="modal-content help-modal-content">
             <span id="closeModal" class="close-modal" title="Zamknij">&times;</span>
             <div class="modal-title-bar">
-                <h3>Jak korzystać z CHEDDAR</h3>
+                <h3 id="helpModalTitle">Jak korzystać z CHEDDAR</h3>
             </div>
-            <ul>
+            <ul id="helpModalList">
                 <li><strong>Wartościowe ciekawostki:</strong> Pisz prawdziwe fakty ze świata zamiast losowych słów.</li>
                 <li><strong>Klawiatura ekranowa:</strong> Podświetla aktualnie wymagany klawisz, a przy obcych alfabetach (np. rosyjskim) pokazuje fizyczny odpowiednik QWERTY.</li>
-                <li><strong>Układy Alice & Ortho:</strong> W ustawieniach możesz dopasować kształt klawiatury do ergonomicznej <em>Alice 98</em> lub wykryć ją automatycznie przez USB (VIA).</li>
+                <li><strong>Układ Alice & Ortho:</strong> W ustawieniach możesz dopasować kształt klawiatury do ergonomicznej <em>Alice</em> lub wykryć ją automatycznie przez USB (VIA).</li>
                 <li><strong>Tryby pisania:</strong> W trybie <em>Endless</em> piszesz ciągle bez przerw, a w <em>Single</em> po każdym zdaniu widzisz wynik.</li>
                 <li><strong>Inteligentny Trener Błędów:</strong> Aplikacja uczy się Twoich błędów i priorytetowo podsuwa zdania z trudnymi dla Ciebie znakami.</li>
                 <li><strong>Skróty klawiszowe:</strong> Naciśnij <kbd>ESC</kbd>, aby zobaczyć podsumowanie sesji. Na ekranie wyników <kbd>Enter</kbd> daje nowe zdanie, a <kbd>Tab</kbd> powtarza obecne.</li>
