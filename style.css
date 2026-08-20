@@ -61,7 +61,7 @@ header h1 {
 #LanguageSelection {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     color: #FFF5E1;
     font-size: 0.95rem;
 }
@@ -100,10 +100,14 @@ header h1 {
     background: rgba(255, 255, 255, 0.2);
 }
 
+.header-icon-btn.active {
+    background: #FFF5E1;
+    color: #8B4513;
+}
+
 .header-icon-btn:active {
     transform: scale(0.95);
 }
-
 
 /* ==========================================================================
    CATEGORY BAR (MULTI-SELECT)
@@ -159,19 +163,19 @@ header h1 {
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 20px 0;
+    padding: 16px 0;
     box-sizing: border-box;
 }
 
 main {
     margin: auto;
-    width: 90%;
-    max-width: 900px;
+    width: 92%;
+    max-width: 980px;
     display: flex;
     background-color: #F39C12;
-    padding: 30px;
+    padding: 24px 26px;
     flex-direction: column;
-    gap: 25px;
+    gap: 16px;
     border-radius: 12px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
@@ -184,9 +188,9 @@ main {
 #TextDisplay {
     position: relative;
     width: 100%;
-    padding: 40px 30px;
+    padding: 30px 26px;
     background-color: #FFF5E1;
-    min-height: 180px;
+    min-height: 150px;
     box-sizing: border-box;
     border-radius: 8px;
     overflow: hidden;
@@ -199,7 +203,7 @@ main {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    font-size: 2rem;
+    font-size: 1.95rem;
     font-weight: 600;
     row-gap: 12px;
     line-height: 1.4;
@@ -209,7 +213,7 @@ main {
 }
 
 body.font-large #TextContent {
-    font-size: 2.4rem;
+    font-size: 2.35rem;
 }
 
 #ProgressBar {
@@ -238,7 +242,7 @@ body.font-large #TextContent {
 #TimeDisplay {
     width: auto;
     align-self: center;
-    padding: 16px 28px;
+    padding: 12px 24px;
     background-color: rgba(0, 0, 0, 0.2);
     color: #FFF5E1;
     display: flex;
@@ -256,7 +260,7 @@ body.font-large #TextContent {
 }
 
 .timer-label {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.7;
@@ -265,7 +269,7 @@ body.font-large #TextContent {
 #timer {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 3rem;
+    font-size: 2.7rem;
     font-weight: bold;
     color: #FFF5E1;
 }
@@ -273,7 +277,7 @@ body.font-large #TextContent {
 .hud-stat-val {
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     font-weight: bold;
     color: #FFF5E1;
 }
@@ -284,8 +288,8 @@ body.font-large #TextContent {
 
 #userInput {
     width: 100%;
-    padding: 20px;
-    font-size: 1.3rem;
+    padding: 16px 18px;
+    font-size: 1.2rem;
     background-color: #FFF5E1;
     color: #8B4513;
     border: none;
@@ -337,6 +341,142 @@ body.font-large #TextContent {
 }
 
 /* ==========================================================================
+   WIRTUALNA KLAWIATURA - DOKŁADNY SZKIELET ALICE 98 & ORTHO & STANDARD
+   ========================================================================== */
+
+.visual-keyboard-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.2s ease;
+}
+
+.visual-keyboard-container.hidden {
+    display: none;
+}
+
+.visual-keyboard {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 20px 18px 16px 18px;
+    background-color: rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 860px;
+    overflow: hidden;
+}
+
+.kb-row {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+}
+
+.kb-key {
+    background-color: #FFF5E1;
+    color: #8B4513;
+    border-radius: 4px;
+    padding: 4px 3px;
+    min-width: 32px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.92rem;
+    font-weight: bold;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s, color 0.1s, transform 0.08s;
+    box-sizing: border-box;
+    position: relative;
+    user-select: none;
+}
+
+.kb-key .kb-main {
+    font-size: 0.9rem;
+    line-height: 1;
+}
+
+.kb-key .kb-hint {
+    font-size: 0.63rem;
+    opacity: 0.6;
+    margin-top: 1px;
+    line-height: 1;
+    font-family: monospace;
+}
+
+/* Klawisze funkcyjne i modyfikatory */
+.kb-key.key-wide { min-width: 46px; font-size: 0.75rem; }
+.kb-key.key-wider { min-width: 56px; font-size: 0.75rem; }
+.kb-key.key-space { flex: 4; max-width: 250px; }
+.kb-key.key-space-left { flex: 2; min-width: 110px; max-width: 155px; }
+.kb-key.key-space-right { flex: 2; min-width: 120px; max-width: 165px; }
+
+.kb-key.key-f { height: 25px; min-width: 28px; font-size: 0.72rem; opacity: 0.95; }
+
+/* Aktywny / podświetlony klawisz docelowy */
+.kb-key.key-target {
+    background-color: #D35400 !important;
+    color: #FFF5E1 !important;
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.kb-key.key-target .kb-hint {
+    color: #FFF5E1 !important;
+    opacity: 0.9;
+}
+
+.kb-key.key-modifier {
+    background-color: #e67e22 !important;
+    color: #FFF5E1 !important;
+    transform: translateY(2px);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+/* ==========================================================================
+   GEOMETRIA ALICE (ERGONOMICZNY SPLIT Z ODSTĘPEM)
+   ========================================================================== */
+
+.alice-board-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 70px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.alice-half {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.alice-left {
+    transform: rotate(8deg);
+    transform-origin: bottom center;
+    margin-bottom: 6px;
+}
+
+.alice-right {
+    transform: rotate(-8deg);
+    transform-origin: bottom center;
+    margin-bottom: 6px;
+}
+
+/* Geometria Ortho / Kolumnowa */
+.visual-keyboard.keyboard-ortho .kb-key {
+    min-width: 36px;
+    height: 36px;
+}
+
+/* ==========================================================================
    HELP BUTTON
    ========================================================================== */
 
@@ -367,7 +507,7 @@ body.font-large #TextContent {
 }
 
 /* ==========================================================================
-   MODALS (NO SCROLLBARS, EXACT RADIUS)
+   MODALS
    ========================================================================== */
 
 .modal-overlay {
@@ -400,7 +540,7 @@ body.font-large #TextContent {
     color: #444;
     transition: background-color 0.3s ease, color 0.3s ease;
     box-sizing: border-box;
-    overflow: visible; /* Brak zbędnych pasków przewijania */
+    overflow: visible;
 }
 
 .help-modal-content {
@@ -555,11 +695,11 @@ kbd {
 }
 
 /* ==========================================================================
-   SETTINGS & RECORDS MODAL
+   SETTINGS & RECORDS & KEYBOARD MODAL
    ========================================================================== */
 
 .settings-modal-content {
-    max-width: 600px;
+    max-width: 620px;
 }
 
 .settings-tabs {
@@ -577,9 +717,9 @@ kbd {
     background: #FFF5E1;
     color: #8B4513;
     border: 1px solid #F39C12;
-    padding: 8px 12px;
+    padding: 8px 10px;
     border-radius: 6px;
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     font-weight: 600;
     cursor: pointer;
     opacity: 0.7;
@@ -701,11 +841,14 @@ kbd {
     background: transparent;
     color: #8B4513;
     border: 1px solid #F39C12;
-    padding: 5px 10px;
+    padding: 6px 12px;
     border-radius: 4px;
-    font-size: 0.82rem;
+    font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
 }
 
 .btn-subtle:hover {
@@ -719,6 +862,141 @@ kbd {
 
 .btn-danger:hover {
     background: rgba(231, 76, 60, 0.15);
+}
+
+/* Tab 2: Keyboard & Geometries */
+.setting-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFF5E1;
+    border: 1px solid #F39C12;
+    padding: 12px 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.setting-row strong {
+    color: #8B4513;
+    font-size: 0.95rem;
+}
+
+.setting-desc {
+    margin: 2px 0 0 0;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.layout-selector-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.layout-card {
+    background: #FFF5E1;
+    border: 1px solid #F39C12;
+    padding: 12px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+    transition: transform 0.15s;
+}
+
+.layout-card:hover {
+    transform: translateY(-2px);
+}
+
+.layout-card.active {
+    border: 2px solid #D35400;
+    box-shadow: 0 0 0 1px #D35400;
+}
+
+.layout-card strong {
+    font-size: 0.85rem;
+    color: #8B4513;
+}
+
+.layout-desc {
+    font-size: 0.72rem;
+    opacity: 0.7;
+    line-height: 1.2;
+}
+
+.layout-icon-preview {
+    width: 60px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    background: rgba(243, 156, 18, 0.2);
+    border-radius: 4px;
+}
+
+.alice-preview .preview-half {
+    width: 20px;
+    height: 20px;
+    background: #D35400;
+    border-radius: 2px;
+}
+
+.alice-preview .left { transform: rotate(12deg); }
+.alice-preview .right { transform: rotate(-12deg); }
+
+.standard-preview .preview-rect {
+    width: 46px;
+    height: 20px;
+    background: #D35400;
+    border-radius: 2px;
+}
+
+.ortho-preview .preview-grid {
+    width: 44px;
+    height: 20px;
+    background: repeating-linear-gradient(90deg, #D35400 0, #D35400 8px, transparent 8px, transparent 11px);
+    border-radius: 2px;
+}
+
+.via-detection-box {
+    background: #FFF5E1;
+    border: 1px solid #F39C12;
+    padding: 14px;
+    border-radius: 8px;
+}
+
+.via-info strong {
+    font-size: 0.95rem;
+    color: #8B4513;
+}
+
+.via-info p {
+    margin: 2px 0 10px 0;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.btn-via {
+    background: #F39C12;
+    color: #FFF5E1;
+    border-color: #F39C12;
+    padding: 8px 14px;
+}
+
+.btn-via:hover {
+    background: #e67e22;
+}
+
+.via-status {
+    margin-top: 8px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #D35400;
 }
 
 /* Themes grid in Settings */
@@ -955,6 +1233,11 @@ body.night-mode .header-icon-btn {
     color: #abd1c6;
 }
 
+body.night-mode .header-icon-btn.active {
+    background-color: #1e2222;
+    color: #abd1c6;
+}
+
 body.night-mode #langSelect option,
 body.night-mode #modeSelect option {
     background-color: #0d1010;
@@ -1007,6 +1290,26 @@ body.night-mode .hud-stat-val {
     color: #abd1c6;
 }
 
+body.night-mode .visual-keyboard {
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+body.night-mode .kb-key {
+    background-color: #1e2222;
+    color: #abd1c6;
+    box-shadow: 0 2px 0 #000;
+}
+
+body.night-mode .kb-key.key-target {
+    background-color: #D35400 !important;
+    color: #FFF5E1 !important;
+}
+
+body.night-mode .kb-key.key-modifier {
+    background-color: #2ecc71 !important;
+    color: #121414 !important;
+}
+
 body.night-mode ::-webkit-scrollbar-track {
     background: #121414;
 }
@@ -1056,6 +1359,9 @@ body.night-mode .modal-overlay {
 body.night-mode .stat-card,
 body.night-mode .record-item,
 body.night-mode .trainer-section,
+body.night-mode .setting-row,
+body.night-mode .layout-card,
+body.night-mode .via-detection-box,
 body.night-mode .theme-card,
 body.night-mode .tab-btn {
     background-color: #161919;
@@ -1071,12 +1377,21 @@ body.night-mode .tab-btn.active {
 
 body.night-mode .sub-label,
 body.night-mode .trainer-title strong,
+body.night-mode .setting-row strong,
+body.night-mode .layout-card strong,
+body.night-mode .via-info strong,
 body.night-mode .theme-name {
     color: #abd1c6;
 }
 
 body.night-mode .btn-subtle {
     border-color: #444;
+    color: #abd1c6;
+}
+
+body.night-mode .btn-via {
+    background-color: #0d1010;
+    border-color: #abd1c6;
     color: #abd1c6;
 }
 

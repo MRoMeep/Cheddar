@@ -27,8 +27,14 @@
                     <option value="single">Single (Pojedynczy)</option>
                 </select>
 
+                <button id="kbToggleBtn" class="header-icon-btn active" title="Włącz/Wyłącz klawiaturę ekranową" aria-label="Klawiatura ekranowa">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="14" x="2" y="5" rx="2"/>
+                        <path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M18 13h.01M10 13h4"/>
+                    </svg>
+                </button>
 
-                <button id="settingsBtn" class="header-icon-btn" title="Ustawienia i Rekordy" aria-label="Ustawienia i Rekordy">
+                <button id="settingsBtn" class="header-icon-btn" title="Ustawienia, Rekordy i Klawiatura" aria-label="Ustawienia i Rekordy">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/>
                         <circle cx="12" cy="12" r="3"/>
@@ -37,7 +43,7 @@
             </div>
         </div>
 
-        <!-- Pasek wielokrotnego wyboru podkategorii -->
+        <!-- Pasek podkategorii -->
         <div class="categories-bar" id="categoriesBar">
             <button class="cat-chip active" data-category="all" title="Wszystkie kategorie">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -73,7 +79,7 @@
                 <div id="TextContent"></div>
             </div>
 
-            <!-- Stylizowane pole z ciemnym, wgłębionym zegarem i statystykami -->
+            <!-- Stylizowane pole ze statystykami i ciemnym zegarem -->
             <div id="TimeDisplay">
                 <div class="stat-unit">
                     <span class="timer-label">WPM:</span>
@@ -90,10 +96,17 @@
             </div>
 
             <input type="text" id="userInput" autocomplete="off" autofocus placeholder="Naciśnij ESC aby zakończyć / zrestartować" spellcheck="false">
+
+            <!-- Wirtualna Klawiatura z podpowiedziami (Standard / Alice 98 / Ortho) -->
+            <div id="visualKeyboardContainer" class="visual-keyboard-container">
+                <div id="visualKeyboard" class="visual-keyboard keyboard-alice">
+                    <!-- Dynamicznie generowane klawisze -->
+                </div>
+            </div>
         </main>
     </div>
 
-    <!-- NOWOCZESNY EKRAN WYNIKÓW (ZAMIAST ALERT) -->
+    <!-- NOWOCZESNY EKRAN WYNIKÓW -->
     <div id="resultsModal" class="modal-overlay">
         <div class="modal-content results-modal-content">
             <span id="closeResultsModal" class="close-modal" title="Zamknij">&times;</span>
@@ -124,7 +137,6 @@
                 </div>
             </div>
 
-            <!-- Informacja z Trenera Błędów w tej rundzie -->
             <div id="roundWeaknessInfo" class="round-weakness-banner">
                 <span id="roundWeaknessText">Trener odnotował trudniejsze momenty.</span>
             </div>
@@ -142,7 +154,7 @@
         </div>
     </div>
 
-    <!-- PANEL USTAWIEŃ, REKORDÓW I MOTYWÓW -->
+    <!-- PANEL USTAWIEŃ, REKORDÓW I KLAWIATURY -->
     <div id="settingsModal" class="modal-overlay">
         <div class="modal-content settings-modal-content">
             <span id="closeSettingsModal" class="close-modal" title="Zamknij">&times;</span>
@@ -154,6 +166,10 @@
                 <button class="tab-btn active" data-tab="tabRecords">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.45.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.45.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
                     <span>Rekordy & Trener</span>
+                </button>
+                <button class="tab-btn" data-tab="tabKeyboard">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M6 13h.01M18 13h.01M10 13h4"/></svg>
+                    <span>Klawiatura & VIA</span>
                 </button>
                 <button class="tab-btn" data-tab="tabThemes">
                     <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.992 6.012 17.48 2 12 2z"/></svg>
@@ -208,7 +224,61 @@
                 </div>
             </div>
 
-            <!-- Tab 2: Motywy i Opcje -->
+            <!-- Tab 2: Klawiatura & VIA -->
+            <div id="tabKeyboard" class="tab-panel">
+                <div class="setting-row">
+                    <div>
+                        <strong>Pokaż wirtualną klawiaturę</strong>
+                        <p class="setting-desc">Wyświetla podpowiedzi klawiszy w czasie rzeczywistym.</p>
+                    </div>
+                    <label class="toggle-switch">
+                        <input type="checkbox" id="kbEnableToggle" checked>
+                        <span class="toggle-slider"></span>
+                    </label>
+                </div>
+
+                <span class="sub-label">Kształt / Układ fizyczny klawiatury:</span>
+                <div class="layout-selector-grid">
+                    <button class="layout-card active" data-geometry="alice">
+                        <div class="layout-icon-preview alice-preview">
+                            <span class="preview-half left"></span>
+                            <span class="preview-half right"></span>
+                        </div>
+                        <strong>Ergonomiczna Alice 98</strong>
+                        <span class="layout-desc">Dzielona, klawisze pod kątem dla dłoni</span>
+                    </button>
+
+                    <button class="layout-card" data-geometry="standard">
+                        <div class="layout-icon-preview standard-preview">
+                            <span class="preview-rect"></span>
+                        </div>
+                        <strong>Standardowa ANSI</strong>
+                        <span class="layout-desc">Klasyczny prosty układ rzędów</span>
+                    </button>
+
+                    <button class="layout-card" data-geometry="ortho">
+                        <div class="layout-icon-preview ortho-preview">
+                            <span class="preview-grid"></span>
+                        </div>
+                        <strong>Kolumnowa (Ortho)</strong>
+                        <span class="layout-desc">Pionowe proste kolumny</span>
+                    </button>
+                </div>
+
+                <div class="via-detection-box">
+                    <div class="via-info">
+                        <strong>Autodetekcja USB (VIA / QMK)</strong>
+                        <p>Podłącz klawiaturę przez USB, a aplikacja automatycznie rozpozna model i dopasuje geometrię.</p>
+                    </div>
+                    <button id="btnDetectVia" class="btn-subtle btn-via">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19 7-7 3 3-7 7-3-3z"/><path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="m2 2 7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+                        <span>Wykryj przez USB</span>
+                    </button>
+                    <div id="viaStatusMsg" class="via-status"></div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Motywy i Opcje -->
             <div id="tabThemes" class="tab-panel">
                 <span class="sub-label">Motyw kolorystyczny:</span>
                 <div class="themes-grid">
@@ -269,7 +339,7 @@
         </div>
     </div>
 
-    <!-- MODAL POMOCY (BEZ PRZEWIJANIA) -->
+    <!-- MODAL POMOCY -->
     <div id="helpModal" class="modal-overlay">
         <div class="modal-content help-modal-content">
             <span id="closeModal" class="close-modal" title="Zamknij">&times;</span>
@@ -278,11 +348,11 @@
             </div>
             <ul>
                 <li><strong>Wartościowe ciekawostki:</strong> Pisz prawdziwe fakty ze świata zamiast losowych słów.</li>
+                <li><strong>Klawiatura ekranowa:</strong> Podświetla aktualnie wymagany klawisz, a przy obcych alfabetach (np. rosyjskim) pokazuje fizyczny odpowiednik QWERTY.</li>
+                <li><strong>Układy Alice & Ortho:</strong> W ustawieniach możesz dopasować kształt klawiatury do ergonomicznej <em>Alice 98</em> lub wykryć ją automatycznie przez USB (VIA).</li>
                 <li><strong>Tryby pisania:</strong> W trybie <em>Endless</em> piszesz ciągle bez przerw, a w <em>Single</em> po każdym zdaniu widzisz wynik.</li>
-                <li><strong>Filtrowanie kategorii:</strong> Wybieraj podkategorie na górnym pasku.</li>
-                <li><strong>Inteligentny Trener Błędów:</strong> Aplikacja uczy się Twoich błędów na trudnych parach liter (np. <em>rz</em>, <em>ch</em>, <em>ą</em>) i priorytetowo podsuwa zdania z tymi kombinacjami.</li>
+                <li><strong>Inteligentny Trener Błędów:</strong> Aplikacja uczy się Twoich błędów i priorytetowo podsuwa zdania z trudnymi dla Ciebie znakami.</li>
                 <li><strong>Skróty klawiszowe:</strong> Naciśnij <kbd>ESC</kbd>, aby zobaczyć podsumowanie sesji. Na ekranie wyników <kbd>Enter</kbd> daje nowe zdanie, a <kbd>Tab</kbd> powtarza obecne.</li>
-                <li><strong>Ustawienia i Motywy:</strong> Zmieniaj motywy i przeglądaj swoje rekordy pod ikoną zębatki.</li>
             </ul>
             <div class="modal-easter-egg">
                 <img src="MRMeepe.png" class="interactive-img" alt="MRMeepe2" title="Kliknij mnie!">
