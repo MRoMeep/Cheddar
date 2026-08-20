@@ -1,479 +1,2663 @@
 {
-  "english": {
-    "easy": [
-      "The sun rises in the east and sets in the west every day.",
-      "Cats like to sleep in warm places and hunt for small mice.",
-      "Drinking water is very important for your health and skin.",
-      "The blue sky looks beautiful when the weather is clear and sunny.",
-      "An apple a day keeps the doctor away is a popular saying.",
-      "Most birds can fly high in the air using their wings.",
-      "I love to read interesting books during my free time.",
-      "The capital city of France is Paris, known for the Eiffel Tower.",
-      "Learning a new language can be a very rewarding experience.",
-      "Summer is the warmest season of the year in this country.",
-      "Milk contains calcium which helps to keep your bones strong.",
-      "Dogs are often called a man's best friend for their loyalty.",
-      "Music has the power to change a person's mood instantly.",
-      "I usually drink coffee with milk and sugar in the morning.",
-      "Trees provide us with oxygen and shade during hot days.",
-      "My favorite hobby is playing football with my friends on weekends.",
-      "The flowers in the garden smell very fresh after the rain.",
-      "Elephants are the largest land animals living on our planet.",
-      "It is important to brush your teeth at least twice a day.",
-      "We should recycle paper and plastic to protect the environment.",
-      "A rainbow appears in the sky when it rains and the sun shines.",
-      "Chocolate is sweet and many people enjoy eating it as a treat.",
-      "I need to buy some bread, eggs, and milk at the grocery store.",
-      "The moon shines brightly at night when there are no clouds.",
-      "Computers are very useful tools for working and studying at home.",
-      "Swimming in the sea is a great way to cool down in summer.",
-      "Birds build nests in trees to lay their eggs and raise babies.",
-      "Taking a walk in the park helps to clear your mind.",
-      "Yellow lemons have a very sour taste but smell very nice.",
-      "The train arrives at the station every thirty minutes.",
-      "Rabbits have long ears and can jump very high and fast.",
-      "I like to wear a warm jacket when it is cold outside.",
-      "Pizza is a famous Italian dish that is loved worldwide.",
-      "Water freezes at zero degrees Celsius.",
-      "The Earth has one natural satellite called the Moon.",
-      "Spiders have eight legs.",
-      "The Pacific Ocean is the largest ocean on Earth.",
-      "A leap year has exactly 366 days.",
-      "Venus is the second planet from the Sun.",
-      "Light travels faster than sound.",
-      "The human body has 206 bones in adulthood.",
-      "Mount Everest is the highest mountain above sea level.",
-      "Sharks are a type of cartilaginous fish.",
-      "Oxygen is a gas that humans need to breathe.",
-      "Ice is the solid form of water.",
-      "The Great Wall of China is a very long historical structure.",
-      "Penguins are birds that cannot fly.",
-      "Leaves use sunlight to make food for plants.",
-      "Dolphins are marine mammals, not fish."
-    ],
-    "hard": [
-      "A quick brown fox jumps over the lazy dog, is a pangram used to test specialized typewriters.",
-      "Synchronizing polymorphic encryption algorithms requires extraordinary rhythmic dexterity and precision.",
-      "The quirky psychiatrist's zephyr-like rhythm overwhelmed the xanthic xylophone's synthesized melody.",
-      "Supercalifragilisticexpialidocious is a word used when you have nothing else to say.",
-      "The fundamental principles of thermodynamics dictate the direction of heat transfer in closed systems.",
-      "Archaeological excavations revealed ancient artifacts from the prehistoric era of the civilization.",
-      "Technological advancements in artificial intelligence are reshaping the global economic landscape.",
-      "Phenomenological observations suggest that perception is heavily influenced by prior expectations.",
-      "The juxtaposition of vibrant colors created a stark contrast against the monochromatic background.",
-      "Interdisciplinary research facilitates the integration of diverse methodologies to solve complex problems.",
-      "The ephemeral nature of the morning mist added a mystical quality to the landscape.",
-      "Quantum entanglement challenges our conventional understanding of locality and causality in physics.",
-      "The labyrinthine corridors of the ancient palace were adorned with intricate gold filigree.",
-      "Linguistic nuances often pose significant challenges during the process of literary translation.",
-      "The socioeconomic implications of rapid urbanization require comprehensive policy interventions.",
-      "A meticulous analysis of the geological strata revealed a history of seismic activity.",
-      "The mitochondria are often referred to as the powerhouses of the biological cell.",
-      "Deoxyribonucleic acid carries the genetic instructions for all known living organisms.",
-      "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
-      "Jupiter is a gas giant composed primarily of hydrogen and helium.",
-      "The Mariana Trench is the deepest known oceanic trench on Earth.",
-      "Tectonic plates are large pieces of the Earth's crust that move continuously.",
-      "Photosynthesis is the process by which green plants transform light energy into chemical energy.",
-      "Avogadro's number defines the number of constituent particles in one mole of a given substance.",
-      "The concept of universal gravitation was mathematically formulated by Sir Isaac Newton.",
-      "Nuclear fusion reactions inside the Sun generate enormous amounts of electromagnetic energy."
-    ]
-  },
   "polish": {
-    "easy": [
-      "W ludzkim ciele jest więcej bakterii niż własnych komórek.",
-      "Ośmiornice mają trzy serca i niebieską krew.",
-      "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 m.",
-      "Najdłuższą rzeką świata jest Nil o długości ponad 6600 km.",
-      "Kawa jest najpopularniejszym napojem na całym świecie.",
-      "Słońce jest gwiazdą znajdującą się w centrum Układu Słonecznego.",
-      "Koty spędzają większość swojego życia na spaniu.",
-      "Woda wrze w temperaturze stu stopni Celsjusza.",
-      "Polska leży w Europie Środkowej nad Morzem Bałtyckim.",
-      "Liście drzew zmieniają kolor i spadają podczas jesieni.",
-      "Miód jest jedynym produktem spożywczym, który się nie psuje.",
-      "Banany rosną na ogromnych roślinach, które nie są drzewami.",
-      "Zimą dni są krótsze, a noce stają się znacznie dłuższe.",
-      "Herbata z cytryną smakuje najlepiej w mroźne, zimowe wieczory.",
-      "Moja ulubiona zupa to tradycyjny polski rosół z makaronem.",
-      "W lesie można znaleźć wiele jagód oraz jadalnych grzybów.",
-      "Każdego ranka jem pożywne śniadanie, aby mieć dużo energii.",
-      "Dzieci lubią bawić się na placu zabaw obok naszego domu.",
-      "Telefony komórkowe pozwalają nam na szybki kontakt z rodziną.",
-      "Rower to ekologiczny środek transportu, który poprawia kondycję.",
-      "W bibliotece można wypożyczyć wiele ciekawych i mądrych książek.",
-      "Cukier jest słodki, ale nie powinno się go jeść zbyt dużo.",
-      "Ryby oddychają pod wodą za pomocą specjalnych narządów - skrzeli.",
-      "Mój pies bardzo cieszy się, gdy wracam ze szkoły do domu.",
-      "Lustro odbija światło i pozwala nam zobaczyć nasze odbicie.",
-      "Pociągiem można podróżować szybko między dużymi miastami.",
-      "Sól poprawia smak potraw, ale należy jej używać z umiarem.",
-      "Owoce i warzywa mają bardzo dużo witamin potrzebnych do życia.",
-      "Księżyc krąży wokół Ziemi i zmienia swoje fazy co miesiąc.",
-      "W nocy na niebie widać tysiące świecących, dalekich gwiazd.",
-      "Chleb kupujemy codziennie rano w małej, lokalnej piekarni.",
-      "Pszczoły produkują miód i zapylają kwiaty w całym ogrodzie.",
-      "Jazda na nartach to popularny sport uprawiany w wysokich górach.",
-      "Woda zamarza w temperaturze zera stopni Celsjusza.",
-      "Ziemia ma jednego naturalnego satelitę nazywanego Księżycem.",
-      "Pająki posiadają osiem odnóży.",
-      "Ocean Spokojny jest największym oceanem na Ziemi.",
-      "Rok przestępny składa się z trzystu sześćdziesięciu sześciu dni.",
-      "Wenus jest drugą planetą od Słońca w Układzie Słonecznym.",
-      "Światło porusza się znacznie szybciej niż dźwięk.",
-      "Dorosły człowiek ma w swoim ciele 206 kości.",
-      "Rekiny to ryby chrzęstnoszkieletowe żyjące w oceanach.",
-      "Tlen jest gazem niezbędnym ludziom do oddychania.",
-      "Lód jest stałym stanem skupienia wody.",
-      "Wielki Mur Chiński to bardzo długa budowla obronna.",
-      "Pingwiny to ptaki, które nie potrafią latać.",
-      "Liście wykorzystują światło słoneczne do produkcji pokarmu.",
-      "Delfiny są ssakami morskimi, a nie rybami."
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Natura i Zwierzęta"
+      },
+      {
+        "id": "science",
+        "name": "Nauka i Kosmos"
+      },
+      {
+        "id": "human",
+        "name": "Ciało i Zdrowie"
+      },
+      {
+        "id": "history",
+        "name": "Historia i Świat"
+      },
+      {
+        "id": "language",
+        "name": "Język i Trudne Słowa"
+      }
     ],
-    "hard": [
-      "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
-      "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
-      "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych.",
-      "Konstantynopolitańczykowianeczka to jedno z najdłuższych słów w języku polskim.",
-      "Subiektywne poczucie estetyki często koliduje z obiektywnymi paradygmatami współczesnej architektury.",
-      "Zaleca się systematyczną synchronizację baz danych w celu uniknięcia redundantnych rekordów i niespójności.",
-      "W Szczebrzeszynie chrząszcz brzmi w trzcinie i Szczebrzeszyn z tego słynie.",
-      "Transcendentalna medytacja pozwala na osiągnięcie homeostazy między umysłem a ciałem użytkownika.",
-      "Eksperymentalna fizyka kwantowa bada zjawiska superpozycji oraz splątania cząsteczek elementarnych.",
-      "Skomplikowane algorytmy kryptograficzne zabezpieczają transfery danych przed nieautoryzowanym dostępem.",
-      "Dyferencjacja morfologiczna poszczególnych gatunków świadczy o ich adaptacji ewolucyjnej.",
-      "Interdyscyplinarne podejście do nauki sprzyja innowacyjnym odkryciom technologicznym.",
-      "Egzaltowany artysta wygłosił kontrowersyjną tyradę na temat kondycji współczesnej kultury.",
-      "Zjawisko rezonansu magnetycznego jest kluczowe dla nowoczesnej diagnostyki medycznej.",
-      "Paradygmat kognitywistyczny zakłada, że procesy myślowe można modelować obliczeniowo.",
-      "Wielowymiarowa analiza statystyczna wykazała istotną korelację między zmiennymi niezależnymi.",
-      "Mitochondria są często nazywane centrami energetycznymi komórki.",
-      "Kwas deoksyrybonukleinowy zawiera instrukcje genetyczne organizmów żywych.",
-      "Prędkość światła w próżni wynosi dokładnie 299 792 458 metrów na sekundę.",
-      "Jowisz jest gazowym gigantem zbudowanym głównie z wodoru i helu.",
-      "Płyty tektoniczne to ogromne fragmenty litosfery, które nieustannie się przemieszczają.",
-      "Fotosynteza to proces biochemiczny przekształcający energię świetlną w chemiczną.",
-      "Liczba Avogadra określa liczbę cząsteczek w jednym molu danej substancji.",
-      "Prawo powszechnego ciążenia zostało sformułowane matematycznie przez Izaaka Newtona.",
-      "Atmosfera ziemska składa się w około siedemdziesięciu ośmiu procentach z azotu.",
-      "Reakcje termojądrowe wewnątrz Słońca generują ogromne ilości energii."
+    "facts": [
+      {
+        "text": "Ośmiornice mają trzy serca i niebieską krew.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Koty spędzają około siedemdziesiąt procent swojego życia na spaniu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Miód jest jedynym produktem spożywczym na Ziemi, który nigdy się nie psuje.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Banany rosną na ogromnych bylinach, które wbrew pozorom nie są drzewami.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "W lesie można znaleźć wiele jagód, poziomek oraz jadalnych grzybów.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Ryby oddychają pod wodą za pomocą specjalnych narządów zwanych skrzelami.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Pszczoły muszą odwiedzić około dwa miliony kwiatów, aby wyprodukować jeden słoik miodu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Pająki posiadają osiem odnóży i potrafią wytwarzać niezwykle mocną pajęczynę.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Rekiny to ryby chrzęstnoszkieletowe, które nie posiadają ani jednej kości.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Pingwiny to ptaki morskie, które doskonale pływają, ale nie potrafią latać.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Liście drzew wykorzystują światło słoneczne do produkcji tlenu i pokarmu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Delfiny są bardzo inteligentnymi ssakami morskimi, które śpią z jednym okiem otwartym.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Elefanty potrafią wyczuć wodę pod ziemią z odległości nawet kilkunastu kilometrów.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Krowy mają swoich najlepszych przyjaciół w stadzie i stresują się przy rozłące.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Wiewiórki sadzą tysiące drzew rocznie, zapominając, gdzie ukryły swoje żołędzie.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Flamingi rodzą się szare, a ich różowy kolor pochodzi ze zjadanego pokarmu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Żyrafy mają dokładnie tyle samo kręgów szyjnych co ludzie, czyli siedem.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Wieloryb błękitny ma serce wielkości małego samochodu osobowego.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Motyle czują i smakują pokarm za pomocą swoich nóżek.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Ślimaki potrafią spać nieprzerwanie nawet przez trzy lata z rzędu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Koale śpią nawet do dwudziestu dwóch godzin na dobę, jedząc liście eukaliptusa.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Kameleony potrafią poruszać każdym okiem niezależnie w zupełnie innym kierunku.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Mrówki potrafią unieść ciężar nawet pięćdziesiąt razy większy od własnego ciała.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Bambus jest najszybciej rosnącą rośliną na świecie, rosnąc prawie metr w dobę.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Wydry morskie trzymają się za łapki podczas snu, aby prąd wody ich nie rozdzielił.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Żaby nie muszą pić wody ustami, ponieważ wchłaniają ją bezpośrednio przez skórę.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Ptaki kolibry są jedynymi ptakami na świecie potrafiącymi latać do tyłu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Leniwce trawią pojedynczy liść nawet przez cały miesiąc ze względu na wolny metabolizm.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Słońce jest gwiazdą znajdującą się w centrum naszego Układu Słonecznego.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Woda wrze w temperaturze stu stopni Celsjusza na poziomie morza.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Woda zamarza w temperaturze zera stopni Celsjusza, tworząc lód.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ziemia ma jednego naturalnego satelitę nazywanego Księżycem.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ocean Spokojny jest największym i najgłębszym oceanem na naszej planecie.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Rok przestępny składa się z trzystu sześćdziesięciu sześciu dni.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Wenus jest drugą planetą od Słońca i najgorętszą planetą Układu Słonecznego.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Światło porusza się w przestrzeni znacznie szybciej niż dźwięk.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Księżyc nie świeci własnym światłem, lecz odbija promienie słoneczne.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Tęcza powstaje, gdy światło słoneczne załamuje się w kroplach deszczu.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Dzień na planecie Wenus trwa dłużej niż cały jej rok wokół Słońca.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Mars jest nazywany Czerwoną Planetą z powodu dużej ilości tlenku żelaza na powierzchni.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Diament jest najtwardszym naturalnie występującym minerałem na Ziemi.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Dźwięk nie może rozchodzić się w próżni kosmicznej, ponieważ nie ma tam cząsteczek.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Pierwszym sztucznym satelitą wystrzelonym w kosmos był radziecki Sputnik 1.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Około siedemdziesiąt jeden procent powierzchni Ziemi pokrywają morza i oceany.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Światło ze Słońca potrzebuje około ośmiu minut, aby dotrzeć do Ziemi.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Piorun może osiągnąć temperaturę pięciokrotnie wyższą niż powierzchnia Słońca.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Zorza polarna powstaje w wyniku zderzenia wiatru słonecznego z ziemską atmosferą.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Saturn ma tak małą gęstość, że unosiłby się na powierzchni gigantycznego oceanu.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ciepłe powietrze jest lżejsze od zimnego, dlatego zawsze unosi się ku górze.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "W ludzkim ciele jest więcej bakterii niż naszych własnych komórek.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kawa jest jednym z najpopularniejszych i najchętniej pitych napojów na świecie.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Dorosły człowiek ma w swoim ciele dokładnie dwieście sześć kości.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Tlen jest bezwonnym gazem niezbędnym człowiekowi do oddychania i życia.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Serce człowieka bije średnio około sto tysięcy razy każdego dnia.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Ludzki mózg zużywa około dwadzieścia procent całej energii organizmu.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Skóra jest największym narządem w całym ciele dorosłego człowieka.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Odciski palców każdego człowieka na świecie są całkowicie unikalne i niepowtarzalne.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kiedy się uśmiechasz, Twoje ciało uwalnia endorfiny poprawiające samopoczucie.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Picie odpowiedniej ilości wody pomaga utrzymać koncentrację i zdrową skórę.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Ludzkie oko potrafi rozróżnić około dziesięć milionów różnych kolorów.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Podczas snu mózg porządkuje wspomnienia i utrwala nowo zdobytą wiedzę.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Czekolada zawiera substancje pobudzające mózg do produkcji serotoniny.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kości człowieka w przeliczeniu na wagę są mocniejsze niż czysta stal.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kubki smakowe na języku człowieka wymieniają się całkowicie co około dwa tygodnie.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Paznokcie u rąk rosną prawie cztery razy szybciej niż paznokcie u stóp.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Śmiech obniża poziom hormonów stresu i wzmacnia układ odpornościowy.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Głęboki oddech pozwala szybko uspokoić tętno i obniżyć napięcie nerwowe.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Najwyższa góra na Ziemi to Mount Everest o wysokości około 8849 metrów.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Najdłuższą rzeką na świecie jest afrykański Nil o długości ponad 6600 kilometrów.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Polska leży w Europie Środkowej nad Morzem Bałtyckim ze stolicą w Warszawie.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Wielki Mur Chiński to monumentalna budowla wznoszona przez stulecia.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Piramidy w Gizie zostały zbudowane ponad cztery tysiące lat temu w Egipcie.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Wieża Eiffla w Paryżu została wzniesiona z okazji wystawy światowej w 1889 roku.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pierwsze igrzyska olimpijskie odbyły się w starożytnej Grecji w Olimpii.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Kraków był historyczną stolicą Polski przed przeniesieniem jej do Warszawy.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pismo klinowe wynalezione przez Sumerów było jednym z najwcześniejszych systemów pisma.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Rzym jest nazywany Wiecznym Miastem ze względu na swoją tysiącletnią historię.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Wynalezienie druku przez Jana Gutenberga zrewolucjonizowało dostęp do wiedzy.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Koloseum w Rzymie mogło pomieścić nawet ponad pięćdziesiąt tysięcy widzów.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Kanał Panamski łączy Ocean Atlantycki z Oceanem Spokojnym, ułatwiając żeglugę.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pierwszy lot samolotem z silnikiem wykonali bracia Wright w 1903 roku.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "W bibliotece można wypożyczyć wiele mądrych, pouczających i wspaniałych książek.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Pangram to zdanie zawierające wszystkie litery danego alfabetu.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Czytanie książek wzbogaca słownictwo i rozwija wyobraźnię czytelnika.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Język polski posiada dziewięć wyjątkowych liter ze znakami diakrytycznymi.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Słowo alfabet pochodzi od dwóch pierwszych liter greckich alfa oraz beta.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Pisanie bezwzrokowe polega na pisaniu na klawiaturze bez patrzenia na klawisze.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Trzymaj ręce swobodnie na klawiaturze, aby pisać szybko, płynnie i bezbłędnie.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Szybkie pisanie na klawiaturze wymaga regularnego treningu pamięci mięśniowej.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Najgłębszym miejscem w oceanach jest Rów Mariański, który ma około 11 km głębokości.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Planeta Wenus obraca się w przeciwnym kierunku niż większość planet w Układzie Słonecznym.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Największym organizmem na Ziemi jest grzyb Armillaria ostoyae w Oregon, który zajmuje kilka kilometrów kwadratowych.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Konstantynopolitańczykowianeczka to jedno z najdłuższych słów w języku polskim.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Subiektywne poczucie estetyki często koliduje z obiektywnymi paradygmatami współczesnej architektury.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Zaleca się systematyczną synchronizację baz danych w celu uniknięcia redundantnych rekordów i niespójności.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "W Szczebrzeszynie chrząszcz brzmi w trzcinie i Szczebrzeszyn z tego słynie.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Transcendentalna medytacja pozwala na osiągnięcie homeostazy między umysłem a ciałem użytkownika.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Eksperymentalna fizyka kwantowa bada zjawiska superpozycji oraz splątania cząsteczek elementarnych.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Skomplikowane algorytmy kryptograficzne zabezpieczają transfery danych przed nieautoryzowanym dostępem.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Dyferencjacja morfologiczna poszczególnych gatunków świadczy o ich adaptacji ewolucyjnej.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Interdyscyplinarne podejście do nauki sprzyja innowacyjnym odkryciom technologicznym.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Egzaltowany artysta wygłosił kontrowersyjną tyradę na temat kondycji współczesnej kultury.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Zjawisko rezonansu magnetycznego jest kluczowe dla nowoczesnej diagnostyki medycznej.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Paradygmat kognitywistyczny zakłada, że procesy myślowe można modelować obliczeniowo.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Wielowymiarowa analiza statystyczna wykazała istotną korelację między zmiennymi niezależnymi.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Mitochondria są często nazywane centrami energetycznymi komórki.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Kwas deoksyrybonukleinowy zawiera instrukcje genetyczne organizmów żywych.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Prędkość światła w próżni wynosi dokładnie 299 792 458 metrów na sekundę.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Jowisz jest gazowym gigantem zbudowanym głównie z wodoru i helu.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Płyty tektoniczne to ogromne fragmenty litosfery, które nieustannie się przemieszczają.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Fotosynteza to proces biochemiczny przekształcający energię świetlną w chemiczną.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Liczba Avogadra określa liczbę cząsteczek w jednym molu danej substancji.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Prawo powszechnego ciążenia zostało sformułowane matematycznie przez Izaaka Newtona.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Atmosfera ziemska składa się w około siedemdziesięciu ośmiu procentach z azotu.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Reakcje termojądrowe wewnątrz Słońca generują ogromne ilości energii.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Truskawki są jedynymi owocami na świecie, których nasiona znajdują się na zewnątrz.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Biedronki potrafią zjadać nawet do pięciu tysięcy mszyc w ciągu swojego życia.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Krokodyle potrafią żyć ponad sto lat i rzadko chorują dzięki silnemu układowi odpornościowemu.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Wilki porozumiewają się ze sobą poprzez wycie słyszalne z odległości wielu kilometrów.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Kury potrafią zapamiętać i rozpoznać ponad sto różnych twarzy ludzi i zwierząt.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Sowy potrafią obrócić swoją głowę aż o dwieście siedemdziesiąt stopni bez ruchu ciała.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Woda stanowi około sześćdziesiąt procent masy ciała dorosłego człowieka.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Ludzkie serce pompuje około siedem tysięcy litrów krwi każdego dnia.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Język jest jednym z najsilniejszych i najbardziej elastycznych mięśni w ludzkim ciele.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Każdy człowiek spędza średnio około jednej trzeciej swojego życia na spaniu.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kiedy kichasz, powietrze wylatuje z Twoich dróg oddechowych z dużą prędkością.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Słuchanie relaksującej muzyki pomaga obniżyć poziom ciśnienia tętniczego krwi.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Ciepła herbata z miodem i cytryną to doskonały sposób na rozgrzanie w chłodne dni.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Grawitacja na Księżycu jest około sześć razy słabsza niż na powierzchni Ziemi.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Jowisz jest największą planetą w Układzie Słonecznym i posiada dziesiątki księżyców.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Płyty tektoniczne przesuwają się rocznie o mniej więcej tyle, ile rosną ludzkie paznokcie.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Śnieżynki zawsze mają sześciokątną symetrię z powodu struktury cząsteczek wody.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Laser to skupiona wiązka światła o jednej, precyzyjnie określonej barwie.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Morska woda jest słona z powodu rozpuszczonych w niej minerałów i soli.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ziemia krąży wokół Słońca z prędkością około trzydziestu kilometrów na sekundę.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Zamek Królewski na Wawelu w Krakowie był przez stulecia siedzibą królów Polski.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pierwsze koło zostało wynalezione ponad pięć tysięcy lat temu w Mezopotamii.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Starożytni Rzymianie budowali wspaniałe akwedukty doprowadzające czystą wodę do miast.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Mikołaj Kopernik udowodnił, że to Ziemia i inne planety krążą wokół Słońca.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Warszawa jest największym miastem w Polsce i jej stolicą od końca szesnastego wieku.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Trening pisania bezwzrokowego pozwala znacząco oszczędzać czas przy pracy na komputerze.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Prawidłowa postawa przy biurku chroni Twój kręgosłup i ułatwia szybkie pisanie.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Płynne pisanie bez patrzenia na klawiaturę angażuje pamięć motoryczną obu dłoni.",
+        "level": "easy",
+        "category": "language"
+      }
     ]
   },
-  "russian": {
-    "easy": [
-      "Солнце встает на востоке и заходит на западе каждый день.",
-      "Кошки любят спать в теплых местах и охотиться на мышей.",
-      "Пить чистую воду очень важно для здоровья и кожи.",
-      "Синее небо выглядит красиво, когда погода ясная и солнечная.",
-      "Книга - лучший подарок для человека любого возраста.",
-      "Летом в лесу растет много грибов и сладких ягод.",
-      "Ученики ходят в школу, чтобы получать новые знания.",
-      "Завтрак - самый важный прием пищи в течение всего дня.",
-      "Зимой дети любят кататься на санках и лепить снеговиков.",
-      "Машина быстро едет по широкой асфальтированной дороге.",
-      "У меня есть маленькая собака, которая очень любит играть.",
-      "Весной на деревьях появляются первые зеленые листья.",
-      "Моя мама готовит очень вкусный обед для всей семьи.",
-      "Птицы поют красивые песни рано утром в нашем саду.",
-      "Я люблю смотреть интересные фильмы по вечерам в выходные.",
-      "На столе стоит ваза с красивыми красными цветами.",
-      "Мы часто ходим гулять в парк рядом с нашим домом.",
-      "Вчера была очень хорошая погода и мы долго гуляли.",
-      "Мой дедушка любит читать газеты и пить горячий чай.",
-      "Я учусь играть на гитаре и уже знаю несколько песен.",
-      "В зоопарке мы видели большого льва и длинного жирафа.",
-      "Осенью часто идет дождь и на улице становится холодно.",
-      "Хлеб и молоко можно купить в магазине за углом.",
-      "У меня есть много друзей, с которыми я играю в футбол.",
-      "Мед очень сладкий и полезный для иммунитета человека.",
-      "Рыбы живут в воде и умеют очень хорошо плавать.",
-      "Каждый вечер я чищу зубы перед тем, как лечь спать.",
-      "На небе ночью можно увидеть луну и много звезд.",
-      "Я хочу поехать в отпуск на теплое море этим летом.",
-      "Мой папа работает врачом в большой городской больнице.",
-      "Сахар делает чай сладким, а лимон делает его кислым.",
-      "Сегодня я встал очень рано, чтобы сделать зарядку.",
-      "Вода замерзает при нуле градусов по Цельсию.",
-      "Земля имеет один естественный спутник, который называется Луна.",
-      "У пауков восемь ног.",
-      "Тихий океан - самый большой океан на Земле.",
-      "В високосном году ровно 366 дней.",
-      "Венера - вторая планета от Солнца.",
-      "Свет распространяется быстрее, чем звук.",
-      "Скелет взрослого человека состоит из 206 костей.",
-      "Акулы - это вид хрящевых рыб.",
-      "Кислород - это газ, необходимый людям для дыхания.",
-      "Лед - это твердое состояние воды.",
-      "Великая Китайская стена - это очень длинное оборонительное сооружение.",
-      "Пингвины - это птицы, которые не умеют летать.",
-      "Листья используют солнечный свет для производства питания растений.",
-      "Дельфины - это морские млекопитающие, а не рыбы."
+  "english": {
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Nature & Animals"
+      },
+      {
+        "id": "science",
+        "name": "Science & Space"
+      },
+      {
+        "id": "human",
+        "name": "Body & Health"
+      },
+      {
+        "id": "history",
+        "name": "History & World"
+      },
+      {
+        "id": "language",
+        "name": "Linguistics & Dexterity"
+      }
     ],
-    "hard": [
-      "Синхронизация полиморфных алгоритмов шифрования требует исключительной ловкости и точности ритма.",
-      "На побережье океана были обнаружены древние артефакты доисторической эпохи цивилизации.",
-      "Технологический прогресс в области искусственного интеллекта меняет мировой экономический ландшафт.",
-      "В четверг четвертого числа в четыре с четвертью часа лигурийский регулировщик регулировал в Лигурии.",
-      "Трансцендентальная концепция бытия исследуется в рамках современной метафизической философии.",
-      "Систематическое изучение квантовой механики открывает новые горизонты в микроэлектронике.",
-      "Дифференциальные уравнения высших порядков применяются для моделирования динамических систем.",
-      "Архитектурный ансамбль исторического центра города поражает своей монументальностью и изяществом.",
-      "Междисциплинарный подход позволяет интегрировать различные методологии для решения сложных задач.",
-      "Энтузиазм исследователей способствовал открытию уникальных биологических видов в амазонских джунглях.",
-      "Когнитивный диссонанс возникает при столкновении противоречивых убеждений в сознании индивида.",
-      "Антропогенное воздействие на экосистемы приводит к необратимым изменениям климата.",
-      "Феноменологический анализ позволяет глубже понять структуру человеческого опыта.",
-      "Инфраструктурные проекты требуют значительных капиталовложений и долгосрочного планирования.",
-      "Эстетическая ценность произведения искусства субъективна и зависит от культурного контекста.",
-      "Генетическая модификация организмов вызывает бурные дискуссии в научном сообществе.",
-      "Митохондрии часто называют энергетическими станциями биологической клетки.",
-      "Дезоксирибонуклеиновая кислота содержит генетические инструкции всех живых организмов.",
-      "Скорость света в вакууме составляет ровно 299 792 458 метров в секунду.",
-      "Юпитер является газовым гигантом, состоящим в основном из водорода и гелия.",
-      "Марианская впадина является самым глубоким известным океаническим желобом на Земле.",
-      "Тектонические плиты - это крупные участки литосферы, которые постоянно движутся.",
-      "Фотосинтез - это процесс, с помощью которого зеленые растения преобразуют световую энергию в химическую.",
-      "Число Авогадро определяет количество частиц в одном моле данного вещества.",
-      "Закон всемирного тяготения был математически сформулирован Исааком Ньютоном.",
-      "Термоядерные реакции внутри Солнца генерируют колоссальное количество энергии."
-    ]
-  },
-  "swedish": {
-    "easy": [
-      "Solen går upp i öster och ner i väster varje dag.",
-      "Katter gillar att sova på varma platser och jaga små möss.",
-      "Att dricka vatten är mycket viktigt för din hälsa och hud.",
-      "Den blå himlen ser vacker ut när vädret är klart och soligt.",
-      "En bok är den bästa presenten för människor i alla åldrar.",
-      "På sommaren växer det många svampar och söta bär i skogen.",
-      "Elever går i skolan för att få nya kunskaper.",
-      "Frukost är den viktigaste måltiden under hela dagen.",
-      "På vintern älskar barn att åka pulka och bygga snögubbar.",
-      "Bilen kör snabbt på den breda asfalterade vägen.",
-      "Jag har en liten hund som älskar att leka.",
-      "På våren kommer de första gröna bladen på träden.",
-      "Jag tycker om att dricka kaffe med en liten kaka.",
-      "Min familj bor i ett rött hus med vita knutar.",
-      "Fåglar kvittrar glatt i skogen tidigt på morgonen.",
-      "Det är viktigt att äta frukt och grönsaker varje dag.",
-      "Vi ska gå på bio och se en spännande film ikväll.",
-      "Mamma lagar god mat i köket till hela familjen.",
-      "Pappa läser tidningen och dricker en kopp varmt te.",
-      "Det regnar ute så vi måste ta på oss regnkläder.",
-      "Jag gillar att simma i sjön när det är varmt ute.",
-      "Hästar är stora djur som kan springa mycket fort.",
-      "I skolan lär vi oss att läsa, skriva och räkna.",
-      "Mjölk är gott och gör att dina ben blir starka.",
-      "Blommorna i trädgården doftar underbart efter regnet.",
-      "Jag behöver köpa bröd och smör i affären idag.",
-      "Barnen leker med en boll på den stora gröna ängen.",
-      "Månen lyser klart på natten när himlen är mörk.",
-      "Vi åker tåg till Stockholm för att hälsa på vänner.",
-      "Glass smakar bäst när solen skiner och det är sommar.",
-      "Kaniner har långa öron och gillar att äta färska morötter.",
-      "Jag ska sova nu för jag är mycket trött efter dagen.",
-      "Vatten fryser vid noll grader Celsius.",
-      "Jorden har en naturlig satellit som kallas månen.",
-      "Spindlar har åtta ben.",
-      "Stilla havet är den största oceanen på jorden.",
-      "Ett skottår har exakt 366 dagar.",
-      "Venus är den andra planeten från solen.",
-      "Ljus färdas mycket snabbare än ljud.",
-      "Den vuxna människokroppen har 206 ben.",
-      "Hajar är en typ av broskfiskar.",
-      "Syre är en gas som människor behöver för att andas.",
-      "Is är den fasta formen av vatten.",
-      "Kinesiska muren är en mycket lång historisk byggnad.",
-      "Pingviner är fåglar som inte kan flyga.",
-      "Blad använder solljus för att producera mat åt växter.",
-      "Delfiner är marina däggdjur, inte fiskar."
-    ],
-    "hard": [
-      "Synkronisering av polymorfa krypteringsalgoritmer kräver exceptionell rytmisk smidighet och precision.",
-      "Arkeologiska utgrävningar avslöjade antika artefakter från civilisationens förhistoriska era.",
-      "Teknologiska framsteg inom artificiell intelligens omformar den globala ekonomiska landskapen.",
-      "Transcendental konceptualisering av varande utforskas inom ramen för modern metafysisk filosofi.",
-      "Interdisciplinär forskning underlättar integrationen av olika metodologier för komplexa problem.",
-      "Den socioekonomiska analysen påvisade betydande skillnader i befolkningens levnadsstandard.",
-      "Kvantfysikaliska fenomen utmanar vår fundamentala förståelse av universums struktur.",
-      "Litterär gestaltning kräver en djupgående insikt i språkets nyanser och metaforik.",
-      "Implementeringen av hållbara energilösningar är avgörande för framtida generationer.",
-      "Den arkitektoniska estetiken harmonierar med den omgivande urbana miljön.",
-      "Mitochondrierna kallas ofta för den biologiska cellens kraftverk.",
-      "Deoxiribonukleinsyra bär på de genetiska instruktionerna för alla kända levande organismer.",
-      "Ljusets hastighet i vakuum är exakt 299 792 458 meter per sekund.",
-      "Jupiter är en gasjätte som huvudsakligen består av väte och helium.",
-      "Marianergraven är den djupaste kända oceaniska graven på jorden.",
-      "Tektoniska plattor är stora delar av jordskorpan som rör sig kontinuerligt.",
-      "Fotosyntes är processen där gröna växter omvandlar ljusenergi till kemisk energi.",
-      "Avogadros tal definierar antalet beståndsdelar i en mol av ett givet ämne.",
-      "Begreppet universell gravitation formulerades matematiskt av Sir Isaac Newton.",
-      "Kärnfusionsreaktioner inuti solen genererar enorma mängder elektromagnetisk energi.",
-      "Jordens atmosfär består till cirka sjuttioåtta procent av kväve.",
-      "Kognitiv dissonans uppstår vid mötet mellan motstridiga övertygelser i individens medvetande.",
-      "Fenomenologisk analys möjliggör en djupare förståelse av den mänskliga erfarenhetens struktur.",
-      "Genetisk modifiering av organismer väcker intensiva diskussioner inom forskarsamhället.",
-      "Infrastrukturprojekt kräver betydande kapitalinvesteringar och långsiktig planering.",
-      "Mångdimensionell statistisk analys visade en signifikant korrelation mellan de oberoende variablerna."
-    ]
-  },
-  "french": {
-    "easy": [
-      "Le soleil se lève à l'est et se couche à l'ouest chaque jour.",
-      "L'eau gèle à zéro degré Celsius.",
-      "Les chats aiment dormir dans des endroits chauds.",
-      "Le ciel bleu est magnifique quand la météo est claire.",
-      "La Terre tourne autour du Soleil.",
-      "Les oiseaux construisent des nids pour pondre leurs œufs.",
-      "La capitale de la France est Paris.",
-      "L'océan Pacifique est le plus grand océan de la Terre.",
-      "Les arbres perdent leurs feuilles en automne.",
-      "Le lait est une bonne source de calcium.",
-      "Les chiens ont un excellent odorat.",
-      "La lune brille pendant la nuit.",
-      "Les poissons respirent sous l'eau avec des branchies.",
-      "Le cœur pompe le sang dans tout le corps.",
-      "Les araignées ont exactement huit pattes.",
-      "L'Everest est la plus haute montagne du monde.",
-      "Les pingouins sont des oiseaux qui ne volent pas.",
-      "Un an normal compte trois cent soixante-cinq jours.",
-      "Les pommes poussent sur les pommiers.",
-      "Le sang humain est de couleur rouge.",
-      "L'oxygène est un gaz nécessaire pour respirer.",
-      "Les dauphins sont des mammifères marins.",
-      "Le désert du Sahara est très chaud et sec.",
-      "La glace est l'état solide de l'eau.",
-      "Le feu produit beaucoup de chaleur et de lumière.",
-      "Une semaine complète est composée de sept jours.",
-      "Les vaches produisent du lait.",
-      "Le sucre a un goût très sucré.",
-      "Les tomates sont botaniquement considérées comme des fruits.",
-      "Le miel est produit par les abeilles.",
-      "La Terre possède un seul satellite naturel appelé la Lune.",
-      "Vénus est la deuxième planète en partant du Soleil.",
-      "La lumière voyage plus vite que le son.",
-      "Le corps humain adulte possède 206 os.",
-      "Les requins sont des poissons cartilagineux.",
-      "La Grande Muraille de Chine est une structure très longue.",
-      "Le chocolat est fabriqué à partir de fèves de cacao.",
-      "Les éléphants sont les plus grands animaux terrestres.",
-      "Les lapins ont de longues oreilles et sautent très haut.",
-      "Le train arrive à la gare à l'heure prévue.",
-      "Le sel améliore le goût des aliments.",
-      "La pluie tombe des nuages dans le ciel.",
-      "L'été est la saison la plus chaude de l'année.",
-      "L'hiver apporte souvent de la neige et du froid.",
-      "Les fleurs du jardin sentent très bon.",
-      "Le bois est utilisé pour fabriquer des meubles.",
-      "Le plastique doit être recyclé pour protéger la nature."
-    ],
-    "hard": [
-      "La photosynthèse permet aux plantes de convertir l'énergie lumineuse en énergie chimique.",
-      "La théorie de la relativité générale a été formulée par le physicien Albert Einstein.",
-      "L'acide désoxyribonucléique contient les instructions génétiques des organismes vivants.",
-      "La vitesse de la lumière dans le vide est d'environ 299 792 kilomètres par seconde.",
-      "Les plaques tectoniques se déplacent très lentement à la surface de la Terre.",
-      "Le système solaire s'est formé il y a environ 4,6 milliards d'années.",
-      "L'atmosphère terrestre est composée à environ soixante-dix-huit pour cent d'azote.",
-      "La gravité est la force d'attraction entre toutes les masses de l'univers.",
-      "Les mitochondries sont les organites cellulaires responsables de la respiration.",
-      "La mécanique quantique décrit le comportement de la matière à l'échelle atomique.",
-      "Les observations phénoménologiques suggèrent que la perception est influencée par les attentes.",
-      "La juxtaposition de couleurs vibrantes crée un contraste saisissant.",
-      "La recherche interdisciplinaire facilite l'intégration de diverses méthodologies.",
-      "La nature éphémère de la brume matinale ajoute une qualité mystique au paysage.",
-      "L'intrication quantique remet en question notre compréhension classique de la localité.",
-      "Les nuances linguistiques posent des défis importants lors de la traduction littéraire.",
-      "L'analyse socio-économique révèle des disparités importantes dans le niveau de vie.",
-      "Le nombre d'Avogadro définit le nombre de particules dans une mole d'une substance.",
-      "La fosse des Mariannes est la fosse océanique la plus profonde connue sur Terre.",
-      "Jupiter est une géante gazeuse composée principalement d'hydrogène et d'hélium.",
-      "Les réactions de fusion nucléaire à l'intérieur du Soleil génèrent d'énormes quantités d'énergie.",
-      "La modification génétique des organismes suscite de vifs débats scientifiques.",
-      "L'impact anthropique sur les écosystèmes entraîne des changements climatiques irréversibles.",
-      "L'analyse multidimensionnelle a montré une corrélation significative entre les variables.",
-      "La conception architecturale s'harmonise parfaitement avec l'environnement urbain environnant.",
-      "Le paradigme cognitif suppose que les processus de pensée peuvent être modélisés par le calcul."
+    "facts": [
+      {
+        "text": "The sun rises in the east and sets in the west every day.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Cats like to sleep in warm places and spend most of the day napping.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Drinking water is very important for your health, hydration, and skin.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "The blue sky looks beautiful when the weather is clear and sunny.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "An apple a day keeps the doctor away is a popular and wise saying.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Most birds can fly high in the air using their powerful wings.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "I love to read interesting books and discover new facts during my free time.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "The capital city of France is Paris, famous for the Eiffel Tower.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Learning a new language can be a very rewarding and fun experience.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Summer is the warmest season of the year in most northern countries.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Milk contains calcium which helps to keep your teeth and bones strong.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Dogs are often called man's best friend for their loyalty and kindness.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Music has the amazing power to change a person's mood instantly.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Trees provide us with oxygen, clean air, and cooling shade on hot days.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Elephants are the largest living land animals on our planet today.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Honey never spoils and edible honey was found in ancient Egyptian tombs.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Octopuses have three hearts, nine brains, and blue blood.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Bananas grow on giant herbs that are not actual trees.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Butterflies taste their food using sensors located on their tiny feet.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Sea otters hold hands while sleeping so they do not drift away with the current.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Cows have best friends and get stressed when they are separated.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Squirrels plant thousands of new trees each year by forgetting their nuts.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "A day on the planet Venus is longer than a whole year on Venus.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Water freezes into solid ice at zero degrees Celsius.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "The Earth has one natural satellite called the Moon.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "The Pacific Ocean is the largest and deepest ocean on Earth.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Light travels much faster through empty space than sound does.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "The human body has two hundred and six bones in adulthood.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Your brain uses twenty percent of the total energy of your body.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "The human heart beats around one hundred thousand times every single day.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Smiling releases positive chemicals in the brain called endorphins.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Mount Everest is the highest mountain peak above sea level on Earth.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "The Great Wall of China is one of the longest structures ever built.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "The pyramids of Giza were built more than four thousand years ago in Egypt.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "A pangram is a unique sentence containing every letter of the alphabet.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Touch typing allows you to type quickly without looking down at the keyboard.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "A quick brown fox jumps over the lazy dog, is a famous typing pangram.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Synchronizing polymorphic encryption algorithms requires extraordinary rhythmic dexterity.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "The quirky psychiatrist's zephyr-like rhythm overwhelmed the synthetic melody.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Supercalifragilisticexpialidocious is an extraordinary word used when there is nothing else to say.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "The fundamental principles of thermodynamics dictate the direction of heat transfer.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Archaeological excavations revealed ancient artifacts from the prehistoric era.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Quantum entanglement challenges our conventional understanding of locality and physics.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Photosynthesis is the process by which green plants transform light into chemical energy.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Strawberries are the only fruit that wear their seeds on the outside.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "A group of flamingos is called a flamboyance.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Giraffes have blue-black tongues that can be up to fifty centimeters long.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Sloths can hold their breath underwater for up to forty minutes.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Hummingbirds are the only birds that can fly backwards and upside down.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Koalas have unique fingerprints that look almost identical to human fingerprints.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "The heart of a shrimp is located in its head.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Gravity on the Moon is one-sixth of the gravity on Earth.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Jupiter is the largest planet in our solar system and has many moons.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Snowflakes always have six sides due to the molecular structure of ice.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "The Earth orbits the Sun at a speed of about thirty kilometers per second.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Diamonds are formed deep inside the Earth under extreme heat and pressure.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Water makes up about sixty percent of the adult human body.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "The tongue is one of the strongest and most flexible muscles in your body.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Humans spend about one-third of their entire lives sleeping.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Listening to relaxing music can help reduce stress and lower blood pressure.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Ancient Romans built incredible aqueducts to bring fresh water into their cities.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "The first wheel was invented over five thousand years ago in Mesopotamia.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Nicolaus Copernicus showed that the Earth and other planets orbit the Sun.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Good typing posture keeps your back straight and prevents muscle strain.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Practicing touch typing builds muscle memory in your fingers and hands.",
+        "level": "easy",
+        "category": "language"
+      }
     ]
   },
   "german": {
-    "easy": [
-      "Die Sonne geht im Osten auf und im Westen unter.",
-      "Wasser gefriert bei exakt null Grad Celsius.",
-      "Katzen schlafen gerne an warmen Orten.",
-      "Der Himmel ist tagsüber oft strahlend blau.",
-      "Die Erde dreht sich ununterbrochen um die Sonne.",
-      "Vögel bauen Nester, um dort ihre Eier zu legen.",
-      "Die Hauptstadt von Frankreich ist die Stadt Paris.",
-      "Der Pazifische Ozean ist der größte Ozean der Welt.",
-      "Laubbäume verlieren im Herbst ihre Blätter.",
-      "Milch ist eine sehr gute Quelle für Kalzium.",
-      "Hunde besitzen einen ausgezeichneten Geruchssinn.",
-      "Der Mond leuchtet sichtbar in der Nacht.",
-      "Fische atmen unter Wasser durch ihre Kiemen.",
-      "Das Herz pumpt kontinuierlich Blut durch den Körper.",
-      "Spinnentiere haben in der Regel genau acht Beine.",
-      "Der Mount Everest ist der höchste Berg der Welt.",
-      "Pinguine sind Vögel, die nicht fliegen können.",
-      "Ein normales Jahr hat dreihundertfünfundsechzig Tage.",
-      "Äpfel wachsen an großen Apfelbäumen.",
-      "Menschliches Blut hat eine kräftige rote Farbe.",
-      "Sauerstoff ist ein Gas, das zum Atmen notwendig ist.",
-      "Delfine sind im Wasser lebende Säugetiere.",
-      "Die Sahara-Wüste ist extrem heiß und trocken.",
-      "Eis ist ganz einfach der feste Zustand von Wasser.",
-      "Feuer erzeugt große Mengen an Wärme und Licht.",
-      "Eine vollständige Woche besteht aus sieben Tagen.",
-      "Kühe produzieren Milch für ihre Kälber.",
-      "Zucker hat einen intensiv süßen Geschmack.",
-      "Tomaten sind botanisch gesehen Beerenfrüchte.",
-      "Honig wird von fleißigen Bienen produziert.",
-      "Die Erde hat einen einzigen natürlichen Satelliten.",
-      "Venus ist der zweite Planet von der Sonne aus gesehen.",
-      "Licht bewegt sich viel schneller als der Schall.",
-      "Das Skelett eines erwachsenen Menschen hat 206 Knochen.",
-      "Haie gehören zur biologischen Klasse der Knorpelfische.",
-      "Die Chinesische Mauer ist ein sehr langes Bauwerk.",
-      "Schokolade wird aus gerösteten Kakaobohnen hergestellt.",
-      "Elefanten sind die größten lebenden Landsäugetiere.",
-      "Kaninchen haben lange Ohren und können gut springen.",
-      "Der Zug kommt planmäßig am großen Bahnhof an.",
-      "Salz wird oft verwendet, um den Geschmack zu verbessern.",
-      "Regen fällt in Form von Wassertropfen aus den Wolken.",
-      "Der Sommer ist die wärmste Jahreszeit im Jahr.",
-      "Der Winter bringt häufig sehr kalte Temperaturen mit sich.",
-      "Blumen in einem Garten duften oft sehr angenehm.",
-      "Holz wird häufig für die Herstellung von Möbeln verwendet.",
-      "Plastik sollte immer recycelt werden, um die Umwelt zu schonen."
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Natur und Tiere"
+      },
+      {
+        "id": "science",
+        "name": "Wissenschaft und Kosmos"
+      },
+      {
+        "id": "human",
+        "name": "Körper und Gesundheit"
+      },
+      {
+        "id": "history",
+        "name": "Geschichte und Welt"
+      },
+      {
+        "id": "language",
+        "name": "Sprache und Zungenbrecher"
+      }
     ],
-    "hard": [
-      "Die Photosynthese ermöglicht es Pflanzen, Lichtenergie in chemische Energie umzuwandeln.",
-      "Die allgemeine Relativitätstheorie wurde von dem Physiker Albert Einstein formuliert.",
-      "Die Desoxyribonukleinsäure enthält die genetischen Anweisungen für alle Lebewesen.",
-      "Die Lichtgeschwindigkeit im Vakuum beträgt exakt 299.792.458 Meter pro Sekunde.",
-      "Tektonische Platten bewegen sich sehr langsam über die gesamte Erdoberfläche.",
-      "Das Sonnensystem entstand vor schätzungsweise 4,6 Milliarden Jahren aus einer Gaswolke.",
-      "Die Erdatmosphäre besteht zu etwa achtundsiebzig Prozent aus Stickstoff.",
-      "Die Schwerkraft ist die Anziehungskraft zwischen allen physikalischen Massen im Universum.",
-      "Mitochondrien sind die zellulären Organellen, die für die Zellatmung verantwortlich sind.",
-      "Die Quantenmechanik beschreibt das Verhalten von Materie auf der atomaren Ebene.",
-      "Phänomenologische Beobachtungen deuten darauf hin, dass die Wahrnehmung durch Erwartungen beeinflusst wird.",
-      "Die Gegenüberstellung lebhafter Farben erzeugt einen starken visuellen Kontrast.",
-      "Interdisziplinäre Forschung erleichtert die Integration verschiedener wissenschaftlicher Methoden.",
-      "Die Vergänglichkeit des morgendlichen Nebels verleiht der Landschaft eine mystische Qualität.",
-      "Die Quantenverschränkung fordert unser klassisches Verständnis von Lokalität in der Physik heraus.",
-      "Linguistische Nuancen stellen bei der literarischen Übersetzung oft große Herausforderungen dar.",
-      "Sozioökonomische Analysen zeigen erhebliche Unterschiede im Lebensstandard der Bevölkerung.",
-      "Die Avogadro-Konstante definiert die Anzahl der Teilchen in einem Mol einer Substanz.",
-      "Der Marianengraben ist der tiefste bekannte ozeanische Graben auf der Erde.",
-      "Jupiter ist ein Gasriese, der hauptsächlich aus Wasserstoff und Helium besteht.",
-      "Kernfusionsreaktionen im Inneren der Sonne erzeugen gewaltige Mengen an Energie.",
-      "Die genetische Veränderung von Organismen löst in der Wissenschaft heftige Debatten aus.",
-      "Anthropogene Einflüsse auf Ökosysteme führen zu oft unumkehrbaren klimatischen Veränderungen.",
-      "Multidimensionale statistische Analysen zeigten eine signifikante Korrelation der Variablen.",
-      "Die architektonische Gestaltung harmoniert perfekt mit der umgebenden städtischen Umwelt.",
-      "Das kognitive Paradigma geht davon aus, dass Denkprozesse rechnerisch modelliert werden können."
+    "facts": [
+      {
+        "text": "Die Sonne geht im Osten auf und im Westen unter.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Wasser gefriert bei exakt null Grad Celsius.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Katzen schlafen gerne an warmen Orten.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Der Himmel ist tagsüber oft strahlend blau.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Die Erde dreht sich ununterbrochen um die Sonne.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Vögel bauen Nester, um dort ihre Eier zu legen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Die Hauptstadt von Frankreich ist die Stadt Paris.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Der Pazifische Ozean ist der größte Ozean der Welt.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Laubbäume verlieren im Herbst ihre Blätter.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Milch ist eine sehr gute Quelle für Kalzium.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Hunde besitzen einen ausgezeichneten Geruchssinn.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Der Mond leuchtet sichtbar in der Nacht.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Fische atmen unter Wasser durch ihre Kiemen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Das Herz pumpt kontinuierlich Blut durch den Körper.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Spinnentiere haben in der Regel genau acht Beine.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Der Mount Everest ist der höchste Berg der Welt.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pinguine sind Vögel, die nicht fliegen können.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Ein normales Jahr hat dreihundertfünfundsechzig Tage.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Äpfel wachsen an großen Apfelbäumen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Menschliches Blut hat eine kräftige rote Farbe.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Sauerstoff ist ein Gas, das zum Atmen notwendig ist.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Delfine sind im Wasser lebende Säugetiere.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Die Sahara-Wüste ist extrem heiß und trocken.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Eis ist ganz einfach der feste Zustand von Wasser.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Feuer erzeugt große Mengen an Wärme und Licht.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Eine vollständige Woche besteht aus sieben Tagen.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Kühe produzieren Milch für ihre Kälber.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Zucker hat einen intensiv süßen Geschmack.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Tomaten sind botanisch gesehen Beerenfrüchte.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Honig wird von fleißigen Bienen produziert.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Die Erde hat einen einzigen natürlichen Satelliten.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Venus ist der zweite Planet von der Sonne aus gesehen.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Licht bewegt sich viel schneller als der Schall.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Das Skelett eines erwachsenen Menschen hat 206 Knochen.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Haie gehören zur biologischen Klasse der Knorpelfische.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Die Chinesische Mauer ist ein sehr langes Bauwerk.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Schokolade wird aus gerösteten Kakaobohnen hergestellt.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Elefanten sind die größten lebenden Landsäugetiere.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Kaninchen haben lange Ohren und können gut springen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Der Zug kommt planmäßig am großen Bahnhof an.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Salz wird oft verwendet, um den Geschmack zu verbessern.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Regen fällt in Form von Wassertropfen aus den Wolken.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Der Sommer ist die wärmste Jahreszeit im Jahr.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Der Winter bringt häufig sehr kalte Temperaturen mit sich.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Blumen in einem Garten duften oft sehr angenehm.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Holz wird häufig für die Herstellung von Möbeln verwendet.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Plastik sollte immer recycelt werden, um die Umwelt zu schonen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Die Photosynthese ermöglicht es Pflanzen, Lichtenergie in chemische Energie umzuwandeln.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Die allgemeine Relativitätstheorie wurde von dem Physiker Albert Einstein formuliert.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die Desoxyribonukleinsäure enthält die genetischen Anweisungen für alle Lebewesen.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Die Lichtgeschwindigkeit im Vakuum beträgt exakt 299.792.458 Meter pro Sekunde.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Tektonische Platten bewegen sich sehr langsam über die gesamte Erdoberfläche.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Das Sonnensystem entstand vor schätzungsweise 4,6 Milliarden Jahren aus einer Gaswolke.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die Erdatmosphäre besteht zu etwa achtundsiebzig Prozent aus Stickstoff.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die Schwerkraft ist die Anziehungskraft zwischen allen physikalischen Massen im Universum.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Mitochondrien sind die zellulären Organellen, die für die Zellatmung verantwortlich sind.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Die Quantenmechanik beschreibt das Verhalten von Materie auf der atomaren Ebene.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Phänomenologische Beobachtungen deuten darauf hin, dass die Wahrnehmung durch Erwartungen beeinflusst wird.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Die Gegenüberstellung lebhafter Farben erzeugt einen starken visuellen Kontrast.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Interdisziplinäre Forschung erleichtert die Integration verschiedener wissenschaftlicher Methoden.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die Vergänglichkeit des morgendlichen Nebels verleiht der Landschaft eine mystische Qualität.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Die Quantenverschränkung fordert unser klassisches Verständnis von Lokalität in der Physik heraus.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Linguistische Nuancen stellen bei der literarischen Übersetzung oft große Herausforderungen dar.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Sozioökonomische Analysen zeigen erhebliche Unterschiede im Lebensstandard der Bevölkerung.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Die Avogadro-Konstante definiert die Anzahl der Teilchen in einem Mol einer Substanz.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Der Marianengraben ist der tiefste bekannte ozeanische Graben auf der Erde.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Jupiter ist ein Gasriese, der hauptsächlich aus Wasserstoff und Helium besteht.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Kernfusionsreaktionen im Inneren der Sonne erzeugen gewaltige Mengen an Energie.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die genetische Veränderung von Organismen löst in der Wissenschaft heftige Debatten aus.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Anthropogene Einflüsse auf Ökosysteme führen zu oft unumkehrbaren klimatischen Veränderungen.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Multidimensionale statistische Analysen zeigten eine signifikante Korrelation der Variablen.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Die architektonische Gestaltung harmoniert perfekt mit der umgebenden städtischen Umwelt.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Das kognitive Paradigma geht davon aus, dass Denkprozesse rechnerisch modelliert werden können.",
+        "level": "hard",
+        "category": "human"
+      }
+    ]
+  },
+  "french": {
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Nature et Animaux"
+      },
+      {
+        "id": "science",
+        "name": "Science et Espace"
+      },
+      {
+        "id": "human",
+        "name": "Corps et Santé"
+      },
+      {
+        "id": "history",
+        "name": "Histoire et Monde"
+      },
+      {
+        "id": "language",
+        "name": "Langue et Dextérité"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Le soleil se lève à l'est et se couche à l'ouest chaque jour.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "L'eau gèle à zéro degré Celsius.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Les chats aiment dormir dans des endroits chauds.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le ciel bleu est magnifique quand la météo est claire.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "La Terre tourne autour du Soleil.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Les oiseaux construisent des nids pour pondre leurs œufs.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "La capitale de la France est Paris.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "L'océan Pacifique est le plus grand océan de la Terre.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Les arbres perdent leurs feuilles en automne.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le lait est une bonne source de calcium.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les chiens ont un excellent odorat.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "La lune brille pendant la nuit.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Les poissons respirent sous l'eau avec des branchies.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le cœur pompe le sang dans tout le corps.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les araignées ont exactement huit pattes.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "L'Everest est la plus haute montagne du monde.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Les pingouins sont des oiseaux qui ne volent pas.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Un an normal compte trois cent soixante-cinq jours.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Les pommes poussent sur les pommiers.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le sang humain est de couleur rouge.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "L'oxygène est un gaz nécessaire pour respirer.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les dauphins sont des mammifères marins.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le désert du Sahara est très chaud et sec.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "La glace est l'état solide de l'eau.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Le feu produit beaucoup de chaleur et de lumière.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Une semaine complète est composée de sept jours.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Les vaches produisent du lait.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le sucre a un goût très sucré.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les tomates sont botaniquement considérées comme des fruits.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le miel est produit par les abeilles.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "La Terre possède un seul satellite naturel appelé la Lune.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Vénus est la deuxième planète en partant du Soleil.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "La lumière voyage plus vite que le son.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Le corps humain adulte possède 206 os.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les requins sont des poissons cartilagineux.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "La Grande Muraille de Chine est une structure très longue.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Le chocolat est fabriqué à partir de fèves de cacao.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Les éléphants sont les plus grands animaux terrestres.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Les lapins ont de longues oreilles et sautent très haut.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le train arrive à la gare à l'heure prévue.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Le sel améliore le goût des aliments.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "La pluie tombe des nuages dans le ciel.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "L'été est la saison la plus chaude de l'année.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "L'hiver apporte souvent de la neige et du froid.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Les fleurs du jardin sentent très bon.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Le bois est utilisé pour fabriquer des meubles.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Le plastique doit être recyclé pour protéger la nature.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "La photosynthèse permet aux plantes de convertir l'énergie lumineuse en énergie chimique.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "La théorie de la relativité générale a été formulée par le physicien Albert Einstein.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "L'acide désoxyribonucléique contient les instructions génétiques des organismes vivants.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "La vitesse de la lumière dans le vide est d'environ 299 792 kilomètres par seconde.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Les plaques tectoniques se déplacent très lentement à la surface de la Terre.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Le système solaire s'est formé il y a environ 4,6 milliards d'années.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "L'atmosphère terrestre est composée à environ soixante-dix-huit pour cent d'azote.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "La gravité est la force d'attraction entre toutes les masses de l'univers.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Les mitochondries sont les organites cellulaires responsables de la respiration.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "La mécanique quantique décrit le comportement de la matière à l'échelle atomique.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Les observations phénoménologiques suggèrent que la perception est influencée par les attentes.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "La juxtaposition de couleurs vibrantes crée un contraste saisissant.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "La recherche interdisciplinaire facilite l'intégration de diverses méthodologies.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "La nature éphémère de la brume matinale ajoute une quality mystique au paysage.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "L'intrication quantique remet en question notre compréhension classique de la localité.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Les nuances linguistiques posent des défis importants lors de la traduction littéraire.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "L'analyse socio-économique révèle des disparités importantes dans le niveau de vie.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Le nombre d'Avogadro définit le nombre de particules dans une mole d'une substance.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "La fosse des Mariannes est la fosse océanique la plus profonde connue sur Terre.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Jupiter est une géante gazeuse composée principalement d'hydrogène et d'hélium.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Les réactions de fusion nucléaire à l'intérieur du Soleil génèrent d'énormes quantités d'énergie.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "La modification génétique des organismes suscite de vifs débats scientifiques.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "L'impact anthropique sur les écosystèmes entraîne des changements climatiques irréversibles.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "L'analyse multidimensionnelle a montré une corrélation significative entre les variables.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "La conception architecturale s'harmonise parfaitement avec l'environnement urbain environnant.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Le paradigme cognitif suppose que les processus de pensée peuvent être modélisés par le calcul.",
+        "level": "hard",
+        "category": "human"
+      }
+    ]
+  },
+  "swedish": {
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Natur och Djur"
+      },
+      {
+        "id": "science",
+        "name": "Vetenskap och Rymd"
+      },
+      {
+        "id": "human",
+        "name": "Kropp och Hälsa"
+      },
+      {
+        "id": "history",
+        "name": "Historia och Värld"
+      },
+      {
+        "id": "language",
+        "name": "Språk och Fingerfärdighet"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Solen går upp i öster och ner i väster varje dag.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Katter gillar att sova på varma platser och jaga små möss.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Att dricka vatten är mycket viktigt för din hälsa och hud.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Den blå himlen ser vacker ut när vädret är klart och soligt.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "En bok är den bästa presenten för människor i alla åldrar.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "På sommaren växer det många svampar och söta bär i skogen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Elever går i skolan för att få nya kunskaper.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Frukost är den viktigaste måltiden under hela dagen.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "På vintern älskar barn att åka pulka och bygga snögubbar.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Bilen kör snabbt på den breda asfalterade vägen.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Jag har en liten hund som älskar att leka.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "På våren kommer de första gröna bladen på träden.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Jag tycker om att dricka kaffe med en liten kaka.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Min familj bor i ett rött hus med vita knutar.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Fåglar kvittrar glatt i skogen tidigt på morgonen.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Det är viktigt att äta frukt och grönsaker varje dag.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Vi ska gå på bio och se en spännande film ikväll.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Mamma lagar god mat i köket till hela familjen.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Pappa läser tidningen och dricker en kopp varmt te.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Det regnar ute så vi måste ta på oss regnkläder.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Jag gillar att simma i sjön när det är varmt ute.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Hästar är stora djur som kan springa mycket fort.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "I skolan lär vi oss att läsa, skriva och räkna.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Mjölk är gott och gör att dina ben blir starka.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Blommorna i trädgården doftar underbart efter regnet.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Jag behöver köpa bröd och smör i affären idag.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Barnen leker med en boll på den stora gröna ängen.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Månen lyser klart på natten när himlen är mörk.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Vi åker tåg till Stockholm för att hälsa på vänner.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Glass smakar bäst när solen skiner och det är sommar.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Kaniner har långa öron och gillar att äta färska morötter.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Jag ska sova nu för jag är mycket trött efter dagen.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Vatten fryser vid noll grader Celsius.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Jorden har en naturlig satellit som kallas månen.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Spindlar har åtta ben.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Stilla havet är den största oceanen på jorden.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ett skottår har exakt 366 dagar.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Venus är den andra planeten från solen.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Ljus färdas mycket snabbare än ljud.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Den vuxna människokroppen har 206 ben.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Hajar är en typ av broskfiskar.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Syre är en gas som människor behöver för att andas.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Is är den fasta formen av vatten.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Kinesiska muren är en mycket lång historisk byggnad.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Pingviner är fåglar som inte kan flyga.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Blad använder solljus för att producera mat åt växter.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Delfiner är marina däggdjur, inte fiskar.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Synkronisering av polymorfa krypteringsalgoritmer kräver exceptionell rytmisk smidighet och precision.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Arkeologiska utgrävningar avslöjade antika artefakter från civilisationens förhistoriska era.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Teknologiska framsteg inom artificiell intelligens omformar den globala ekonomiska landskapen.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Transcendental konceptualisering av varande utforskas inom ramen för modern metafysisk filosofi.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Interdisciplinär forskning underlättar integrationen av olika metodologier för komplexa problem.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Den socioekonomiska analysen påvisade betydande skillnader i befolkningens levnadsstandard.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Kvantfysikaliska fenomen utmanar vår fundamentala förståelse av universums struktur.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Litterär gestaltning kräver en djupgående insikt i språkets nyanser och metaforik.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Implementeringen av hållbara energilösningar är avgörande för framtida generationer.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Den arkitektoniska estetiken harmonierar med den omgivande urbana miljön.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Mitochondrierna kallas ofta för den biologiska cellens kraftverk.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Deoxiribonukleinsyra bär på de genetiska instruktionerna för alla kända levande organismer.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Ljusets hastighet i vakuum är exakt 299 792 458 meter per sekund.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Jupiter är en gasjätte som huvudsakligen består av väte och helium.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Marianergraven är den djupaste kända oceaniska graven på jorden.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Tektoniska plattor är stora delar av jordskorpan som rör sig kontinuerligt.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Fotosyntes är processen där gröna växter omvandlar ljusenergi till kemisk energi.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Avogadros tal definierar antalet beståndsdelar i en mol av ett givet ämne.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Begreppet universell gravitation formulerades matematiskt av Sir Isaac Newton.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Kärnfusionsreaktioner inuti solen genererar enorma mängder elektromagnetisk energi.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Jordens atmosfär består till cirka sjuttioåtta procent av kväve.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Kognitiv dissonans uppstår vid mötet mellan motstridiga övertygelser i individens medvetande.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Fenomenologisk analys möjliggör en djupare förståelse av den mänskliga erfarenhetens struktur.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Genetisk modifiering av organismer väcker intensiva diskussioner inom forskarsamhället.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Infrastrukturprojekt kräver betydande kapitalinvesteringar och långsiktig planering.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Mångdimensionell statistisk analys visade en signifikant korrelation mellan de oberoende variablerna.",
+        "level": "hard",
+        "category": "science"
+      }
+    ]
+  },
+  "russian": {
+    "categories": [
+      {
+        "id": "nature",
+        "name": "Природа и Животные"
+      },
+      {
+        "id": "science",
+        "name": "Наука и Космос"
+      },
+      {
+        "id": "human",
+        "name": "Тело и Здоровье"
+      },
+      {
+        "id": "history",
+        "name": "История и Мир"
+      },
+      {
+        "id": "language",
+        "name": "Язык и Скороговорки"
+      }
+    ],
+    "facts": [
+      {
+        "text": "Солнце встает на востоке и заходит на западе каждый день.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Кошки любят спать в теплых местах и охотиться на мышей.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Пить чистую воду очень важно для здоровья и кожи.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Синее небо выглядит красиво, когда погода ясная и солнечная.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Книга - лучший подарок для человека любого возраста.",
+        "level": "easy",
+        "category": "language"
+      },
+      {
+        "text": "Летом в лесу растет много грибов и сладких ягод.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Ученики ходят в школу, чтобы получать новые знания.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Завтрак - самый важный прием пищи в течение всего дня.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Зимой дети любят кататься на санках и лепить снеговиков.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Машина быстро едет по широкой асфальтированной дороге.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "У меня есть маленькая собака, которая очень любит играть.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Весной на деревьях появляются первые зеленые листья.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Моя мама готовит очень вкусный обед для всей семьи.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Птицы поют красивые песни рано утром в нашем саду.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Я люблю смотреть интересные фильмы по вечерам в выходные.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "На столе стоит ваза с красивыми красными цветами.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Мы часто ходим гулять в парк рядом с нашим домом.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Вчера была очень хорошая погода и мы долго гуляли.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Мой дедушка любит читать газеты и пить горячий чай.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Я учусь играть на гитаре и уже знаю несколько песен.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "В зоопарке мы видели большого льва и длинного жирафа.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Осенью часто идет дождь и на улице становится холодно.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Хлеб и молоко можно купить в магазине за углом.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "У меня есть много друзей, с которыми я играю в футбол.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Мед очень сладкий и полезный для иммунитета человека.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Рыбы живут в воде и умеют очень хорошо плавать.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Каждый вечер я чищу зубы перед тем, как лечь спать.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "На небе ночью можно увидеть луну и много звезд.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Я хочу поехать в отпуск на теплое море этим летом.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Мой папа работает врачом в большой городской больнице.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Сахар делает чай сладким, а лимон делает его кислым.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Сегодня я встал очень рано, чтобы сделать зарядку.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Вода замерзает при нуле градусов по Цельсию.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Земля имеет один естественный спутник, который называется Луна.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "У пауков восемь ног.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Тихий океан - самый большой океан на Земле.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "В високосном году ровно 366 дней.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Венера - вторая планета от Солнца.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Свет распространяется быстрее, чем звук.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Скелет взрослого человека состоит из 206 костей.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Акулы - это вид хрящевых рыб.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Кислород - это газ, необходимый людям для дыхания.",
+        "level": "easy",
+        "category": "human"
+      },
+      {
+        "text": "Лед - это твердое состояние воды.",
+        "level": "easy",
+        "category": "science"
+      },
+      {
+        "text": "Великая Китайская стена - это очень длинное оборонительное сооружение.",
+        "level": "easy",
+        "category": "history"
+      },
+      {
+        "text": "Пингвины - это птицы, которые не умеют летать.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Листья используют солнечный свет для производства питания растений.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Дельфины - это морские млекопитающие, а не рыбы.",
+        "level": "easy",
+        "category": "nature"
+      },
+      {
+        "text": "Синхронизация полиморфных алгоритмов шифрования требует исключительной ловкости и точности ритма.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "На побережье океана были обнаружены древние артефакты доисторической эпохи цивилизации.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Технологический прогресс в области искусственного интеллекта меняет мировой экономический ландшафт.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "В четверг четвертого числа в четыре с четвертью часа лигурийский регулировщик регулировал в Лигурии.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Трансцендентальная концепция бытия исследуется в рамках современной метафизической философии.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Систематическое изучение квантовой механики открывает новые горизонты в микроэлектронике.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Дифференциальные уравнения высших порядков применяются для моделирования динамических систем.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Архитектурный ансамбль исторического центра города поражает своей монументальностью и изяществом.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Междисциплинарный подход позволяет интегрировать различные методологии для решения сложных задач.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Энтузиазм исследователей способствовал открытию уникальных биологических видов в амазонских джунглях.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Когнитивный диссонанс возникает при столкновении противоречивых убеждений в сознании индивида.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Антропогенное воздействие на экосистемы приводит к необратимым изменениям климата.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Феноменологический анализ позволяет глубже понять структуру человеческого опыта.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Инфраструктурные проекты требуют значительных капиталовложений и долгосрочного планирования.",
+        "level": "hard",
+        "category": "history"
+      },
+      {
+        "text": "Эстетическая ценность произведения искусства субъективна и зависит от культурного контекста.",
+        "level": "hard",
+        "category": "language"
+      },
+      {
+        "text": "Генетическая модификация организмов вызывает бурные дискуссии в научном сообществе.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Митохондрии часто называют энергетическими станциями биологической клетки.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Дезоксирибонуклеиновая кислота содержит генетические инструкции всех живых организмов.",
+        "level": "hard",
+        "category": "human"
+      },
+      {
+        "text": "Скорость света в вакууме составляет ровно 299 792 458 метров в секунду.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Юпитер является газовым гигантом, состоящим в основном из водорода и гелия.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Марианская впадина является самым глубоким известным океаническим желобом на Земле.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Тектонические плиты - это крупные участки литосферы, которые постоянно движутся.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Фотосинтез - это процесс, с помощью которого зеленые растения преобразуют световую энергию в химическую.",
+        "level": "hard",
+        "category": "nature"
+      },
+      {
+        "text": "Число Авогадро определяет количество частиц в одном моле данного вещества.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Закон всемирного тяготения был математически сформулирован Исааком Ньютоном.",
+        "level": "hard",
+        "category": "science"
+      },
+      {
+        "text": "Термоядерные реакции внутри Солнца генерируют колоссальное количество энергии.",
+        "level": "hard",
+        "category": "science"
+      }
     ]
   }
 }
