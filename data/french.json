@@ -1,0 +1,391 @@
+{
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Nature et Animaux"
+    },
+    {
+      "id": "science",
+      "name": "Science et Espace"
+    },
+    {
+      "id": "human",
+      "name": "Corps et Santé"
+    },
+    {
+      "id": "history",
+      "name": "Histoire et Monde"
+    },
+    {
+      "id": "language",
+      "name": "Langue et Dextérité"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Le soleil se lève à l'est et se couche à l'ouest chaque jour.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "L'eau gèle à zéro degré Celsius.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les chats aiment dormir dans des endroits chauds.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le ciel bleu est magnifique quand la météo est claire.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "La Terre tourne autour du Soleil.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les oiseaux construisent des nids pour pondre leurs œufs.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La capitale de la France est Paris.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "L'océan Pacifique est le plus grand océan de la Terre.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les arbres perdent leurs feuilles en automne.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le lait est une bonne source de calcium.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les chiens ont un excellent odorat.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La lune brille pendant la nuit.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les poissons respirent sous l'eau avec des branchies.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le cœur pompe le sang dans tout le corps.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les araignées ont exactement huit pattes.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "L'Everest est la plus haute montagne du monde.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Les pingouins sont des oiseaux qui ne volent pas.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Un an normal compte trois cent soixante-cinq jours.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les pommes poussent sur les pommiers.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le sang humain est de couleur rouge.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "L'oxygène est un gaz nécessaire pour respirer.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les dauphins sont des mammifères marins.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le désert du Sahara est très chaud et sec.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "La glace est l'état solide de l'eau.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Le feu produit beaucoup de chaleur et de lumière.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Une semaine complète est composée de sept jours.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Les vaches produisent du lait.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le sucre a un goût très sucré.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les tomates sont botaniquement considérées comme des fruits.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le miel est produit par les abeilles.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La Terre possède un seul satellite naturel appelé la Lune.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Vénus est la deuxième planète en partant du Soleil.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "La lumière voyage plus vite que le son.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Le corps humain adulte possède 206 os.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les requins sont des poissons cartilagineux.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La Grande Muraille de Chine est une structure très longue.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Le chocolat est fabriqué à partir de fèves de cacao.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les éléphants sont les plus grands animaux terrestres.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Les lapins ont de longues oreilles et sautent très haut.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le train arrive à la gare à l'heure prévue.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Le sel améliore le goût des aliments.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "La pluie tombe des nuages dans le ciel.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "L'été est la saison la plus chaude de l'année.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "L'hiver apporte souvent de la neige et du froid.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Les fleurs du jardin sentent très bon.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le bois est utilisé pour fabriquer des meubles.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Le plastique doit être recyclé pour protéger la nature.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La photosynthèse permet aux plantes de convertir l'énergie lumineuse en énergie chimique.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "La théorie de la relativité générale a été formulée par le physicien Albert Einstein.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "L'acide désoxyribonucléique contient les instructions génétiques des organismes vivants.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "La vitesse de la lumière dans le vide est d'environ 299 792 kilomètres par seconde.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Les plaques tectoniques se déplacent très lentement à la surface de la Terre.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Le système solaire s'est formé il y a environ 4,6 milliards d'années.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "L'atmosphère terrestre est composée à environ soixante-dix-huit pour cent d'azote.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "La gravité est la force d'attraction entre toutes les masses de l'univers.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Les mitochondries sont les organites cellulaires responsables de la respiration.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "La mécanique quantique décrit le comportement de la matière à l'échelle atomique.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Les observations phénoménologiques suggèrent que la perception est influencée par les attentes.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "La juxtaposition de couleurs vibrantes crée un contraste saisissant.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "La recherche interdisciplinaire facilite l'intégration de diverses méthodologies.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "La nature éphémère de la brume matinale ajoute une quality mystique au paysage.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "L'intrication quantique remet en question notre compréhension classique de la localité.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Les nuances linguistiques posent des défis importants lors de la traduction littéraire.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "L'analyse socio-économique révèle des disparités importantes dans le niveau de vie.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Le nombre d'Avogadro définit le nombre de particules dans une mole d'une substance.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "La fosse des Mariannes est la fosse océanique la plus profonde connue sur Terre.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Jupiter est une géante gazeuse composée principalement d'hydrogène et d'hélium.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Les réactions de fusion nucléaire à l'intérieur du Soleil génèrent d'énormes quantités d'énergie.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "La modification génétique des organismes suscite de vifs débats scientifiques.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "L'impact anthropique sur les écosystèmes entraîne des changements climatiques irréversibles.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "L'analyse multidimensionnelle a montré une corrélation significative entre les variables.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "La conception architecturale s'harmonise parfaitement avec l'environnement urbain environnant.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Le paradigme cognitif suppose que les processus de pensée peuvent être modélisés par le calcul.",
+      "level": "hard",
+      "category": "human"
+    }
+  ]
+}

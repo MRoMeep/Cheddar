@@ -1,0 +1,391 @@
+{
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Natur und Tiere"
+    },
+    {
+      "id": "science",
+      "name": "Wissenschaft und Kosmos"
+    },
+    {
+      "id": "human",
+      "name": "Körper und Gesundheit"
+    },
+    {
+      "id": "history",
+      "name": "Geschichte und Welt"
+    },
+    {
+      "id": "language",
+      "name": "Sprache und Zungenbrecher"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Die Sonne geht im Osten auf und im Westen unter.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Wasser gefriert bei exakt null Grad Celsius.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Katzen schlafen gerne an warmen Orten.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Himmel ist tagsüber oft strahlend blau.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Die Erde dreht sich ununterbrochen um die Sonne.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Vögel bauen Nester, um dort ihre Eier zu legen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Die Hauptstadt von Frankreich ist die Stadt Paris.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Der Pazifische Ozean ist der größte Ozean der Welt.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Laubbäume verlieren im Herbst ihre Blätter.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Milch ist eine sehr gute Quelle für Kalzium.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Hunde besitzen einen ausgezeichneten Geruchssinn.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Mond leuchtet sichtbar in der Nacht.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Fische atmen unter Wasser durch ihre Kiemen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Das Herz pumpt kontinuierlich Blut durch den Körper.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Spinnentiere haben in der Regel genau acht Beine.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Mount Everest ist der höchste Berg der Welt.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Pinguine sind Vögel, die nicht fliegen können.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Ein normales Jahr hat dreihundertfünfundsechzig Tage.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Äpfel wachsen an großen Apfelbäumen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Menschliches Blut hat eine kräftige rote Farbe.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Sauerstoff ist ein Gas, das zum Atmen notwendig ist.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Delfine sind im Wasser lebende Säugetiere.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Die Sahara-Wüste ist extrem heiß und trocken.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Eis ist ganz einfach der feste Zustand von Wasser.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Feuer erzeugt große Mengen an Wärme und Licht.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Eine vollständige Woche besteht aus sieben Tagen.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Kühe produzieren Milch für ihre Kälber.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Zucker hat einen intensiv süßen Geschmack.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Tomaten sind botanisch gesehen Beerenfrüchte.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Honig wird von fleißigen Bienen produziert.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Die Erde hat einen einzigen natürlichen Satelliten.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Venus ist der zweite Planet von der Sonne aus gesehen.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Licht bewegt sich viel schneller als der Schall.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Das Skelett eines erwachsenen Menschen hat 206 Knochen.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Haie gehören zur biologischen Klasse der Knorpelfische.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Die Chinesische Mauer ist ein sehr langes Bauwerk.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Schokolade wird aus gerösteten Kakaobohnen hergestellt.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Elefanten sind die größten lebenden Landsäugetiere.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Kaninchen haben lange Ohren und können gut springen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Zug kommt planmäßig am großen Bahnhof an.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Salz wird oft verwendet, um den Geschmack zu verbessern.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Regen fällt in Form von Wassertropfen aus den Wolken.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Der Sommer ist die wärmste Jahreszeit im Jahr.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Winter bringt häufig sehr kalte Temperaturen mit sich.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Blumen in einem Garten duften oft sehr angenehm.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Holz wird häufig für die Herstellung von Möbeln verwendet.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Plastik sollte immer recycelt werden, um die Umwelt zu schonen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Die Photosynthese ermöglicht es Pflanzen, Lichtenergie in chemische Energie umzuwandeln.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "Die allgemeine Relativitätstheorie wurde von dem Physiker Albert Einstein formuliert.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die Desoxyribonukleinsäure enthält die genetischen Anweisungen für alle Lebewesen.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Die Lichtgeschwindigkeit im Vakuum beträgt exakt 299.792.458 Meter pro Sekunde.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Tektonische Platten bewegen sich sehr langsam über die gesamte Erdoberfläche.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Das Sonnensystem entstand vor schätzungsweise 4,6 Milliarden Jahren aus einer Gaswolke.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die Erdatmosphäre besteht zu etwa achtundsiebzig Prozent aus Stickstoff.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die Schwerkraft ist die Anziehungskraft zwischen allen physikalischen Massen im Universum.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Mitochondrien sind die zellulären Organellen, die für die Zellatmung verantwortlich sind.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Die Quantenmechanik beschreibt das Verhalten von Materie auf der atomaren Ebene.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Phänomenologische Beobachtungen deuten darauf hin, dass die Wahrnehmung durch Erwartungen beeinflusst wird.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Die Gegenüberstellung lebhafter Farben erzeugt einen starken visuellen Kontrast.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Interdisziplinäre Forschung erleichtert die Integration verschiedener wissenschaftlicher Methoden.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die Vergänglichkeit des morgendlichen Nebels verleiht der Landschaft eine mystische Qualität.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "Die Quantenverschränkung fordert unser klassisches Verständnis von Lokalität in der Physik heraus.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Linguistische Nuancen stellen bei der literarischen Übersetzung oft große Herausforderungen dar.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Sozioökonomische Analysen zeigen erhebliche Unterschiede im Lebensstandard der Bevölkerung.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Die Avogadro-Konstante definiert die Anzahl der Teilchen in einem Mol einer Substanz.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Der Marianengraben ist der tiefste bekannte ozeanische Graben auf der Erde.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Jupiter ist ein Gasriese, der hauptsächlich aus Wasserstoff und Helium besteht.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Kernfusionsreaktionen im Inneren der Sonne erzeugen gewaltige Mengen an Energie.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die genetische Veränderung von Organismen löst in der Wissenschaft heftige Debatten aus.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Anthropogene Einflüsse auf Ökosysteme führen zu oft unumkehrbaren klimatischen Veränderungen.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "Multidimensionale statistische Analysen zeigten eine signifikante Korrelation der Variablen.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Die architektonische Gestaltung harmoniert perfekt mit der umgebenden städtischen Umwelt.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Das kognitive Paradigma geht davon aus, dass Denkprozesse rechnerisch modelliert werden können.",
+      "level": "hard",
+      "category": "human"
+    }
+  ]
+}

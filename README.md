@@ -103,7 +103,7 @@ Aby samodzielnie wyeksportować aplikację do pojedynczego pliku wykonywalnego:
 
 ```bash
 pip install pyinstaller pywebview
-python -m PyInstaller --noconfirm --onefile --windowed --icon=logo.ico --add-data "index.html;." --add-data "style.css;." --add-data "script.js;." --add-data "data.json;." --add-data "logo.ico;." --add-data "MRMeepe.png;." --name Cheddar main.py
+python -m PyInstaller --noconfirm --onefile --windowed --icon=logo.ico --add-data "index.html;." --add-data "style.css;." --add-data "script.js;." --add-data "data;data" --add-data "data.json;." --add-data "logo.ico;." --add-data "MRMeepe.png;." --name Cheddar main.py
 ```
 Gotowy plik `Cheddar.exe` pojawi się w folderze `dist/`.
 

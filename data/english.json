@@ -1,0 +1,356 @@
+{
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Nature & Animals"
+    },
+    {
+      "id": "science",
+      "name": "Science & Space"
+    },
+    {
+      "id": "human",
+      "name": "Body & Health"
+    },
+    {
+      "id": "history",
+      "name": "History & World"
+    },
+    {
+      "id": "language",
+      "name": "Linguistics & Dexterity"
+    }
+  ],
+  "facts": [
+    {
+      "text": "The sun rises in the east and sets in the west every day.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Cats like to sleep in warm places and spend most of the day napping.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Drinking water is very important for your health, hydration, and skin.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "The blue sky looks beautiful when the weather is clear and sunny.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "An apple a day keeps the doctor away is a popular and wise saying.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Most birds can fly high in the air using their powerful wings.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "I love to read interesting books and discover new facts during my free time.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "The capital city of France is Paris, famous for the Eiffel Tower.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Learning a new language can be a very rewarding and fun experience.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "Summer is the warmest season of the year in most northern countries.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Milk contains calcium which helps to keep your teeth and bones strong.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Dogs are often called man's best friend for their loyalty and kindness.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Music has the amazing power to change a person's mood instantly.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Trees provide us with oxygen, clean air, and cooling shade on hot days.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Elephants are the largest living land animals on our planet today.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Honey never spoils and edible honey was found in ancient Egyptian tombs.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Octopuses have three hearts, nine brains, and blue blood.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Bananas grow on giant herbs that are not actual trees.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Butterflies taste their food using sensors located on their tiny feet.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Sea otters hold hands while sleeping so they do not drift away with the current.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Cows have best friends and get stressed when they are separated.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Squirrels plant thousands of new trees each year by forgetting their nuts.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "A day on the planet Venus is longer than a whole year on Venus.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Water freezes into solid ice at zero degrees Celsius.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "The Earth has one natural satellite called the Moon.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "The Pacific Ocean is the largest and deepest ocean on Earth.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Light travels much faster through empty space than sound does.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "The human body has two hundred and six bones in adulthood.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Your brain uses twenty percent of the total energy of your body.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "The human heart beats around one hundred thousand times every single day.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Smiling releases positive chemicals in the brain called endorphins.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Mount Everest is the highest mountain peak above sea level on Earth.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "The Great Wall of China is one of the longest structures ever built.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "The pyramids of Giza were built more than four thousand years ago in Egypt.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "A pangram is a unique sentence containing every letter of the alphabet.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "Touch typing allows you to type quickly without looking down at the keyboard.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "A quick brown fox jumps over the lazy dog, is a famous typing pangram.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Synchronizing polymorphic encryption algorithms requires extraordinary rhythmic dexterity.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "The quirky psychiatrist's zephyr-like rhythm overwhelmed the synthetic melody.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Supercalifragilisticexpialidocious is an extraordinary word used when there is nothing else to say.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "The fundamental principles of thermodynamics dictate the direction of heat transfer.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Archaeological excavations revealed ancient artifacts from the prehistoric era.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Quantum entanglement challenges our conventional understanding of locality and physics.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "The speed of light in a vacuum is exactly 299,792,458 meters per second.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Photosynthesis is the process by which green plants transform light into chemical energy.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "Strawberries are the only fruit that wear their seeds on the outside.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "A group of flamingos is called a flamboyance.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Giraffes have blue-black tongues that can be up to fifty centimeters long.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Sloths can hold their breath underwater for up to forty minutes.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Hummingbirds are the only birds that can fly backwards and upside down.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Koalas have unique fingerprints that look almost identical to human fingerprints.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "The heart of a shrimp is located in its head.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Gravity on the Moon is one-sixth of the gravity on Earth.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Jupiter is the largest planet in our solar system and has many moons.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Snowflakes always have six sides due to the molecular structure of ice.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "The Earth orbits the Sun at a speed of about thirty kilometers per second.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Diamonds are formed deep inside the Earth under extreme heat and pressure.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Water makes up about sixty percent of the adult human body.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "The tongue is one of the strongest and most flexible muscles in your body.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Humans spend about one-third of their entire lives sleeping.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Listening to relaxing music can help reduce stress and lower blood pressure.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Ancient Romans built incredible aqueducts to bring fresh water into their cities.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "The first wheel was invented over five thousand years ago in Mesopotamia.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Nicolaus Copernicus showed that the Earth and other planets orbit the Sun.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Good typing posture keeps your back straight and prevents muscle strain.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "Practicing touch typing builds muscle memory in your fingers and hands.",
+      "level": "easy",
+      "category": "language"
+    }
+  ]
+}

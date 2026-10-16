@@ -1,0 +1,391 @@
+{
+  "categories": [
+    {
+      "id": "nature",
+      "name": "Natur och Djur"
+    },
+    {
+      "id": "science",
+      "name": "Vetenskap och Rymd"
+    },
+    {
+      "id": "human",
+      "name": "Kropp och Hälsa"
+    },
+    {
+      "id": "history",
+      "name": "Historia och Värld"
+    },
+    {
+      "id": "language",
+      "name": "Språk och Fingerfärdighet"
+    }
+  ],
+  "facts": [
+    {
+      "text": "Solen går upp i öster och ner i väster varje dag.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Katter gillar att sova på varma platser och jaga små möss.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Att dricka vatten är mycket viktigt för din hälsa och hud.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Den blå himlen ser vacker ut när vädret är klart och soligt.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "En bok är den bästa presenten för människor i alla åldrar.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "På sommaren växer det många svampar och söta bär i skogen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Elever går i skolan för att få nya kunskaper.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Frukost är den viktigaste måltiden under hela dagen.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "På vintern älskar barn att åka pulka och bygga snögubbar.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Bilen kör snabbt på den breda asfalterade vägen.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Jag har en liten hund som älskar att leka.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "På våren kommer de första gröna bladen på träden.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Jag tycker om att dricka kaffe med en liten kaka.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Min familj bor i ett rött hus med vita knutar.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Fåglar kvittrar glatt i skogen tidigt på morgonen.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Det är viktigt att äta frukt och grönsaker varje dag.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Vi ska gå på bio och se en spännande film ikväll.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Mamma lagar god mat i köket till hela familjen.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Pappa läser tidningen och dricker en kopp varmt te.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Det regnar ute så vi måste ta på oss regnkläder.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Jag gillar att simma i sjön när det är varmt ute.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Hästar är stora djur som kan springa mycket fort.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "I skolan lär vi oss att läsa, skriva och räkna.",
+      "level": "easy",
+      "category": "language"
+    },
+    {
+      "text": "Mjölk är gott och gör att dina ben blir starka.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Blommorna i trädgården doftar underbart efter regnet.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Jag behöver köpa bröd och smör i affären idag.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Barnen leker med en boll på den stora gröna ängen.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Månen lyser klart på natten när himlen är mörk.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Vi åker tåg till Stockholm för att hälsa på vänner.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Glass smakar bäst när solen skiner och det är sommar.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Kaniner har långa öron och gillar att äta färska morötter.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Jag ska sova nu för jag är mycket trött efter dagen.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Vatten fryser vid noll grader Celsius.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Jorden har en naturlig satellit som kallas månen.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Spindlar har åtta ben.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Stilla havet är den största oceanen på jorden.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Ett skottår har exakt 366 dagar.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Venus är den andra planeten från solen.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Ljus färdas mycket snabbare än ljud.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Den vuxna människokroppen har 206 ben.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Hajar är en typ av broskfiskar.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Syre är en gas som människor behöver för att andas.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Is är den fasta formen av vatten.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Kinesiska muren är en mycket lång historisk byggnad.",
+      "level": "easy",
+      "category": "history"
+    },
+    {
+      "text": "Pingviner är fåglar som inte kan flyga.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Blad använder solljus för att producera mat åt växter.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Delfiner är marina däggdjur, inte fiskar.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Synkronisering av polymorfa krypteringsalgoritmer kräver exceptionell rytmisk smidighet och precision.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Arkeologiska utgrävningar avslöjade antika artefakter från civilisationens förhistoriska era.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Teknologiska framsteg inom artificiell intelligens omformar den globala ekonomiska landskapen.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Transcendental konceptualisering av varande utforskas inom ramen för modern metafysisk filosofi.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Interdisciplinär forskning underlättar integrationen av olika metodologier för komplexa problem.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Den socioekonomiska analysen påvisade betydande skillnader i befolkningens levnadsstandard.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Kvantfysikaliska fenomen utmanar vår fundamentala förståelse av universums struktur.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Litterär gestaltning kräver en djupgående insikt i språkets nyanser och metaforik.",
+      "level": "hard",
+      "category": "language"
+    },
+    {
+      "text": "Implementeringen av hållbara energilösningar är avgörande för framtida generationer.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Den arkitektoniska estetiken harmonierar med den omgivande urbana miljön.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Mitochondrierna kallas ofta för den biologiska cellens kraftverk.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Deoxiribonukleinsyra bär på de genetiska instruktionerna för alla kända levande organismer.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Ljusets hastighet i vakuum är exakt 299 792 458 meter per sekund.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Jupiter är en gasjätte som huvudsakligen består av väte och helium.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Marianergraven är den djupaste kända oceaniska graven på jorden.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Tektoniska plattor är stora delar av jordskorpan som rör sig kontinuerligt.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Fotosyntes är processen där gröna växter omvandlar ljusenergi till kemisk energi.",
+      "level": "hard",
+      "category": "nature"
+    },
+    {
+      "text": "Avogadros tal definierar antalet beståndsdelar i en mol av ett givet ämne.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Begreppet universell gravitation formulerades matematiskt av Sir Isaac Newton.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Kärnfusionsreaktioner inuti solen genererar enorma mängder elektromagnetisk energi.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Jordens atmosfär består till cirka sjuttioåtta procent av kväve.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Kognitiv dissonans uppstår vid mötet mellan motstridiga övertygelser i individens medvetande.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Fenomenologisk analys möjliggör en djupare förståelse av den mänskliga erfarenhetens struktur.",
+      "level": "hard",
+      "category": "human"
+    },
+    {
+      "text": "Genetisk modifiering av organismer väcker intensiva diskussioner inom forskarsamhället.",
+      "level": "hard",
+      "category": "science"
+    },
+    {
+      "text": "Infrastrukturprojekt kräver betydande kapitalinvesteringar och långsiktig planering.",
+      "level": "hard",
+      "category": "history"
+    },
+    {
+      "text": "Mångdimensionell statistisk analys visade en signifikant korrelation mellan de oberoende variablerna.",
+      "level": "hard",
+      "category": "science"
+    }
+  ]
+}

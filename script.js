@@ -72,7 +72,7 @@ const uiLangSelect = document.getElementById('uiLangSelect');
 // ==========================================================================
 // STATE MANAGEMENT
 // ==========================================================================
-let allData = {};
+let allData = {}; // Cache załadowanych języków { [lang]: data }
 let currentLanguage = 'polish';
 let uiLanguageSetting = 'auto'; // 'auto' or 'polish', 'english', 'german', 'french', 'swedish', 'russian'
 let currentMode = 'endless'; // 'endless' or 'single'
@@ -1435,18 +1435,40 @@ function setTheme(themeName) {
 }
 
 // ==========================================================================
-// 7. DATA LOADING & INITIALIZATION
+// 7. DATA LOADING & INITIALIZATION (ON-DEMAND LANGUAGE LOADING)
 // ==========================================================================
+async function loadLanguageData(lang) {
+    if (allData[lang]) {
+        return allData[lang];
+    }
+    try {
+        const response = await fetch(`data/${lang}.json`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        const data = await response.json();
+        allData[lang] = data;
+        return data;
+    } catch (e) {
+        console.error(`Error loading data/${lang}.json:`, e);
+        // Fallback w razie uruchomienia ze starszą strukturą (jeśli data.json istnieje)
+        try {
+            const fallbackResp = await fetch('data.json');
+            const fallbackAll = await fallbackResp.json();
+            if (fallbackAll && fallbackAll[lang]) {
+                allData[lang] = fallbackAll[lang];
+                return allData[lang];
+            }
+        } catch (err) {}
+        return null;
+    }
+}
+
 async function loadData() {
     try {
-        const response = await fetch('data.json');
-        allData = await response.json();
-        
         const savedLang = localStorage.getItem('cheddar_lang') || 'polish';
-        if (allData[savedLang]) {
-            currentLanguage = savedLang;
-            if (langSelect) langSelect.value = savedLang;
-        }
+        currentLanguage = savedLang;
+        if (langSelect) langSelect.value = savedLang;
 
         const savedMode = localStorage.getItem('cheddar_mode') || 'endless';
         currentMode = savedMode;
@@ -1461,9 +1483,12 @@ async function loadData() {
         applyUiLocalization();
         updateCategoryChipsUI();
         recordsManager.updateUI();
+
+        // Ładujemy tylko i wyłącznie wybrany język początkowy
+        await loadLanguageData(currentLanguage);
         startNewRound(true);
     } catch (e) {
-        console.error('Error loading data.json:', e);
+        console.error('Error in initialization:', e);
     }
 }
 
@@ -1982,11 +2007,14 @@ document.addEventListener('keydown', (event) => {
 
 // Zmiana języka
 if (langSelect) {
-    langSelect.addEventListener('change', () => {
+    langSelect.addEventListener('change', async () => {
         currentLanguage = langSelect.value;
         localStorage.setItem('cheddar_lang', currentLanguage);
         perfectStreak = 0;
         applyUiLocalization();
+
+        // Ładujemy plik JSON tylko w momencie wybrania tego języka
+        await loadLanguageData(currentLanguage);
         startNewRound(true);
     });
 }
