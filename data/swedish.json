@@ -23,77 +23,77 @@
   ],
   "facts": [
     {
-      "text": "Solen går upp i öster och ner i väster varje dag.",
+      "text": "En dag på planeten Venus är längre än ett helt venusianskt år eftersom planeten roterar extremt långsamt.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Katter gillar att sova på varma platser och jaga små möss.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "Att dricka vatten är mycket viktigt för din hälsa och hud.",
-      "level": "easy",
-      "category": "human"
-    },
-    {
-      "text": "Den blå himlen ser vacker ut när vädret är klart och soligt.",
+      "text": "Varmt vatten kan under vissa fysikaliska förhållanden frysa snabbare än kallt vatten, ett fenomen kallat Mpemba-effekten.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "En bok är den bästa presenten för människor i alla åldrar.",
-      "level": "easy",
-      "category": "language"
-    },
-    {
-      "text": "På sommaren växer det många svampar och söta bär i skogen.",
+      "text": "Katter saknar den genetiska receptorn för sötma och kan därför inte känna smaken av socker.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Elever går i skolan för att få nya kunskaper.",
+      "text": "En tesked materia från en neutronstjärna skulle väga cirka sex miljarder ton på jordens yta.",
       "level": "easy",
-      "category": "human"
+      "category": "science"
     },
     {
-      "text": "Frukost är den viktigaste måltiden under hela dagen.",
-      "level": "easy",
-      "category": "human"
-    },
-    {
-      "text": "På vintern älskar barn att åka pulka och bygga snögubbar.",
-      "level": "easy",
-      "category": "human"
-    },
-    {
-      "text": "Bilen kör snabbt på den breda asfalterade vägen.",
+      "text": "Kleopatra levde tidsmässigt närmare lanseringen av iPhone än byggandet av Cheopspyramiden i Giza.",
       "level": "easy",
       "category": "history"
     },
     {
-      "text": "Jag har en liten hund som älskar att leka.",
+      "text": "Kolibrier är de enda fåglarna på jorden som kan flyga baklänges och sväva helt stilla i luften.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "På våren kommer de första gröna bladen på träden.",
+      "text": "Eiffeltornet i Paris blir upp till femton centimeter högre under varma sommardagar på grund av metallens värmeutvidgning.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Det regnar troligen äkta diamanter på Neptunus och Uranus på grund av det enorma atmosfäriska trycket.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Vombater lämnar efter sig kubformad spillning för att den inte ska rulla iväg från stenar och klippor.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Jag tycker om att dricka kaffe med en liten kaka.",
+      "text": "Människans skelettben är i förhållande till sin vikt starkare och mer tåliga mot tryck än stål.",
       "level": "easy",
       "category": "human"
     },
     {
-      "text": "Min familj bor i ett rött hus med vita knutar.",
+      "text": "Grönlandshajar kan bli över fyrahundra år gamla och är därmed de mest långlivade ryggradsdjuren i världen.",
       "level": "easy",
-      "category": "history"
+      "category": "nature"
     },
     {
-      "text": "Fåglar kvittrar glatt i skogen tidigt på morgonen.",
+      "text": "Månen rör sig sakta bort från jorden med nästan fyra centimeter per år, vilket gör våra dygn något längre över tid.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Pingviner har en speciell körtel ovanför ögonen som filtrerar bort havssalt från vattnet de dricker.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Människans hjärna producerar tillräckligt med elektrisk energi i vaket tillstånd för att tända en liten LED-lampa.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Bläckfiskar har tre fungerande hjärtan, nio hjärnor och blått blod baserat på koppar istället för järn.",
       "level": "easy",
       "category": "nature"
     },

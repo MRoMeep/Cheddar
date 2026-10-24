@@ -23,77 +23,77 @@
   ],
   "facts": [
     {
-      "text": "Le soleil se lève à l'est et se couche à l'ouest chaque jour.",
+      "text": "Un jour sur Vénus est plus long qu'une année vénusienne entière, car la planète tourne très lentement sur elle-même.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "L'eau gèle à zéro degré Celsius.",
+      "text": "L'eau chaude peut geler plus rapidement que l'eau froide dans certaines conditions, un phénomène appelé effet Mpemba.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Les chats aiment dormir dans des endroits chauds.",
+      "text": "Les chats ne peuvent pas percevoir le goût sucré en raison d'une mutation génétique de leurs récepteurs gustatifs.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Le ciel bleu est magnifique quand la météo est claire.",
+      "text": "Une cuillère à café de matière provenant d'une étoile à neutrons pèserait environ six milliards de tonnes sur Terre.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "La Terre tourne autour du Soleil.",
-      "level": "easy",
-      "category": "science"
-    },
-    {
-      "text": "Les oiseaux construisent des nids pour pondre leurs œufs.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "La capitale de la France est Paris.",
+      "text": "Cléopâtre a vécu chronologiquement plus près de l'invention de l'iPhone que de la construction de la grande pyramide de Gizeh.",
       "level": "easy",
       "category": "history"
     },
     {
-      "text": "L'océan Pacifique est le plus grand océan de la Terre.",
+      "text": "Les colibris sont les seuls oiseaux capables de voler en arrière, à l'envers et de faire du surplace en vol stationnaire.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La tour Eiffel grandit jusqu'à quinze centimètres pendant l'été à cause de la dilatation thermique du fer chauffé au soleil.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Les arbres perdent leurs feuilles en automne.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "Le lait est une bonne source de calcium.",
-      "level": "easy",
-      "category": "human"
-    },
-    {
-      "text": "Les chiens ont un excellent odorat.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "La lune brille pendant la nuit.",
+      "text": "Il pleut de véritables diamants solides sur Neptune et Uranus en raison de la pression phénoménale dans leur atmosphère.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Les poissons respirent sous l'eau avec des branchies.",
+      "text": "Les crottes des wombats sont cubiques, ce qui les empêche de rouler lorsqu'ils marquent leur territoire sur des rochers.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Le cœur pompe le sang dans tout le corps.",
+      "text": "À poids égal, l'os humain est plus résistant aux chocs et à la pression que certaines structures en acier.",
       "level": "easy",
       "category": "human"
     },
     {
-      "text": "Les araignées ont exactement huit pattes.",
+      "text": "Le requin du Groenland peut vivre plus de quatre cents ans, ce qui en fait le vertébré avec la plus longue longévité connue.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "La Lune s'éloigne de la Terre d'environ quatre centimètres chaque année, ce qui allonge insensiblement nos journées.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Les manchots possèdent une glande supraorbitale spéciale qui filtre l'excès de sel contenu dans l'eau de mer qu'ils boivent.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Le cerveau humain génère suffisamment d'impulsions électriques éveillé pour alimenter une petite ampoule LED.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Les pieuvres possèdent trois cœurs, neuf cerveaux et un sang bleu à base de cuivre pour transporter l'oxygène.",
       "level": "easy",
       "category": "nature"
     },

@@ -1206,6 +1206,38 @@ class SmartWeaknessEngine {
         this.save();
     }
 
+    recordSuccess(expectedChar, prevChar) {
+        if (!expectedChar) return;
+        const charLow = expectedChar.toLowerCase();
+        let changed = false;
+
+        if (this.data.chars[charLow] && this.data.chars[charLow] > 0) {
+            this.data.chars[charLow] -= 1;
+            if (this.data.chars[charLow] <= 0) {
+                delete this.data.chars[charLow];
+            }
+            changed = true;
+        }
+
+        if (prevChar && prevChar.trim().length > 0 && expectedChar.trim().length > 0) {
+            const bigram = (prevChar + expectedChar).toLowerCase();
+            if (this.data.bigrams[bigram] && this.data.bigrams[bigram] > 0) {
+                this.data.bigrams[bigram] -= 1;
+                if (this.data.bigrams[bigram] <= 0) {
+                    delete this.data.bigrams[bigram];
+                }
+                changed = true;
+            }
+        }
+
+        if (changed) {
+            this.save();
+            if (typeof recordsManager !== 'undefined') {
+                recordsManager.renderWeaknesses();
+            }
+        }
+    }
+
     getScoreForText(text) {
         if (!this.data.enabled) return 1.0;
         const lower = text.toLowerCase();
@@ -1451,15 +1483,6 @@ async function loadLanguageData(lang) {
         return data;
     } catch (e) {
         console.error(`Error loading data/${lang}.json:`, e);
-        // Fallback w razie uruchomienia ze starszą strukturą (jeśli data.json istnieje)
-        try {
-            const fallbackResp = await fetch('data.json');
-            const fallbackAll = await fallbackResp.json();
-            if (fallbackAll && fallbackAll[lang]) {
-                allData[lang] = fallbackAll[lang];
-                return allData[lang];
-            }
-        } catch (err) {}
         return null;
     }
 }
@@ -1571,6 +1594,8 @@ function getFilteredFactsPool() {
     return pool;
 }
 
+let charAttemptErrors = new Set(); // Indeksy znaków, na których popełniono błąd
+
 // ==========================================================================
 // 9. ROUND & TYPING CORE LOGIC
 // ==========================================================================
@@ -1589,6 +1614,7 @@ function startNewRound(resetTimer = true, forceRepeat = false) {
     previousInputLength = 0;
     currentSentenceErrors = 0;
     roundMistakes.clear();
+    charAttemptErrors.clear();
     updateProgressBar(0);
     updateStreakUI(false);
 
@@ -1691,14 +1717,27 @@ userInput.addEventListener('input', () => {
         const charIndex = currentLength - 1;
         const expectedLetter = arrayQuote[charIndex] ? arrayQuote[charIndex].textContent : '';
         const typedLetter = arrayValue[charIndex];
+        const prevLetter = charIndex > 0 && arrayQuote[charIndex - 1] ? arrayQuote[charIndex - 1].textContent : null;
 
         if (expectedLetter && typedLetter !== expectedLetter) {
             errorsMade++;
             currentSentenceErrors++;
+            charAttemptErrors.add(charIndex);
             triggerErrorAnimation();
 
-            const prevLetter = charIndex > 0 && arrayQuote[charIndex - 1] ? arrayQuote[charIndex - 1].textContent : null;
+            // Natychmiastowy reset STREAK i płomienia przy błędzie
+            if (perfectStreak > 0) {
+                perfectStreak = 0;
+                updateStreakUI(false);
+            }
+
+            // +1 do błędu symbolu w trenerze
             weaknessEngine.recordMistake(expectedLetter, prevLetter);
+        } else if (expectedLetter && typedLetter === expectedLetter) {
+            // Jeśli symbol został wpisany poprawnie za pierwszym razem (bez wcześniejszego błędu na tej pozycji)
+            if (!charAttemptErrors.has(charIndex)) {
+                weaknessEngine.recordSuccess(expectedLetter, prevLetter);
+            }
         }
     }
     previousInputLength = currentLength;

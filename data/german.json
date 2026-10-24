@@ -23,77 +23,77 @@
   ],
   "facts": [
     {
-      "text": "Die Sonne geht im Osten auf und im Westen unter.",
+      "text": "Ein Tag auf der Venus dauert länger als ein ganzes Venusjahr, weil sie sich extrem langsam rückwärts dreht.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Wasser gefriert bei exakt null Grad Celsius.",
+      "text": "Heißes Wasser kann unter bestimmten physikalischen Bedingungen schneller gefrieren als kaltes Wasser.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Katzen schlafen gerne an warmen Orten.",
+      "text": "Katzen können genetisch bedingt nichts Süßes schmecken, da ihnen die entsprechenden Geschmacksrezeptoren fehlen.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Der Himmel ist tagsüber oft strahlend blau.",
+      "text": "Neutronensterne sind so dicht, dass ein einziger Teelöffel ihrer Materie auf der Erde Milliarden Tonnen wiegen würde.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Die Erde dreht sich ununterbrochen um die Sonne.",
-      "level": "easy",
-      "category": "science"
-    },
-    {
-      "text": "Vögel bauen Nester, um dort ihre Eier zu legen.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "Die Hauptstadt von Frankreich ist die Stadt Paris.",
+      "text": "Kleopatra lebte zeitlich näher an der Erfindung des iPhones als am Bau der großen Pyramiden von Gizeh.",
       "level": "easy",
       "category": "history"
     },
     {
-      "text": "Der Pazifische Ozean ist der größte Ozean der Welt.",
+      "text": "Kolibris sind die einzigen Vögel der Welt, die rückwärts fliegen und minutenlang in der Luft schweben können.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Eiffelturm in Paris wächst an heißen Sommertagen durch die thermische Ausdehnung des Eisens um bis zu fünfzehn Zentimeter.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Laubbäume verlieren im Herbst ihre Blätter.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "Milch ist eine sehr gute Quelle für Kalzium.",
-      "level": "easy",
-      "category": "human"
-    },
-    {
-      "text": "Hunde besitzen einen ausgezeichneten Geruchssinn.",
-      "level": "easy",
-      "category": "nature"
-    },
-    {
-      "text": "Der Mond leuchtet sichtbar in der Nacht.",
+      "text": "Auf den Planeten Neptun und Uranus regnet es echten Diamantenstaub aus reinem, komprimiertem Kohlenstoff.",
       "level": "easy",
       "category": "science"
     },
     {
-      "text": "Fische atmen unter Wasser durch ihre Kiemen.",
+      "text": "Wombats produzieren würfelförmigen Kot, damit dieser auf Hügeln und Felsen nicht unkontrolliert wegrollt.",
       "level": "easy",
       "category": "nature"
     },
     {
-      "text": "Das Herz pumpt kontinuierlich Blut durch den Körper.",
+      "text": "Menschliche Knochen sind im Verhältnis zu ihrem Gewicht härter und widerstandsfähiger als manche Stahlsorten.",
       "level": "easy",
       "category": "human"
     },
     {
-      "text": "Spinnentiere haben in der Regel genau acht Beine.",
+      "text": "Grönlandhaie können über vierhundert Jahre alt werden und schwammen schon zu Shakespeares Lebzeiten in den Meeren.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Der Mond entfernt sich jährlich um fast vier Zentimeter von der Erde, wodurch unsere Tage ganz allmählich länger werden.",
+      "level": "easy",
+      "category": "science"
+    },
+    {
+      "text": "Pinguine besitzen eine spezielle Drüse über ihren Augen, die das Salz aus getrunkenem Meerwasser filtert.",
+      "level": "easy",
+      "category": "nature"
+    },
+    {
+      "text": "Das menschliche Gehirn erzeugt im Wachzustand genügend elektrische Energie, um eine kleine LED-Lampe zu betreiben.",
+      "level": "easy",
+      "category": "human"
+    },
+    {
+      "text": "Kraken besitzen drei funktionierende Herzen und blaues Blut, das Kupfer statt Eisen für den Sauerstofftransport nutzt.",
       "level": "easy",
       "category": "nature"
     },
